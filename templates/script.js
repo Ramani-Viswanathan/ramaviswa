@@ -208,3 +208,25 @@ window.addEventListener("load", function () {
       .catch((error) => console.error("Error fetching data:", error));
 });
 
+// Get the element to loop through
+const hero = document.querySelector('figcaption');
+
+// Create an array of the different roles
+const roles = ['TPM', 'PGM', 'Mentor'];
+
+// Set an interval to loop through the roles
+setInterval(() => {
+  // Get the current role
+  const role = roles.shift();
+
+  // Add the role to the hero element
+  hero.textContent = role;
+
+  // Add the role back to the end of the array
+  roles.push(role);
+}, 2000); // Change the interval to suit your needs
+
+// Add a timeout to disappear the hero element after a few seconds
+setTimeout(() => {
+  hero.style.display = 'none';
+}, 10000); // Change the timeout to suit your needs
