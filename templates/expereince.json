@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Technical Program Manager",
+        "subtitle": "Client: Citibank | Employer: Virtusa Corporation",
+        "imageSrc": "images/Old-new-talent-triangle-evolving.jpg",
+        "description": "I manage Technical Programs for Global Supply Chain and Global Resouce management division of Citibank, providing a clear roadmap for system and operational implementations, with connected platforms to standardize and automate processes, improve data quality, integrate end-to-end systems, and deliver meaningful measures. Contribute to the review of internal tools/processes and assist in identifying potential opportunities for improvement and automation.",
+        "year": "From May 2018 - Till Date",
+        "technologies": "Scrum · Product Management · Vulnerability · Computer Science · Operations · Development Projects · Risk Management · Reporting Requirements · Technology Risk · Conflict Resolution · Information Delivery · Project Delivery · Process Improvement · Communication · Project Leadership · IT Project Leadership · IT Project Management · Stakeholder Management · Cross-functional Team Leadership"
+    },
+    {
+        "title": "Technical Program Manager",
+        "subtitle": "Client: Entergy, Novartis, AstraZeneca | Employer: HCL Technologies",
+        "imageSrc": "images/Old-new-talent-triangle-evolving.jpg",
+        "description": "I was Privileged to be part of the integrated energy company with annual revenue of ~ 11Bn and deliver electricity to ~ 2.9 million people, was successful in managing mission critical technical program in new technologies which delivered advanced products and tools which reduces the carbon footprint.<br>Championed critical Technology program for ~ 172 Bn market capital healthcare company on modernizing their infrastructure & applications which are critical for clinical developments which touches billions of lives across the globe.",
+        "year": "From Aug 2012 - Till May 2018",
+        "technologies": "Computer Science · Risk Management · Reporting Requirements · Technology Risk · Conflict Resolution · Information Delivery · Cybersecurity risk management · Cyber Risk Management · Project Delivery · Process Improvement · Communication · Project Leadership · IT Project Leadership · Stakeholder Management · Cross-functional Team Leadership"
+    },
+    {
+        "title": "Program Manager - Head PMO",
+        "subtitle": "Client: Ahold | Employer: Mphasis",
+        "imageSrc": "images/Old-new-talent-triangle-evolving.jpg",
+        "description": "I was helping PMO and project/program team to deliver Infrastructure business critical rollouts for client. Initiated off‐shore and onsite ratio proposition to bring down cost structure to the HP onsite account, approximate cost saving to NL HP (Q1 : 1,134,750 Euro ; Q2: 1,144,125 Euro). Enforced governance model and quality initiative across program for global financial account.",
+        "year": "From Dec 2010 - Till Aug 2012",
+        "technologies": "Computer Science · Risk Management · Technology Risk · Project Delivery · Process Improvement · Communication · IT Project Leadership · Stakeholder Management"
+    },
+    {
+        "title": "Project Manager - Infrastructure",
+        "subtitle": "Client: IBM | Employer: IBM",
+        "imageSrc": "images/Old-new-talent-triangle-evolving.jpg",
+        "description": "Implemented large scale IT infrastructure projects / program for IBM Internal and client of IBM like Motorola, RBS. I had opportunity to execute successfully various Transition & Transformation projects, data center migration, apps & patch releases, and server decommissioning and data recovery projects. Managed resources across continents (south Africa, China, Philippines, UK and North America) with max 125 indirect Project Team.",
+        "year": "From June 2006 - Till Dec 2010",
+        "technologies": "IT Infrastructure Management · Cross-functional Coordination · Data Center Consolidation · Computer Science · Communication"
+    },
+    {
+        "title": "Project Manager - Application Support",
+        "subtitle": "Client: Office Depot | Employer: Xerox",
+        "imageSrc": "",
+        "description": "I successfully managed new application build and maintenance projects for ACS Clients. Continuity improvement of the business was my key role; the local teams were unable to communicate the deliverables to the onsite team, coordinated and set‐up process and protocol for the smooth functioning of the best shore and onshore team.",
+        "year": "From Aug 2005 - Till June 2006",
+        "technologies": "Application Support Management · Software Project Management · Computer Science"
+    },
+    {
+        "title": "Software Engineer",
+        "subtitle": "Client: Western Digitl | Employer: Western Digital",
+        "imageSrc": "",
+        "description": "Successful in Creating Various Dashboards and 100s of Reports for the Western Digital Manufacturing, Supply Chain departments Locations (San Jose, Malaysia & Thailand).",
+        "year": "From Aug 2000 - Till Aug 2005",
+        "technologies": "Software Development · SDLC · Computer Science · .Net · MSSQL · t-SQL"
+    }
+]
