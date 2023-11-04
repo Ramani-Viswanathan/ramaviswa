@@ -149,7 +149,7 @@ a {
 }
 
 .herobox{
-  background-image: url("/images/box.svg");
+  background-image: url("../images/box.svg");
   background-size: contain;
   position:relative;
   top: 2em;
@@ -159,7 +159,7 @@ a {
 }
 
 .hname{
-  background-image: url("/images/HName.svg");
+  background-image: url("../images/HName.svg");
   background-size: contain;
   position:relative;
   top: 2em;
@@ -169,7 +169,7 @@ a {
 }
 
 .bgproduct{
-  background-image: url("/images/prodLaunch.svg");
+  background-image: url("../images/prodLaunch.svg");
   background-size:contain;
   position:relative;
   top: 1em;
@@ -177,7 +177,7 @@ a {
 }
 
 .bgcareer{
-  background-image: url("/images/careerpath.svg");
+  background-image: url("../images/careerpath.svg");
   background-size:contain;
   position:relative;
   top: 1em;
@@ -185,7 +185,7 @@ a {
 }
 
 .bgcommunity{
-  background-image: url("/images/community.svg");
+  background-image: url("../images/community.svg");
   background-size:contain;
   position:relative;
   top: 1em;
