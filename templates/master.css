@@ -21,13 +21,15 @@ https://codepen.io/aakash_codes/pen/VwVgNNV?editors=1100
 
 https://codepen.io/rrenula/pen/LzLXYJ
 
+https://undraw.co/search
+
 */
 
 /* Define CSS variables at the top of your CSS file */
 :root {
 
   
---body-bgcolor: linear-gradient(90deg, #C3E4B7 1%, #FF0000 93%, #6DBD63 5%, #A3D8CC 1%);
+--body-bgcolor: #FFFFFF; /*linear-gradient(90deg, #C3E4B7 1%, #FF0000 93%, #6DBD63 5%, #A3D8CC 1%);*/
  --site-default-font-family: 'poppins', sans-serif;
 
   /* fonts */
@@ -69,22 +71,7 @@ Caption text	15pt	48px	1em
   .content {
     flex-direction: column;
   }
-
-  .mastercontainer{
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: 0px;
-    overflow: auto;
-    overflow-y: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  
-  }
-
 }
-.container{   height: fit-content; }
-.card{   border-radius: 1px; }
 
 /* Global */* {
   margin: 0;
@@ -112,240 +99,11 @@ body, h1, h2, h3, p, ul, ol, li {
   padding: 0;
 }
 
-/* Top Menu */
-
-.brutContWrapper{
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 2px;
-  background-color: #ffff;
-  border: solid black 4px;
-  box-shadow: black 6px 6px;
-}
-
-.brutresumeWrapper{
-  padding: 30px;
-  margin-top: 25px;
-  border-radius: 2px;
-  background-color: #ffff;
-  border: solid black 2px;
-  text-align: justify;
-  font-family: var(--site-default-font-family);
-  font-size: 1em;
-}
-
-.brutresumeWrapper .header {
-  font-size: 20px;
-  font-weight: 500;
-  color: #000000;
-  padding: 10px 20px;
-  border-bottom: solid #303030 2px;
-}
-
-.brutObjMenu{
-  font-weight: 600;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: #a6fbb2;
-  border: solid black 4px;
-  box-shadow: black 4px 4px;
-  font-size: 1.3em;
-  transition: 0.1s all ease;
-  align-self: flex-start;
-  top: 0px;
-}
-
-.brutImgWrapper{
-  border-radius: 2px;
-  border: solid #1ef876 4px;
-  box-shadow: black 4px 4px;
-}
-
-.brutconttitle{
-
-  background-color: #1ef876;
-}
-
-.brutCardWrapper{
-  padding: 5px;
-  border-radius: 5px;
-  background-color: white;
-  border: solid black 2px;
-  /*box-shadow: black 4px 4px;*/
-  font-size: 1.3em;
-  transition: 0.1s all ease;
-
-  .top-section{
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 2px solid black;
-    background-color: #8aff80;
-    font-family: var(--neoburt-subtitle-fonts);
-  }
-
-  .top-section::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: #ccc;
-  }
-
-  .body-section{
-    text-align: justify;
-    font-size: 15px;
-    background-color:white
-  }
-
-  .bottom-Section{
-    border-top: 2px solid black;
-    padding: 25px;
-    background-color: white;
-  }
-
-}
-
-.brutExpWrapper{
-  padding: 2px;
-  border-radius: 5px;
-  background-color: white;
-  border: solid black 2px;
-  /*box-shadow: black 4px 4px;*/
-  font-size: 1.3em;
-  transition: 0.1s all ease;
-
-  .complogo{
-    font-size: 15px;
-    font-weight: bold;
-    color: #333;
-    padding: 1px;
-    text-align: center;
-  }
-
-  .title{
-    font-size: 19px;
-    font-weight: bold;
-    color: #333;
-    padding: 1px;
-    text-align: center;
-  }
-
-  .title::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: #ccc;
-  }
-
-  .subtitle{
-    font-size: 12px;
-    font-weight: bold;
-    color: #333;
-    padding: 1px;
-    text-align: center;
-  }
-
-  .tenure{
-    text-align: right;
-    font-size: 12px;
-    font-weight: bold;
-  }
-
-
-  .body-section{
-    text-align: justify;
-    font-size: 15px;
-  }
-
-  .technology{
-    text-align: left;
-    font-size: 12px;
-    font-weight: bold;
-  }
-
-
-}
-
-.brutbutton {
-  padding: 2px;
-  font-size: 12px;
-  border: none;
-  border: 2px solid black;
-  border-radius: .2em;
-  background-color: #a6fbb2;
-  filter: drop-shadow(3px 3px black); 
-  transition: .2s ease-in-out all; 
-  align-self:center;
-  color: black;
-
-  .buttona{
-    color: black;
-    font-style: italic;
-    align-items: flex-end;
-  }
-}
-
-/** Hero Banner Cross **/
-.wrapper {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 1fr;
-  max-width: 100%;
-  font-size: 0;
-}
-
-.hero-item,
-.standard-item {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.news-item {
-  display: inline-block;
-  min-height: 400px;
-  width: 50%;
-}
-
-.custcolor{
-  background: #55aa66;
-}
-
-.hero-item {
-  background-color: #2a5443;
-}
-
-@supports (display: grid) {
-  .news-item {
-    width: auto;
-    min-height: 0;
-  }
-  
-  .hero-item {
-    grid-column: 1 / span 2;
-    grid-row: 1 / 50;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
-  }
-
-}
-
-/*End Hero Curve */
-
 /* -- Body START --- */
 
 body{
 
-  background: linear-gradient(to bottom, #a6fbb2 40%, #6DBD63 60%);
+  background: #FFFFF0; /*linear-gradient(to bottom, #a6fbb2 40%, #6DBD63 60%);*/
   scroll-behavior: smooth;
   scrollbar-color: var(--headernav-font-family);
   overflow: auto;
@@ -353,93 +111,6 @@ body{
   color: #333333;
   font-size: small;
 }
-
-.aboutbody{
-
-  background: #FFFFFF;
-  scroll-behavior: smooth;
-  scrollbar-color: var(--headernav-font-family);
-  overflow: auto;
-  font-family: var(--site-default-font-family);
-  color: #333333;
-}
-
-/* -- Body END --- */
-
-/* header nav start */
-
-.headernav{
-
-  font-family: var(--site-default-font-family);
-  font-size: 12px; /* Adjust the size as needed */
-  font-weight: normal; /* You can use a normal weight for menus */
-  color: black;
-  height: 35px;
-  background-color: var(--body-bgcolor);
-  text-decoration: none;
-  overflow-wrap: break-word;
-  hyphens: manual;
-}
-
-.card-header{
-
-  background-color: #F4D738;
-}
-
-.contProject{
-  background-color: #2FFF2F;
-
-}
-
-.contexperience{
-  background-color: #FFFF00;
-}
-
-.myname{
-  font-family: var(--site-default-font-family);
-  font-size: clamp(2rem, 5vw + 2rem, 7rem); /* Adjust the size as needed */
-  line-height: 1;
-  font-weight: 800;
-  inline-size: min(140%, calc(100vw - 2rem));
-  overflow-wrap: break-word;
-  hyphens: manual;
-  color: whitesmoke; /*#4cb69f; /*#f5f5f5; /*#b48c36; /*#d8ab4e; /*#6DBD63; */
-}
-
-.herotext{
-  font-family:  var(--neoburt-subtitle-fonts);
-  font-size: clamp(1rem, 1rem, 1rem); /* Adjust the size as needed */
-  font-weight: bold; /* You can use different font weights */
-  color: white; /*#00b6b0;*/
-  padding: 0.5rem 1rem;
-}
-
-
-.subtitles{
-
-  font-family: var(--neobrut-title-font);
-  font-weight: 700;
-  font-size: clamp(1rem, 10vw, 2rem);
-}
-
-.heromission{
-  font-family: var(--site-default-font-family);
-  font-size: 15px; /* Adjust the size as needed */
-  font-weight: bold; /* You can use different font weights */
-  color: #6DBD63;
-}
-
-.hero-curve {
-  height: 100px;
-  background-color: #cdeacd; /*linear-gradient(to bottom right, black 0%, #cdeacd);*/
-  clip-path: ellipse("M 0 0 L 100 0 A 50 50 0 0 1 0 100");
-}
-
-
-
-/* header nav end */
-
-/* titles and sub titles for the content box */
 
 h1 {
 
@@ -466,33 +137,74 @@ h4 {
 
   font-family: var(--site-default-font-family);
   font-size : 15px;
-
 }
 
-.bold{
-
-  font-weight: bold;
-
+a {
+  text-decoration: none;
+  color: #6c63ffff;
 }
 
-i{
-
-  width: 35;
-  height: 35;
-  color: #1ef876;
-  font-family: var(--site-default-font-family);
+.hero{
+  height: 450px;
 }
 
-i:hover{
-
-  width: 25;
-  height: 25;
-  color: #1ef876;
-  font-family: var(--site-default-font-family);
+.herobox{
+  background-image: url("/images/box.svg");
+  background-size: contain;
+  position:relative;
+  top: 2em;
+  height: 400;
+  width: 400;
+  background-repeat: no-repeat;
 }
 
-/* experience */
+.hname{
+  background-image: url("/images/HName.svg");
+  background-size: contain;
+  position:relative;
+  top: 2em;
+  height: 400px;
+  width: 400px;
+  background-repeat: no-repeat;
+}
 
+.bgproduct{
+  background-image: url("/images/prodLaunch.svg");
+  background-size:contain;
+  position:relative;
+  top: 1em;
+  background-repeat: no-repeat;
+}
+
+.bgcareer{
+  background-image: url("/images/careerpath.svg");
+  background-size:contain;
+  position:relative;
+  top: 1em;
+  background-repeat: no-repeat;
+}
+
+.bgcommunity{
+  background-image: url("/images/community.svg");
+  background-size:contain;
+  position:relative;
+  top: 1em;
+  background-repeat: no-repeat;
+}
+
+.bgblog{
+  position:relative;
+  top: 1em;
+  background-repeat: no-repeat;
+}
+
+.belowhname{
+
+  top: 18em;
+  position: absolute;
+  text-align: center;
+  
+}
 
 /* Add this to your CSS file or within a <style> tag in the HTML head */
 #scroll-to-top-button {
@@ -511,102 +223,57 @@ i:hover{
   cursor: pointer;
 }
 
-/* Proverb */
-
-.proverb {
-
-  text-align: justify;
-  align-items: flex-start;
-  text-transform: initial;
+.back-top {
+  cursor: pointer;
+  position: fixed !important;
+  bottom: 40px;
+  right: 40px;
+  display: block;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: rgba(var(--bs-primary-rgb), 0.1);
+  color: var(--bs-primary);
+  border-radius: 10%;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+}
+.back-top i {
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+.back-top:hover {
+  background: var(--bs-primary);
+  color: var(--bs-white);
+}
+.back-top.back-top-show {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
-a {
-text-decoration: none;
-}
+.brutbutton {
+  padding: 2px;
+  font-size: 12px;
+  border: none;
+  border: 2px solid black;
+  border-radius: .2em;
+  background-color: #6c63ffff;
+  filter: drop-shadow(3px 3px black); 
+  transition: .2s ease-in-out all; 
+  align-self:center;
+  color: black;
 
-a:hover{
-  text-decoration: none;
-}
-
-/* timeline */
-
-.timeline {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-.timeline:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 5px;
-  background-color: black;
-}
-
-.timeline li {
-  list-style: none;
-  position: relative;
-  top:5px;
-  padding: 10px 10;
-  width:fit-content;
-}
-
-.timeline li:before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 5px;
-  margin-top: -5px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: black;
-  border: 4px solid black;
-  z-index: 1;
-}
-
-
-.parent{
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-span:after{
-  color: #1ef876;
-  font-family: var(--site-default-font-family);
-  content: "";
-  animation: myanim 15s ease-in-out infinite;
-}
-
-@keyframes typewriter{
-  to {
-    left: 100%;
-  }
-}
-
-@keyframes myanim{
-  0%{
-  content: "Technical Program Manager";
-  }
-  25%{
-    content: "";
-  }
-  33.33%{
-  content: "Project Management Consultant";
-  }
-  50%{
-    content: "";
-  }
-  66.66%{
-  content: "Agile Leader";
-  }
-  75%{
-    content: "";
-  }
-  100%{
-  content: "Mentor";
+  .buttona{
+    color: black;
+    font-style: italic;
+    align-items: flex-end;
   }
 }
