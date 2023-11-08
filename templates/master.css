@@ -29,7 +29,12 @@ https://undraw.co/search
 :root {
 
   
---body-bgcolor: #FFFFFF; /*linear-gradient(90deg, #C3E4B7 1%, #FF0000 93%, #6DBD63 5%, #A3D8CC 1%);*/
+--body-bgcolor: #D2D1D9; /*linear-gradient(90deg, #C3E4B7 1%, #FF0000 93%, #6DBD63 5%, #A3D8CC 1%);*/
+--section1-bgcolor: #c1c0cc;
+--section2-bgcolor: #abaabb;
+--section3-bgcolor: #9796aa;
+--section4-bgcolor: #838296;
+--section-bottom-bgcolor: #717085;
  --site-default-font-family: 'poppins', sans-serif;
 
   /* fonts */
@@ -103,7 +108,7 @@ body, h1, h2, h3, p, ul, ol, li {
 
 body{
 
-  background: #FFFFF0; /*linear-gradient(to bottom, #a6fbb2 40%, #6DBD63 60%);*/
+  background: var(--body-bgcolor);
   scroll-behavior: smooth;
   scrollbar-color: var(--headernav-font-family);
   overflow: auto;
@@ -139,33 +144,47 @@ h4 {
   font-size : 15px;
 }
 
+h5 {
+
+  font-family: var(--site-default-font-family);
+  font-size : 12px;
+}
+
+h6 {
+
+  font-family: var(--site-default-font-family);
+  font-size : 10px;
+}
+
 a {
   text-decoration: none;
   color: #6c63ffff;
-}
-
-.hero{
-  height: 450px;
 }
 
 .herobox{
   background-image: url("../images/box.svg");
   background-size: contain;
   position:relative;
-  top: 2em;
-  height: 400;
-  width: 400;
+  top: 0em;
   background-repeat: no-repeat;
 }
 
 .hname{
-  background-image: url("../images/HName.svg");
-  background-size: contain;
-  position:relative;
-  top: 2em;
-  height: 400px;
+  height: 350px;
   width: 400px;
   background-repeat: no-repeat;
+  align-content: center;
+  text-align: center;
+  font-family: var(--hero-title-font);
+  font-size: 45px;
+  position:relative;
+  top: 0em;
+
+}
+
+.prowness{
+  font-family: var(--title-font);
+  font-size: 2em;
 }
 
 .bgproduct{
@@ -205,6 +224,35 @@ a {
   text-align: center;
   
 }
+
+.counterouter{
+
+  width: 285px;
+  height: 155px;
+
+}
+
+.counterinner{
+
+  width:270px;
+}
+
+strong{
+  font-size:large;
+  color: #6c63ffff;
+}
+
+.counterinner-img{
+
+  width:270px;
+  height: auto;
+}
+
+.counterinner-btm{
+  width:270px;
+  height: 35px;
+}
+
 
 /* Add this to your CSS file or within a <style> tag in the HTML head */
 #scroll-to-top-button {
@@ -276,4 +324,24 @@ a {
     font-style: italic;
     align-items: flex-end;
   }
+}
+
+.section1bg{
+  background-color: var(--section1-bgcolor);
+}
+
+.section2bg{
+  background-color: var(--section2-bgcolor);
+}
+
+.section3bg{
+  background-color: var(--section3-bgcolor);
+}
+
+.section4bg{
+  background-color: var(--section4-bgcolor);
+}
+
+.bottom{
+  background-color: var(--section-bottom-bgcolor);
 }

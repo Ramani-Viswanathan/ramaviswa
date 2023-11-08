@@ -131,9 +131,9 @@ window.addEventListener("load", function () {
               cardDiv.className = "width:50%";
 
               cardDiv.innerHTML = `
-                  <div class="card mb-3 brutContWrapper" style="width: 56rem; background-color: #FFFFFF;">
-                    <div class="card-header brutresumeWrapper"><strong>${item.year}</strong></div>
-                      <div class="card-body brutresumeWrapper">
+                  <div class="card mb-3" style="width: 56rem; background-color: #FFFFFF;">
+                    <div class="card-header"><strong>${item.year}</strong></div>
+                      <div class="card-body">
                           <p class="card-text"><strong>${item.title}</strong></p>
                           <p class="card-text">${item.subtitle}></p>
                           <p>&nbsp;</P>
@@ -153,6 +153,91 @@ window.addEventListener("load", function () {
       })
       .catch((error) => console.error("Error fetching data:", error));
 });
+
+// for Certifications
+
+// bouve sunction for Experience
+
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("certification-container");
+
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/certification.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+
+          jsonData.forEach((item) => {
+
+            const startDate = new Date(`${item.received_date}`); // Replace with your actual start date
+            console.log(startDate);
+            const currentDate = new Date();
+  
+            const startYear = startDate.getFullYear();
+            const startMonth = startDate.getMonth();
+            const currentYear = currentDate.getFullYear();
+            const currentMonth = currentDate.getMonth();
+  
+            let yearDiff = currentYear - startYear;
+            let monthDiff = currentMonth - startMonth;
+  
+            if (monthDiff < 0) {
+              monthDiff += 12;
+              yearDiff--;
+            }
+  
+            const totalMonths = (yearDiff * 12) + monthDiff;
+
+              const cardDiv = document.createElement("div");
+              cardDiv.className = "width:50%";
+              cardDiv.innerHTML = `
+                <p class="card-text">${item.certification} &nbsp;(&nbsp;${totalMonths} &nbsp; Months)</p>
+              `;
+
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+
+// for Qualufications
+// for Certifications
+
+// bouve sunction for Experience
+
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("qualification-container");
+
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/Qualifications.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+
+          jsonData.forEach((item) => {
+
+              const cardDiv = document.createElement("div");
+              cardDiv.className = "width:50%";
+              cardDiv.innerHTML = `
+                <p class="card-text">${item.qualifications} &nbsp;</p>
+              `;
+
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+
 
 // Section for Projects
 
