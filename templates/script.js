@@ -315,3 +315,6 @@ setInterval(() => {
 setTimeout(() => {
   hero.style.display = 'none';
 }, 10000); // Change the timeout to suit your needs
+
+
+

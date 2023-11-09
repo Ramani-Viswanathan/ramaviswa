@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo'); 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
@@ -28,53 +28,46 @@ https://undraw.co/search
 /* Define CSS variables at the top of your CSS file */
 :root {
 
+  --header-height : 3rem ;
+  --font-semi: 600;
+  --font-page-weight: 500;
+
+  --primary-color : #303031;
+  --secondary-color: rgb(90, 83, 233);
+  --sitebg-color: #ffffff;
+
+  --site-font: 'Poppins', sans-serif;
+  --title-font:'Courgette', cursive;
+  --big-font-size: 2rem;
+  --h-font-size: 1.25rem;
+  --p-font-size: 1.15rem;
+
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
   
---body-bgcolor: #D2D1D9; /*linear-gradient(90deg, #C3E4B7 1%, #FF0000 93%, #6DBD63 5%, #A3D8CC 1%);*/
---section1-bgcolor: #c1c0cc;
---section2-bgcolor: #abaabb;
---section3-bgcolor: #9796aa;
---section4-bgcolor: #838296;
---section-bottom-bgcolor: #717085;
- --site-default-font-family: 'poppins', sans-serif;
-
-  /* fonts */
-
-  --hero-title-font : 'Anton', sans-serif;
-  --title-font: 'Courgette', cursive;
-  --title-adda-explain-font: 'Bricolage Grotesque', sans-serif;
-
-  /* Quote Background color Font */
-  --quoate-headerbackground-color: rgba(29, 30, 34, 0.33);
-  --quoate-bodybackground-color: rgba(236, 216, 224, 0.33);
-  --quote-font-family: 'Roboto Mono', sans-serif,'Anton';
-  --quoate-font-size: 1em;
-
-   /* Neo-brutalisim title font */
-
-  --neobrut-title-font: 'Lexend Mega', sans-serif;
-  --neoburt-subtitle-fonts: 'Roboto Mono', sans-serif,'Anton';
-
-  /* 
-
-This site was created using neubrutalism style.
-
-Font size.
-
-Item	Font size (pt)	Pixel size (px)	Em value
-Title text	34pt	84px	1.71em
-Subheading text	28pt	72px	1.52em
-Body text	17pt	48px	1em
-Call to action text	22pt	64px	1.28em
-Button text	16pt	56px	1.12em
-Caption text	15pt	48px	1em
-
- */
 }
 
 /* Media Queries for Responsive Design (you can customize these as needed) */
 @media screen and (max-width: 900px) {
   .content {
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 3.5rem;
+    --h-font-size: 2rem;
+    --p-font-size: 1rem;
   }
 }
 
@@ -86,79 +79,91 @@ Caption text	15pt	48px	1em
   list-style: none !important;
 }
 
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+*,::before,::after{
+  box-sizing: border-box;
 }
-
-html {
+html{
   scroll-behavior: smooth;
-  width: 100%;
 }
-
-body, h1, h2, h3, p, ul, ol, li {
-  margin: 0;
-  padding: 0;
-}
-
-/* -- Body START --- */
-
 body{
-
-  background: var(--body-bgcolor);
-  scroll-behavior: smooth;
-  scrollbar-color: var(--headernav-font-family);
-  overflow: auto;
-  font-family: var(--site-default-font-family);
-  color: #333333;
-  font-size: small;
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--site-font);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-page-weight);
+  color: var(--secondary-color);
 }
-
-h1 {
-
-  font-family: var(--site-default-font-family);
-  font-size : 30px;
-  
+h1,h2,p{
+  margin: 0;
 }
-
-h2 {
-
-  font-family: var(--site-default-font-family);
-  font-size : 25px;
-
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-h3 {
-
-  font-family: var(--site-default-font-family);
-  font-size : 20px;
-
-}
-
-h4 {
-
-  font-family: var(--site-default-font-family);
-  font-size : 15px;
-}
-
-h5 {
-
-  font-family: var(--site-default-font-family);
-  font-size : 12px;
-}
-
-h6 {
-
-  font-family: var(--site-default-font-family);
-  font-size : 10px;
-}
-
-a {
+a{
   text-decoration: none;
   color: #6c63ffff;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* Section title and colors defined */
+
+.section-title{
+  position: relative;
+  font-family: var(--title-font);
+  font-size: var(--h-font-size);
+  color: var(--primary-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+
+.section{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* Hero details */
+
+.hero_page{
+  height: calc(100vh - 6rem);
+  row-gap: 1rem;
+}
+.hero_data{
+  align-self: center;
+}
+.hero__title{
+  font-family: var(--title-font);
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-1);
+  color: var(--primary-color);
+}
+.hero_title_color{
+  color: var(--secondary-color);
+}
+
+.hero_position{
+  font-family: var(--site-font);
+  font-size: 1.15rem ; /*var(--h-font-size);*/
+  margin-bottom: var(--mb-1);
+  color: var(--primary-color);
+}
+
+.hero_values{
+  font-family: var(--site-font);
+  font-size: var(--p-font-size);
+  margin-bottom: var(--mb-1);
+  color: var(--primary-color);
+}
+
+.hero_strategy{
+  font-family: var(--site-font);
+  font-size: var(--p-font-size);
+  margin-bottom: var(--mb-1);
+  color: var(--primary-color);
 }
 
 .herobox{
@@ -169,22 +174,54 @@ a {
   background-repeat: no-repeat;
 }
 
-.hname{
-  height: 350px;
-  width: 400px;
-  background-repeat: no-repeat;
-  align-content: center;
-  text-align: center;
-  font-family: var(--hero-title-font);
-  font-size: 45px;
-  position:relative;
-  top: 0em;
+/*Project Management Prowness section */
 
+.PMP_container{
+  row-gap: 1rem;
+  text-align: center;
+  height: auto;
+  width: fit-content;
 }
 
-.prowness{
+.PMP_left{
+  text-align: center;
+  color: var(--secondary-color);
   font-family: var(--title-font);
-  font-size: 2em;
+  font-size: var(--big-font-size);
+}
+
+.PMP_right_top{
+  text-align: center;
+  color: var(--primary-color);
+  font-family: var(--site-font);
+  font-size: var(--h-font-size);
+}
+
+.PMP_right_bottom{
+  text-align: center;
+  color: var(--primary-color);
+  font-family: var(--site-font);
+  font-size: var(--p-font-size);
+}
+
+.about_Subtext{
+  text-align: left;
+  color: var(--secondary-color);
+  font-family: var(--site-font);
+  font-size: var(--h-font-size);
+}
+
+.about_text{
+  text-align: left;
+  color: var(--primary-color);
+  font-family: var(--site-font);
+  font-size: var(--p-font-size);
+  font-weight: 520;
+  margin-bottom: var(--mb-2);
+}
+
+.about_box{
+  border: none;
 }
 
 .bgproduct{
@@ -344,4 +381,97 @@ strong{
 
 .bottom{
   background-color: var(--section-bottom-bgcolor);
+}
+
+.work__img{
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.skills__data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: .5rem;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+}
+
+.typedText{
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+/* navigation Menu */
+
+.header_menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--sitebg-color);
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146,161,176,.15);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-semi);
+}
+
+@media screen and (max-width: 768px) {
+  .nav_menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--sitebg-color);
+    transition: .5s;
+  }
+}
+
+.nav_item {
+  margin-bottom: var(--mb-4);
+  align-items: end;
+  color: var(--secondary-color);
+}
+
+.nav_link {
+  position: relative;
+  color: var(--secondary-color);
+}
+
+.nav_link:hover {
+  color: var(--primary-color);
+}
+.nav_link:hover::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--secondary-color);
+}
+
+.nav_logo {
+  color: var(--secondary-color);
+  align-items: start;
+  font-weight: var(--font-semi);
+}
+
+.nav_toggle {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
 }

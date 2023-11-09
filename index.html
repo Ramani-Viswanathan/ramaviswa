@@ -7,27 +7,52 @@
 
     <title>Ramani Viswanathan - Personal Page</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <!-- Link to Bootstrap CSS
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
     <script src="https://kit.fontawesome.com/0f616b50b9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
     <link rel="stylesheet" href="templates/master.css">
 </head>
 <body>
+  <!-- Menu-->
+  <header class="header_menu">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div><p class="nav_logo"><img src="/images/logo.svg"></p></div>
+        <div class="collapse navbar-collapse nav">
+          <ul class="navbar-nav w-60 mx-auto mb-2 mb-lg-1">
+            <li class="nav-item nav_item ml-7">
+              <a class="nav-link nav_link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_link" href="#Prowness">Prowness</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_link" href="#Mark">My Mark</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_link" href="#me">Know Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_link" href="#action">My Action</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_link" href="#contact">Reach Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <!-- Hero -->
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5 no-gutters">
-      <div class="row align-items-center g-lg-5 py-5 no-gutters">
-        <div class="col-lg-7 text-center text-lg-start">
-          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Ramani Viswanathan</h1>
-          <h3 class="col-lg-11 fw-bold fs-4 mx-auto  mb-3" style="text-align: center; background-color: #6c63ffff;">Technical Program Management Consultant</h3>
-          <h4 class="col-lg-12 fw-normal fs-5 mx-auto" style="text-align: center;">To empower organizations to achieve their strategic goals through innovative and effective technical program management consulting.</h4>
-          <h6 class="col-lg-12 fw-italics fs-6 mx-auto  mb-3" style="text-align: center;">Process Improvement | Technology Alignment | Team Colloboration</h6>
-          <ul class="nav col-md-12 justify-content-end list-unstyled d-flex">
+    <div class="container hero_page" id="home">
+      <div class="row hero_data">
+        <div class="col-lg-7 hero_data">
+          <h1 class="hero__title"><span class="hero_title_color">Ramani</span> Viswanathan</h1>
+          <h3 class="hero_position">Technical Program Management Consultant</h3>
+          <h4 class="hero_values"><span class="hero_title_color">Vision - </span>To empower organizations to achieve their strategic goals through innovative and effective technical program management consulting.</h4>
+          <h6 class="hero_strategy"><span class="hero_title_color">strategy - </span>Process Improvement | Technology Alignment | Team Colloboration</h6>
+          <ul class="nav col-md-12 justify-content list-unstyled d-flex">
             <li class="ms-3 fs-5"><a class="text-body-secondary" href="https://www.linkedin.com/in/ramaniviswanathan/"><i class="bi bi-linkedin"  style="color:#6c63ffff;"></i></a></li>
             <li class="ms-3 fs-5"><a class="text-body-secondary" href="https://github.com/Ramani-Viswanathan/Ramani-Viswanathan"><i class="bi bi-github" style="color:#6c63ffff;"></i></a></li>
             <li class="ms-3 fs-5"><a class="text-body-secondary" href="https://www.youtube.com/c/RamaniViswanathan-1"><i class="bi bi-youtube" style="color:#6c63ffff;"></i></a></li>
@@ -41,110 +66,67 @@
             <li class="ms-3 fs-5"><a class="text-body-secondary" href="#"><i class="bi bi-wordpress"></i></a></li>
           </ul>
         </div>
-        <div class="col-md-10 mx-auto col-lg-5 herobox"  style="width: 400px; height: 350px;">
-          <p></p>
+        <div class="col-lg-5">
+          <p>
+            <img src="./images/box.svg">
+          </p>
         </div>
       </div>
     </div>
 
-  <div class="section no-gutters section1bg" style="height: 470px;">
+    <div class="container py-5 PMP_container" id="Prowness">
+      <div class="row g-4 justify-content-center">
+        <h2 class="section-title">Project Management Prowness</h2>
 
-    <!-- Section Header-->
-    <div class="container py-5 no-gutters bg-aqua">
-      <div class="row no-gutters">
-        <div class="col no-gutters">
-          <p class="pb-2 border-bottom prowness">Project Management Prowness</p>
+        <div class="col-sm-1">
+          <div class="PMP_left">
+            <p>3</p>
+          </div>
         </div>
+        <div class="col-sm-2">
+          <h1 class="PMP_right_top">Continent</h1>
+          <span class="PMP_right_bottom">NAM | EMEA | APAC</span>
+        </div>
+
+        <div class="col-sm-1">
+          <div class="PMP_left">
+            <p>4</p>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <h1 class="PMP_right_top">Segments</h1>
+          <span class="PMP_right_bottom">Retail | Pharma | Energy | Banking</span>
+        </div>
+
+        <div class="col-sm-1">
+          <div class="PMP_left">
+            <p>6</p>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <h1 class="PMP_right_top">Expertise</h1>
+          <span class="PMP_right_bottom">Infra (on-prem,cloud) | Security | Product | GRC | Audit | DR</span>
+        </div>
+
+        <div class="col-sm-1">
+          <div class="PMP_left">
+            <p>17</p>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <h1 class="PMP_right_top">Years</h1>
+          <span class="PMP_right_bottom">PM | PgM | PMO | PfM | TPM</span>
+        </div>
+
+
       </div>
     </div>
-  
 
-      <div class="container py-5 no-gutters">
-        <div class="row g-4">
 
-          <!-- Counter item -->
-          <div class="col-sm-6 col-md-4 col-lg-3 counterouter">
-            <div class="card shadow-sm counterinner-img">
-              <img src="./images/20yrs.svg">
-              <div class="card-body counterinner">
-                <div class="row g-2 counterinner">
-                  <div class="row col-lg-12 counterinner">
-                    <p class="fw-normal text-center fs-6 mx-auto"><strong>17</strong> yrs in Project Management</p>
-                  </div>
-                </div>
-                <div class="row col-lg-12 counterinner-btm">
-                  <p class="fw-normal text-center fs-7 mx-auto">PM | PMO | PGM | PFM | TPM </p>
-                </div>
-              </div>
-            </div>            
-          </div>
-          <!-- Counter item -->
-          <div class="col-sm-6 col-md-4 col-lg-3 counterouter">
-            <div class="card shadow-sm counterinner-img">
-              <img src="./images/3cont.svg">
-              <div class="card-body counterinner">
-                <div class="row g-2 counterinner">
-                  <div class="row col-lg-12 counterinner">
-                    <p class="fw-normal text-center fs-6 mx-auto">Worked in <strong>3</strong> Continent(s)</p>
-                  </div>
-                </div>
-                <div class="row col-lg-12 counterinner-btm">
-                  <p class="fw-normal text-center fs-7 mx-auto">NAM | EMEA | APAC </p>
-                </div>
-              </div>
-            </div>            
-          </div>
-          <!-- Counter item -->
-          <div class="col-sm-6 col-md-4 col-lg-3 counterouter">
-            <div class="card shadow-sm  counterinner-img">
-              <img src="./images/4seg.svg">
-              <div class="card-body  counterinner">
-                <div class="row g-2  counterinner">
-                  <div class="row col-lg-12 counterinner">
-                    <p class="fw-normal text-center fs-6 mx-auto">Experience in <strong>4</strong> Segments(s)</p>
-                  </div>
-                </div>
-                <div class="row col-lg-12 counterinner-btm">
-                  <p class="fw-normal text-center fs-7 mx-auto">Retail | Pharma | Energy | Banking</p>
-                </div>
-              </div>
-            </div>            
-          </div>
-          <!-- Counter item -->
-          <div class="col-sm-6 col-md-4 col-lg-3 counterouter">
-            <div class="card shadow-sm counterinner-img">
-              <img src="./images/4dom.svg">
-              <div class="card-body counterinner">
-                <div class="row g-0 counterinner">
-                  <div class="row col-lg-12 counterinner">
-                    <p class="fw-normal text-center fs-6 mx-auto">Expertise in <strong>6</strong> Domain(s)</p>
-                  </div>
-                  <div class="row col-lg-12 counterinner-btm">
-                    <p class="fw-normal text-center fs-7 mx-auto">Infra | Security | Product | GRC | Audit | DR</p>
-                  </div>
-                </div>
-              </div>
-            </div>            
-          </div>
 
-        </div>
-      </div>  
-
-    </div>
-
-    <div class="section section2bg">
-
-      <!-- Section Header-->
-      <div class="container py-5 no-gutters">
-        <div class="row no-gutters">
-          <div class="col no-gutters">
-            <p class="pb-2 border-bottom prowness">Making my Mark</p>
-          </div>
-        </div>
-      </div>
-    
-      <div class="container py-5 no-gutters">
+      <div class="container py-5 no-gutters" id="Mark">
         <div class="row g-3">
+          <h2 class="section-title">Making my mark</h2>
           <div class="row align-items-md-stretch">
             <div class="col-sm-6 col-md-4"  style="width: 350px; height: 400px;">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 d-flex border-primary  shadow bgproduct">
@@ -170,36 +152,25 @@
         </div> 
       </div>
 
-    </div>
 
-    <div class="section section3bg">
-      <!-- Section Header-->
-      <div class="container py-5 no-gutters">
-        <div class="row no-gutters">
-          <div class="col no-gutters">
-            <p class="pb-2 border-bottom prowness">Getting to Know Me</p>
-          </div>
-        </div>
-      </div>
       <!-- about me Section -->
-      <div class="container py-5  no-gutters">
+      <div class="container py-5  no-gutters" id="me">
         <div class="row featurette">
+          <h2 class="section-title">Getting to Know Me</h2>
           <div class="col-md-7">
             <!-- Left side-->
-            <div class="card">
+            <div class="card  about_box">
               <div class="card-header">
-                <p class="col-lg-12 fw-normal fs-5 mx-auto">who am I...?</p>
+                <p class="col-lg-12 fw-normal fs-5 mx-auto about_Subtext">who am I...?</p>
               </div>
-              <div class="card-body">
-                <p class="col-lg-12 fw-italics fs-6 mx-auto  mb-3">
+              <div class="card-body about_box">
+                <p class="col-lg-12 fw-italics fs-6 mx-auto  mb-3 about_text">
                   Ramani Viswanathan is a seasoned Technical Program Management Consultant with extensive experience in spearheading large-scale programs for Fortune 500 clients. His expertise encompasses technical acumen, project management proficiency, and a knack for implementing governance and risk mitigation strategies. Ramani thrives in dynamic environments where collaboration and problem-solving are paramount, excelling as a Digital Architect and a Problem Solver. His commitment to continuous learning has earned him the moniker "forever student," as he actively pursues the latest technological advancements through coursework and certifications.
                   <br><br>
                   Driven by an insatiable thirst for knowledge, Ramani has empowered organizations to achieve their strategic objectives through innovative and impactful technical program management methodologies. His contributions include implementing process improvements, fostering technical alignments, and promoting team collaboration. Ramani takes immense pride in his ability to consistently adapt to the ever-evolving technology landscape, maintaining his competitive edge and successfully delivering Information Technology projects of varying scopes and complexities. His strengths lie in building relationships with stakeholders, identifying key decision-makers, and effectively communicating with cross-functional teams across the globe.
                   <br><br>
                   Ramani's passion extends to mentoring and coaching young minds, nurturing their potential and guiding them towards success. He currently serves as a Technical Program Manager at Virtusa, where he continues to make significant contributions to the organization's growth and achievements.
-                  <br><br>
-                    #TechnicalProgramManager , #ProjectManagement , #AgileMethodologies, #CloudComputing, #PMP
-#PMI-ACP,  #WebDevelopment, #StakeholderManagement, #DataAnalysis #ProcessImprovement #InnovativeSolutions #RiskMitigation #EfficiencyImprovement #AgileMethodology
+                  <br>
                 </p>
               </div>
               <div class="card-footer text-body-secondary">
@@ -218,18 +189,9 @@
       </div>
   </div>
 
-    <div class="section section4bg">
-    <!-- Section Header-->
-    <div class="container py-5 no-gutters">
-      <div class="row no-gutters">
-        <div class="col no-gutters">
-          <p class="pb-2 border-bottom prowness">My Expertise in Action</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container py-5  no-gutters">
+    <div class="container py-5  no-gutters" id="action">
       <div class="row g-4">
+        <h2 class="section-title">My Expertise in Action</h2>
 
         	<!-- Card item START -->
 					<div class="col-sm-6 col-md-4 col-lg-3">
@@ -373,17 +335,17 @@
                 <p class="mb-3 fw-normal fs-5 mx-auto text-body-secondary">&copy; 2023 Ramani Viswanathan</p>
               </div>
               <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3 fs-5"><a class="text-body-secondary" href="https://www.linkedin.com/in/ramaniviswanathan/"><i class="bi bi-linkedin"></i></a></li>
-                <li class="ms-3 fs-5"><a class="text-body-secondary" href="https://github.com/Ramani-Viswanathan/Ramani-Viswanathan"><i class="bi bi-github"></i></a></li>
-                <li class="ms-3 fs-5"><a class="text-body-secondary" href="https://www.youtube.com/c/RamaniViswanathan-1"><i class="bi bi-youtube"></i></a></li>
-                <li class="ms-3 fs-5"><a class="text-body-secondary" href="https://twitter.com/ramanvis"><i class="bi bi-twitter"></i></a></li>
-       <!--         <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/ramaniviswanathan/"  data-bs-toggle="tooltip" data-bs-title="LinkedIn is Active"><i class="bi bi-linkedin" style="color:#6c63ffff;"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Ramani-Viswanathan/Ramani-Viswanathan"><i class="bi bi-github" style="color:#6c63ffff;"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/c/RamaniViswanathan-1"><i class="bi bi-youtube" style="color:#6c63ffff;"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://about.me/ramani.viswanathan"><i class="bi bi-file-person" style="color:#6c63ffff;"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/ramanvis"><i class="bi bi-twitter" style="color:#6c63ffff;"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
                 <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
                 <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-discord"></i></a></li>
                 <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-slack"></i></a></li>
                 <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitch"></i></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-youtube"></i></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-wordpress"></i></a></li> -->
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-wordpress"></i></a></li>
               </ul>
             </footer>
           </div>
