@@ -238,6 +238,41 @@ window.addEventListener("load", function () {
       .catch((error) => console.error("Error fetching data:", error));
 });
 
+// for Recommendation
+
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("recommendation-container");
+
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/Recommend.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+
+          jsonData.forEach((item) => {
+
+              const cardDiv = document.createElement("div");
+              cardDiv.className = "carousel-item active";
+              cardDiv.innerHTML = `
+                <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#ff00"/></svg>
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h6 class="cartitle"><strong>${item.person} &nbsp;</strong><span class="carsubtitle">&nbsp;|&nbsp;${item.title}</span></h6>
+                    <p class="cartext">${item.recomend} &nbsp;<span class="carSource">Source : <i class="bi bi-linkedin" style="color:#6c63ffff;"></i></span></p>
+                  </div>
+                </div>
+              `;
+
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
 
 // Section for Projects
 

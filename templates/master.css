@@ -224,6 +224,30 @@ img{
   border: none;
 }
 
+.carSource{
+  color: var(--secondary-color);
+  font-family: var(--site-font);
+  font-size: var(--p-font-size);
+}
+
+.cartext{
+  color: var(--primary-color);
+  font-family: var(--site-font);
+  font-size: var(--p-font-size);
+}
+
+.cartitle{
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: var(--mb-3);
+}
+
+.carsubtitle{
+  color: var(--primary-color);
+  text-align: center;
+  font-size: var(--mb-2);
+}
+
 .bgproduct{
   background-image: url("../images/prodLaunch.svg");
   background-size:contain;
