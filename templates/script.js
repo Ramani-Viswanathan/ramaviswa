@@ -190,9 +190,17 @@ window.addEventListener("load", function () {
             const totalMonths = (yearDiff * 12) + monthDiff;
 
               const cardDiv = document.createElement("div");
-              cardDiv.className = "width:50%";
+              cardDiv.className = "width:100%";
               cardDiv.innerHTML = `
-                <p class="card-text">${item.certification} &nbsp;(&nbsp;${totalMonths} &nbsp; Months)</p>
+              <ol class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">${item.certification}</div>
+                  ${item.provider}
+                </div>
+                <span class="badge bg-primary rounded-pill">${totalMonths}</span>
+              </li>
+            </ol>
               `;
 
               contentContainer.appendChild(cardDiv);
@@ -223,9 +231,17 @@ window.addEventListener("load", function () {
           jsonData.forEach((item) => {
 
               const cardDiv = document.createElement("div");
-              cardDiv.className = "width:50%";
+              cardDiv.className = "width:100%";
               cardDiv.innerHTML = `
-                <p class="card-text">${item.qualifications} &nbsp;</p>
+              <ol class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">${item.qualifications}</div>
+                    ${item.major}<br>${item.university}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">${item.place}</span>
+                </li>
+              </ol>
               `;
 
               contentContainer.appendChild(cardDiv);
@@ -237,6 +253,133 @@ window.addEventListener("load", function () {
       })
       .catch((error) => console.error("Error fetching data:", error));
 });
+
+// Begin Skills section //
+
+document.addEventListener('DOMContentLoaded', function() {
+  const skillbars = document.querySelectorAll('.skillbar');
+
+  skillbars.forEach(skillbar => {
+    const bar = skillbar.querySelector('.skillbar-bar');
+    const percent = skillbar.getAttribute('data-percent');
+
+    bar.animate({
+      width: percent + '%',
+    }, 3000);
+  });
+});
+
+// hard skills
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("hardskills-container");
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/hardskills.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+          jsonData.forEach((item) => {
+              const cardDiv = document.createElement("p");
+              cardDiv.className = "mb-2 text-truncate-2";
+              cardDiv.innerHTML = `
+                <div><span>${item.subtitle}</span></div>
+                <div class="skillbar clearfix" data-percent="${item.percent}%">
+                  <div class="skillbar-bar" style="width:${item.percent}%;"></div>
+                  <div class="skill-bar-percent">${item.years}</div>
+                </div>
+              `;
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+// Soft skills
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("softskills-container");
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/softskills.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+          jsonData.forEach((item) => {
+              const cardDiv = document.createElement("p");
+              cardDiv.className = "mb-2 text-truncate-2";
+              cardDiv.innerHTML = `
+                <div><span>${item.subtitle}</span></div>
+                <div class="skillbar clearfix" data-percent="${item.percent}%">
+                  <div class="skillbar-bar" style="width:${item.percent}%;"></div>
+                  <div class="skill-bar-percent">${item.years}</div>
+                </div>
+              `;
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+// GRC skills
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("GRCskills-container");
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/GRCskills.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+          jsonData.forEach((item) => {
+              const cardDiv = document.createElement("p");
+              cardDiv.className = "mb-2 text-truncate-2";
+              cardDiv.innerHTML = `
+                <div><span>${item.subtitle}</span></div>
+                <div class="skillbar clearfix" data-percent="${item.percent}%">
+                  <div class="skillbar-bar" style="width:${item.percent}%;"></div>
+                  <div class="skill-bar-percent">${item.years}</div>
+                </div>
+              `;
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+// Tech skills
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("techskills-container");
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/techskills.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+          jsonData.forEach((item) => {
+              const cardDiv = document.createElement("p");
+              cardDiv.className = "mb-2 text-truncate-2";
+              cardDiv.innerHTML = `
+                <div><span>${item.subtitle}</span></div>
+                <div class="skillbar clearfix" data-percent="${item.percent}%">
+                  <div class="skillbar-bar" style="width:${item.percent}%;"></div>
+                  <div class="skill-bar-percent">${item.years}</div>
+                </div>
+              `;
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+
+// end skills section //
+
 
 // for Recommendation
 
@@ -350,6 +493,5 @@ setInterval(() => {
 setTimeout(() => {
   hero.style.display = 'none';
 }, 10000); // Change the timeout to suit your needs
-
 
 

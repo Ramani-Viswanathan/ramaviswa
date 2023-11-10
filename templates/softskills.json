@@ -1,0 +1,37 @@
+[
+    {
+        "subtitle" : "Communication",
+        "percent": "100",
+        "years": "17Y7M"
+    },
+    {
+        "subtitle" : "Cross Functional",
+        "percent": "95.26",
+        "years": "16Y9M"
+    },
+    {
+        "subtitle" : "Business Acumen",
+        "percent": "74.37",
+        "years": "13Y2M"
+    },
+    {
+        "subtitle" : "Corp Political",
+        "percent": "74.37",
+        "years": "13Y2M"
+    },
+    {
+        "subtitle" : "Corp Governance",
+        "percent": "74.37",
+        "years": "13Y1M"
+    },
+    {
+        "subtitle" : "People Management",
+        "percent": "43.71",
+        "years": "7Y7M"
+    },
+    {
+        "subtitle" : "Remote Management",
+        "percent": "95.26",
+        "years": "16Y9M"
+    }
+]
