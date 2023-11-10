@@ -62,22 +62,20 @@ window.addEventListener("load", function () {
           // Loop through the JSON data and create HTML elements
           jsonData.forEach((item) => {
               const cardDiv = document.createElement("div");
-              cardDiv.className = "col-sm-6 col-lg-4 mb-4";
-
+              cardDiv.className = "col-sm-6 col-md-4 col-lg-3";
+              cardDiv.style.position = "static";
+              cardDiv.style.padding = "0.199rem";
+              cardDiv.style.top = "0px";
               cardDiv.innerHTML = `
-                  <div class="card brutExpWrapper">
-                    <div class="p-3">
-                      <div class="p-2">
-                          <img src="${item.imageSrc}" alt="${item.title}" width="100%" height="100%" class="complogo">
-                          <h3 class="title p-2">${item.title}</h3>
-                      </div>
-                      <div>
-                          <p class="lead my-2 tenure">category:  ${item.category}</p>
-                          <p class="body-section">${item.description}</p>
-                          <p  class="brutbutton" style="text-align: center;"><a href="${item.link}" target="_blank" class="buttona">Learn More</a></p>
-                      </div>
-                    </div>
+                <div class="card">
+                  <img src="${item.imageSrc}" class="bd-placeholder-img card-img-top" style="width: 100%; height:125px;"></svg>
+                  <div class="card-body clearfix">
+                    <p class="card-text port_category"><small class="text-body-secondary">&nbsp;${item.category}</small></p>
+                    <p class="card-text port_desc">${item.title}</p>
+                    <p class="card-text port_desc">${item.description}</p>
+                    <p><a class="port_link" href="${item.link}">Click Here &nbsp;</a></p>
                   </div>
+                </div>
               `;
 
               contentContainer.appendChild(cardDiv);
@@ -198,7 +196,7 @@ window.addEventListener("load", function () {
                   <div class="fw-bold">${item.certification}</div>
                   ${item.provider}
                 </div>
-                <span class="badge bg-primary rounded-pill">${totalMonths}</span>
+                <span class="badge bg-primary rounded-pill">${totalMonths}M</span>
               </li>
             </ol>
               `;
@@ -629,4 +627,19 @@ setTimeout(() => {
   hero.style.display = 'none';
 }, 10000); // Change the timeout to suit your needs
 
+// Mansory Script only used for Portfolio html page
+
+// init Masonry
+var grid = document.querySelector('.grid');
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});
 

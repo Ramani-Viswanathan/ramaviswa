@@ -1,27 +1,3 @@
 [
-    {
-        "category": "Prompt Engineering",
-        "Count"     : "0",
-        "link"      : "<a href='#'>click here</a>"
-    },
-    {
-        "category": "Data",
-        "Count"     : "0",
-        "link"      : "<a href='#'>click here</a>"
-    },
-    {
-        "category": "AI",
-        "Count"     : "0",
-        "link"      : "<a href='#'>click here</a>"
-    },
-    {
-        "category": "Cloud Computing",
-        "Count"     : "0",
-        "link"      : "<a href='#'>click here</a>"
-    },
-    {
-        "category": "IOT",
-        "Count"     : "0",
-        "link"      : "<a href='#'>click here</a>"
-    }
+
 ]

@@ -2,16 +2,11 @@
     {
         "category": "Project Management",
         "Count"     : "1",
-        "link"      : "<a href='#'>click here</a>"
+        "link"      : "<a href='portfolio.html'>click here</a>"
     },
     {
         "category": "Cyber Security",
         "Count"     : "1",
-        "link"      : "<a href='#'>click here</a>"
-    },
-    {
-        "category": "Project Liftoff",
-        "Count"     : "0",
-        "link"      : "<a href='#'>click here</a>"
+        "link"      : "<a href='portfolio.html'>click here</a>"
     }
 ]

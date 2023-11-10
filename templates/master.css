@@ -18,10 +18,6 @@
 
 /* Licensing & Courtesy
 
-https://codepen.io/aakash_codes/pen/VwVgNNV?editors=1100
-
-https://codepen.io/rrenula/pen/LzLXYJ
-
 https://undraw.co/search
 
 https://codepen.io/bycreator/pen/qBpwGy
@@ -46,6 +42,7 @@ https://codepen.io/bycreator/pen/qBpwGy
   --p-font-size: 1.15rem;
 
   --mb-1: 0.5rem;
+  --mb-11: 0.75rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
   --mb-4: 2rem;
@@ -503,7 +500,7 @@ strong{
   cursor: pointer;
 }
 
-/* test */
+/* skill Bar : https://codepen.io/bycreator/pen/qBpwGy */
 
 .skillbar {
 	position:relative;
@@ -577,3 +574,34 @@ width:110px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
 }
+
+/* ---- Portfolio ---- */
+
+.port_desc{
+  font-family: var(--site-font);
+  font-size: var(--mb-11);
+  font-weight: var(--mb-2);
+  color: var(--Primary-color);
+  padding: 0.2rem;
+}
+
+.port_category{
+  font-family: var(--site-font);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-page-weight);
+  color: var(--primary-color);
+  text-align: right;
+  padding: 0.5rem;
+}
+
+.port_link{
+  font-family: var(--site-font);
+  font-size:var(--mb-11);
+  font-weight: var(--p-font-size);
+  color: var(--secondary-color);
+  align-items: end;
+  text-align: left;
+  text-decoration: solid;
+}
+
+

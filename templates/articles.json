@@ -1,17 +1,31 @@
 [
     {
         "title": "Navigating Project Success: Unleashing the Power of the PMI Talent Triangle's 'Ways of Working",
-        "imageSrc": "images/Old-new-talent-triangle-evolving.jpg",
+        "imageSrc": "./images/blog.svg",
         "description": "Unlock success in project management by mastering the 'Ways of Working' aspect of the PMI Talent Triangle. Gain practical wisdom from a seasoned professional with over a decade of experience in diverse industries, ensuring you're well-prepared for your next project",
-        "category": "<i class='bi bi-mortarboard-fill'></i>",
+        "category": "Post : Project Management",
         "link": "https://www.linkedin.com/pulse/leveraging-pmi-talent-triangle-benefits-project-ramani-viswanathan%3FtrackingId=Nlae%252F4ZvyWr3Ci2lap2U7A%253D%253D/?trackingId=Nlae%2F4ZvyWr3Ci2lap2U7A%3D%3D"
     },
     {
         "title": "Demystifying Zero Trust Architecture in the Cloud: A TPM's Guide to Secure Cloud Transformation",
-        "imageSrc": "images/WILWIU_Banner.jpg",
+        "imageSrc": "./images/blog.svg",
         "description": "Discover the core principles of Zero Trust Architecture in the Cloud and how they apply to Technical Program Managers (TPMs). This comprehensive guide breaks down the    six pillars of Zero Trust, offering practical insights and questions for TPMs to navigate the world of cloud security effectively",
-        "category": "<i class='bi bi-mortarboard-fill'></i>",
+        "category": "Post :CyberSecurity",
         "link": "https://www.linkedin.com/feed/hashtag/?keywords=whatilearnwhatiunderstand&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7102853992216494080"
+    },
+    {
+        "title": "Review PMP training content",
+        "imageSrc": "./images/community.svg",
+        "description": "Mar 2022 - Dec 2022",
+        "category": "Community : PMI Volunteering",
+        "link": "#"
+    },
+    {
+        "title": "Risk Management: A Practice Guide - Revision – Review Team Member",
+        "imageSrc": "./images/community.svg",
+        "description": "Mar 2023 - Nov 2023",
+        "category": "Community : PMI Volunteering",
+        "link": "#"
     }
 ]
   
