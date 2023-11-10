@@ -380,6 +380,141 @@ window.addEventListener("load", function () {
 
 // end skills section //
 
+//begin expertise section
+
+//Begin Blog
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("blog-container");
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/blog.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+          jsonData.forEach((item) => {
+              const cardDiv = document.createElement("div");
+              cardDiv.className = "width:100%";
+              cardDiv.innerHTML = `
+              <ol class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">${item.category}</div>
+                    ${item.link}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">${item.Count}</span>
+                </li>
+              </ol>
+              <hr>
+              `;
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+
+//Begin YouTube
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("uTube-container");
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/utube.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+          jsonData.forEach((item) => {
+              const cardDiv = document.createElement("div");
+              cardDiv.className = "width:100%";
+              cardDiv.innerHTML = `
+              <ol class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">${item.category}</div>
+                    ${item.link}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">${item.Count}</span>
+                </li>
+              </ol>
+              <hr>
+              `;
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+
+//Begin publications
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("pub-container");
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/pub.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+          jsonData.forEach((item) => {
+              const cardDiv = document.createElement("div");
+              cardDiv.className = "width:100%";
+              cardDiv.innerHTML = `
+              <ol class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">${item.category}</div>
+                    ${item.link}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">${item.Count}</span>
+                </li>
+              </ol>
+              <hr>
+              `;
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+
+//Personal Projects
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("pprojects-container");
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/pprojects.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+          jsonData.forEach((item) => {
+              const cardDiv = document.createElement("div");
+              cardDiv.className = "width:100%";
+              cardDiv.innerHTML = `
+              <ol class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">${item.category}</div>
+                    ${item.link}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">${item.Count}</span>
+                </li>
+              </ol>
+              <hr>
+              `;
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+
+//end expertise section
 
 // for Recommendation
 
