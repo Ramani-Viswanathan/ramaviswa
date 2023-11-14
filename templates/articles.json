@@ -26,6 +26,13 @@
         "description": "Mar 2023 - Nov 2023",
         "category": "Community : PMI Volunteering",
         "link": "#"
+    },
+    {
+        "title": "Personl Portfolio website: Static page hosted in GitHub pages.",
+        "imageSrc": "./images/pproject.svg",
+        "description": "Created personal Portfolio page using HTML5, CSS, Javascript, JSON and Bootstrap",
+        "category": "Project : front end development",
+        "link": "#"
     }
 ]
   
