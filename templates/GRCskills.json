@@ -5,6 +5,11 @@
         "years": "16Y9M"
     },
     {
+        "subtitle" : "Infosec Risk Management",
+        "percent": "32.31",
+        "years": "5Y7M"
+    },
+    {
         "subtitle" : "Change Management",
         "percent": "95.26",
         "years": "16Y9M"
@@ -38,5 +43,10 @@
         "subtitle" : "Compliance",
         "percent": "65.38",
         "years": "11Y5M"
+    },
+    {
+        "subtitle" : "Vulnerability Management",
+        "percent": "15.65",
+        "years": "2Y4M"
     }
 ]

@@ -33,6 +33,7 @@ https://codepen.io/bycreator/pen/qBpwGy
 
   --primary-color : #303031;
   --secondary-color: rgb(90, 83, 233);
+  --secondary-color-light : rgb(177, 175, 219);
   --sitebg-color: #ffffff;
 
   --site-font: 'Nunito Sans', sans-serif;
@@ -129,8 +130,8 @@ img{
 /* Hero details */
 
 .hero_page{
-  height: calc(100vh - 6rem);
-  row-gap: 1rem;
+  height: calc(100vh - 1rem);
+  row-gap: 0.5rem;
 }
 .hero_data{
   align-self: center;
@@ -387,22 +388,6 @@ strong{
   }
 }
 
-.section1bg{
-  background-color: var(--section1-bgcolor);
-}
-
-.section2bg{
-  background-color: var(--section2-bgcolor);
-}
-
-.section3bg{
-  background-color: var(--section3-bgcolor);
-}
-
-.section4bg{
-  background-color: var(--section4-bgcolor);
-}
-
 .bottom{
   background-color: var(--section-bottom-bgcolor);
 }
@@ -571,8 +556,6 @@ width:110px;
 	font-size:11px;
 	height:20px;
 	line-height:20px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
 }
 
 /* ---- Portfolio ---- */

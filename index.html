@@ -52,13 +52,22 @@
   </header>
 
     <!-- Hero -->
-    <div class="container hero_page" id="home">
+    <div class="container py-3 hero_page" id="home">
       <div class="row hero_data">
-        <div class="col-lg-7 hero_data">
+        <div class="col-lg-8 hero_data">
           <h1 class="hero__title"><span class="hero_title_color">Ramani</span> Viswanathan</h1>
           <h3 class="hero_position">Technical Program Management Consultant</h3>
-          <h4 class="hero_values"><span class="hero_title_color">Vision - </span>To empower organizations to achieve their strategic goals through innovative and effective technical program management consulting.</h4>
-          <h6 class="hero_strategy"><span class="hero_title_color">strategy - </span>Process Improvement | Technology Alignment | Team Colloboration</h6>
+          <div class="row mb-3 themed-grid-col">
+            <div class="col-xxl-4 themed-grid-col text-center"><h4 class="hero_values"><span class="hero_title_color">Vision</span></h4></div>
+            <div class="col-xxl-4 themed-grid-col"><h4 class="hero_values">To be a trusted advisor and strategic partner to global organizations, leveraging extensive experience in transformational program leadership, technology strategy and risk mitigation consulting to deliver tangible business outcomes.</h4></div>
+            <div class="col-xxl-4 themed-grid-col text-center"><h4 class="hero_values"><span class="hero_title_color">Strategy</span></h4></div>
+            <div class="col-md-4 themed-grid-col"><h6 class="hero_strategy"><span class="hero_title_color">Process Improvement:<br></span>Leverage expertise in SDLC, Project Management frameworks and best practices to assess, streamline and optimize client processes for enhanced efficiency, quality and governance.</h6></div>
+            <div class="col-md-4 themed-grid-col"><h6 class="hero_strategy"><span class="hero_title_color">Technology Alignment:<br></span>Conduct technology landscape and maturity assessments to identify modernization opportunities.Provide thought leadership on emerging technologies through research and help devise roadmaps for strategic investments.</h6></div>
+            <div class="col-md-4 themed-grid-col"><h6 class="hero_strategy"><span class="hero_title_color">Team Colloboration:<br></span>Foster collaborative work culture and strengthen stakeholder relationships through transparent communication and consensus building.</h6></div>
+            <div class="col-xxl-4 themed-grid-col text-center"><h4 class="hero_values"><span class="hero_title_color">Approach</span></h4></div>
+            <div class="col-xxl-4 themed-grid-col"><h4 class="hero_values">Blend technical know-how with strategic visioning, change management and collaborative problem solving approaches. Leverage global experience, credentials and networks to deliver high impact outcomes. Establish long-term value through knowledge transfer and capability building.</h4></div>
+            <div class="col-xxl-4 themed-grid-col text-center"><h4 class="hero_values"><strong>Connect  to explore how we can partner for your organization's digital transformation journey.</strong></h4></div>
+          </div>
           <ul class="nav col-md-12 justify-content list-unstyled d-flex">
             <li class="ms-3 fs-5"><a class="text-body-secondary" href="https://www.linkedin.com/in/ramaniviswanathan/"><i class="bi bi-linkedin"  style="color:#6c63ffff;"></i></a></li>
             <li class="ms-3 fs-5"><a class="text-body-secondary" href="https://github.com/Ramani-Viswanathan/Ramani-Viswanathan"><i class="bi bi-github" style="color:#6c63ffff;"></i></a></li>
@@ -73,9 +82,9 @@
             <li class="ms-3 fs-5"><a class="text-body-secondary" href="#"><i class="bi bi-wordpress"></i></a></li>
           </ul>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-4">
           <p>
-            <img src="./images/box.svg">
+            <img src="./images/box.svg" class="hero_page">
           </p>
         </div>
       </div>
@@ -114,7 +123,6 @@
           <h1 class="PMP_right_top">Expertise</h1>
           <span class="PMP_right_bottom">SDLC | Product | Infra | Cyber | GRC</span>
         </div>
-
         <div class="col-sm-1">
           <div class="PMP_left">
             <p>17</p>
@@ -209,14 +217,14 @@
                 to make significant contributions to the organization's growth and achievements.
               </p>
               <div>
-                <div class="row g-4">
+                <div class="row g-4" data-masonry='{"percentPosition": true, }'>
                   <div class="col-sm-6">
                     <h5 class="text-body-secondary">Qualification(s)</h5>
-                    <div id="qualification-container" data-masonry='{"percentPosition": true, }'></div>
+                    <div id="qualification-container"></div>
                   </div>
                   <div class="col-sm-6">
                     <h5 class="text-body-secondary">Certification(s)</h5>
-                    <div id="certification-container" data-masonry='{"percentPosition": true, }'></div>
+                    <div id="certification-container"></div>
                   </div>
                 </div>
               </div>
@@ -236,7 +244,7 @@
     <!--sample start-->
     <div class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div id="recommendation-container" data-masonry='{"percentPosition": true, }'></div>
+        <div id="recommendation-container"></div>
       </div>
     </div>
     <!-- same pend-->
@@ -248,14 +256,14 @@
       <div class="col-sm-12 col-md-12 col-lg-12">
       </div>
     </div>
-    <div class="row g-4 justify-content-center">
+    <div class="row g-4 justify-content-center"  data-masonry='{"percentPosition": true, }'>
       <div class="col-sm-3">
         <div class="card shadow h-100">
           <div class="card-body pb-0">
             <h5 class="card-title fw-normal text-center fs-5 mx-auto">Hard Skills</h5>
             <p class="mb-2 text-truncate-2">
               <!-- START Skill Bar -->
-              <div id="hardskills-container" data-masonry='{"percentPosition": true, }'></div>
+              <div id="hardskills-container"></div>
               <!-- End Skill Bar -->
             </p>
           </div>
@@ -267,7 +275,7 @@
             <h5 class="card-title fw-normal text-center fs-5 mx-auto">Soft Skills</h5>
             <p class="mb-2 text-truncate-2">
               <!-- START Skill Bar -->
-              <div id="softskills-container" data-masonry='{"percentPosition": true, }'></div>
+              <div id="softskills-container"></div>
               <!-- End Skill Bar -->
             </p>
           </div>
@@ -279,7 +287,7 @@
             <h5 class="card-title fw-normal text-center fs-5 mx-auto">GRC Skills</h5>
             <p class="mb-2 text-truncate-2">
               <!-- START Skill Bar -->
-              <div id="GRCskills-container" data-masonry='{"percentPosition": true, }'></div>
+              <div id="GRCskills-container"></div>
               <!-- End Skill Bar -->
             </p>
           </div>
@@ -291,7 +299,7 @@
             <h5 class="card-title fw-normal text-center fs-5 mx-auto">Technology</h5>
             <p class="mb-2 text-truncate-2">
               <!-- START Skill Bar -->
-              <div id="techskills-container" data-masonry='{"percentPosition": true, }'></div>
+              <div id="techskills-container"></div>
               <!-- End Skill Bar -->
             </p>
           </div>
