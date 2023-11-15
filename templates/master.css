@@ -178,7 +178,6 @@ img{
 /*Project Management Prowness section */
 
 .PMP_container{
-  row-gap: 1rem;
   text-align: center;
   height: auto;
   width: fit-content;
@@ -586,5 +585,3 @@ width:110px;
   text-align: left;
   text-decoration: solid;
 }
-
-
