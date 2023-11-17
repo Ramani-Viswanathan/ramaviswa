@@ -336,7 +336,7 @@ window.addEventListener("load", function () {
               cardDiv.innerHTML = `
                 <div><span>${item.subtitle}</span></div>
                 <div class="skillbar clearfix" data-percent="${item.percent}%">
-                  <div class="skillbar-bar" style="width:${item.percent}%;"></div>
+                  <div class="skillbar-bar" style="width:${item.percent}%; background:${item.bgcolor}%"></div>
                   <div class="skill-bar-percent">${item.years}</div>
                 </div>
               `;
@@ -363,7 +363,7 @@ window.addEventListener("load", function () {
               cardDiv.innerHTML = `
                 <div><span>${item.subtitle}</span></div>
                 <div class="skillbar clearfix" data-percent="${item.percent}%">
-                  <div class="skillbar-bar" style="width:${item.percent}%;"></div>
+                  <div class="skillbar-bar" style="width:${item.percent}%; background:${item.bgcolor}%"></div>
                   <div class="skill-bar-percent">${item.years}</div>
                 </div>
               `;

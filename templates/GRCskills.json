@@ -2,51 +2,67 @@
     {
         "subtitle" : "Risk Management",
         "percent": "95.26",
-        "years": "16Y9M"
+        "years": "16Y9M",
+        "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Infosec Risk Management",
         "percent": "32.31",
-        "years": "5Y7M"
+        "years": "5Y7M",
+        "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Change Management",
         "percent": "95.26",
-        "years": "16Y9M"
+        "years": "16Y9M",
+        "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Incident Management",
         "percent": "57.65",
-        "years": "10Y"
+        "years": "10Y",
+        "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Disaster Recovery (DR)",
         "percent": "32.31",
-        "years": "5Y7M"
+        "years": "5Y7M",
+        "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Vendor Management",
         "percent": "57.65",
-        "years": "10Y"
+        "years": "10Y",
+        "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Audit",
         "percent": "15.65",
-        "years": "2Y4M"
+        "years": "2Y4M",
+        "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Governance",
         "percent": "74.37",
-        "years": "13Y1M"
+        "years": "13Y1M",
+        "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Compliance",
         "percent": "65.38",
-        "years": "11Y5M"
+        "years": "11Y5M",
+        "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Vulnerability Management",
         "percent": "15.65",
-        "years": "2Y4M"
+        "years": "2Y4M",
+        "bgcolor" : "rgb(90, 83, 233);"
+    },
+    {
+        "subtitle" : "REAS AI",
+        "percent": "0.95",
+        "years": "2M",
+        "bgcolor" :"rgb(118, 233, 83);"
     }
 ]

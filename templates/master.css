@@ -33,6 +33,9 @@ https://codepen.io/bycreator/pen/qBpwGy
 
   --primary-color : #303031;
   --secondary-color: rgb(90, 83, 233);
+  --experience-color: rgb(90, 83, 233);
+  --projects-color: rgb(233, 211, 83);
+  --studying-color: rgb(118, 233, 83);
   --secondary-color-light : rgb(177, 175, 219);
   --sitebg-color: #ffffff;
 
@@ -584,4 +587,21 @@ width:110px;
   align-items: end;
   text-align: left;
   text-decoration: solid;
+}
+
+.skillbar-index{
+  width: 40px;
+  height: 10px;
+}
+
+.skillbar-index_color-exp{
+  background-color: var(--experience-color);
+}
+
+.skillbar-index_color-per{
+  background-color: var(--projects-color);
+}
+
+.skillbar-index_color-beg{
+  background-color: var(--studying-color);
 }
