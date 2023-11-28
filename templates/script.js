@@ -48,7 +48,6 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
 
-
 //masory automatic creation
 
 window.addEventListener("load", function () {
@@ -112,8 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
   adjustContainerHeight();
 });
 
-
-// bouve sunction for Experience
+// To display expereince details
 
 window.addEventListener("load", function () {
   // Get a reference to the content container
@@ -154,8 +152,6 @@ window.addEventListener("load", function () {
 
 // for Certifications
 
-// bouve sunction for Experience
-
 window.addEventListener("load", function () {
   // Get a reference to the content container
   const contentContainer = document.getElementById("certification-container");
@@ -169,7 +165,6 @@ window.addEventListener("load", function () {
           jsonData.forEach((item) => {
 
             const startDate = new Date(`${item.received_date}`); // Replace with your actual start date
-            console.log(startDate);
             const currentDate = new Date();
   
             const startYear = startDate.getFullYear();
@@ -191,14 +186,14 @@ window.addEventListener("load", function () {
               cardDiv.className = "width:100%";
               cardDiv.innerHTML = `
               <ol class="list-group">
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">${item.certification}</div>
-                  ${item.provider}
-                </div>
-                <span class="badge bg-primary rounded-pill">${totalMonths}M</span>
-              </li>
-            </ol>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">${item.certification}</div>
+                    ${item.provider}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">${totalMonths}M</span>
+                </li>
+              </ol>
               `;
 
               contentContainer.appendChild(cardDiv);
@@ -277,13 +272,32 @@ window.addEventListener("load", function () {
       .then((jsonData) => {
           // Loop through the JSON data and create HTML elements
           jsonData.forEach((item) => {
-              const cardDiv = document.createElement("p");
-              cardDiv.className = "mb-2 text-truncate-2";
-              cardDiv.innerHTML = `
+            // Calculate Total Experience
+            const TotalExpStart = new Date(`${item.TotalExp}`);
+            const currentdate = new Date();
+            const ExpStart = new Date(`${item.ExpStart}`);
+            const ExpEnd = new Date(`${item.ExpEnd}`);
+
+            if (ExpEnd == '2023-11-19T23:50:21.000Z') {
+              const ExpEnd = new Date();
+            } else {
+              const ExpEnd = new Date(`${item.ExpEnd}`);
+            }
+           const totalexpyears = calculateExperience(TotalExpStart, currentdate);  
+            // Calculate relevant experience
+           const totalcurrentexp = calculateExperience(ExpStart, ExpEnd);
+          
+            // Calculate the percentage of total experience
+           const totalExperience = totalexpyears.totalYearsMonths; // Assuming total experience is 100%
+           const percentageExperience = (totalcurrentexp.totalYearsMonths / totalExperience) * 100;
+         // Create and append the card div
+            const cardDiv = document.createElement("p");
+            cardDiv.className = "mb-2 text-truncate-2";
+            cardDiv.innerHTML = `
                 <div><span>${item.subtitle}</span></div>
-                <div class="skillbar clearfix" data-percent="${item.percent}%">
-                  <div class="skillbar-bar" style="width:${item.percent}%;"></div>
-                  <div class="skill-bar-percent">${item.years}</div>
+                <div class="skillbar clearfix" data-percent=${percentageExperience}"%">
+                  <div class="skillbar-bar" style="width:${percentageExperience}%;"></div>
+                  <div class="skill-bar-percent">${totalcurrentexp.outputExperience}</div>
                 </div>
               `;
               contentContainer.appendChild(cardDiv);
@@ -304,13 +318,25 @@ window.addEventListener("load", function () {
       .then((jsonData) => {
           // Loop through the JSON data and create HTML elements
           jsonData.forEach((item) => {
-              const cardDiv = document.createElement("p");
-              cardDiv.className = "mb-2 text-truncate-2";
-              cardDiv.innerHTML = `
+            // Calculate Total Experience
+            const TotalExpStart = new Date(`${item.TotalExp}`);
+            const currentdate = new Date();
+            const ExpStart = new Date(`${item.ExpStart}`);
+            const ExpEnd = new Date();
+           const totalexpyears = calculateExperience(TotalExpStart, currentdate);  
+            // Calculate relevant experience
+           const totalcurrentexp = calculateExperience(ExpStart, ExpEnd);          
+            // Calculate the percentage of total experience
+           const totalExperience = totalexpyears.totalYearsMonths; // Assuming total experience is 100%
+           const percentageExperience = (totalcurrentexp.totalYearsMonths / totalExperience) * 100;
+         // Create and append the card div
+            const cardDiv = document.createElement("p");
+            cardDiv.className = "mb-2 text-truncate-2";
+            cardDiv.innerHTML = `
                 <div><span>${item.subtitle}</span></div>
-                <div class="skillbar clearfix" data-percent="${item.percent}%">
-                  <div class="skillbar-bar" style="width:${item.percent}%;"></div>
-                  <div class="skill-bar-percent">${item.years}</div>
+                <div class="skillbar clearfix" data-percent=${percentageExperience}"%">
+                  <div class="skillbar-bar" style="width:${percentageExperience}%;"></div>
+                  <div class="skill-bar-percent">${totalcurrentexp.outputExperience}</div>
                 </div>
               `;
               contentContainer.appendChild(cardDiv);
@@ -321,7 +347,7 @@ window.addEventListener("load", function () {
       })
       .catch((error) => console.error("Error fetching data:", error));
 });
-// GRC skills
+// GRC skills . 
 window.addEventListener("load", function () {
   // Get a reference to the content container
   const contentContainer = document.getElementById("GRCskills-container");
@@ -331,13 +357,25 @@ window.addEventListener("load", function () {
       .then((jsonData) => {
           // Loop through the JSON data and create HTML elements
           jsonData.forEach((item) => {
-              const cardDiv = document.createElement("p");
-              cardDiv.className = "mb-2 text-truncate-2";
-              cardDiv.innerHTML = `
+            // Calculate Total Experience
+            const TotalExpStart = new Date(`${item.TotalExp}`);
+            const currentdate = new Date();
+            const ExpStart = new Date(`${item.ExpStart}`);
+            const ExpEnd = new Date();
+           const totalexpyears = calculateExperience(TotalExpStart, currentdate);  
+            // Calculate relevant experience
+           const totalcurrentexp = calculateExperience(ExpStart, ExpEnd);          
+            // Calculate the percentage of total experience
+           const totalExperience = totalexpyears.totalYearsMonths; // Assuming total experience is 100%
+           const percentageExperience = (totalcurrentexp.totalYearsMonths / totalExperience) * 100;
+         // Create and append the card div
+            const cardDiv = document.createElement("p");
+            cardDiv.className = "mb-2 text-truncate-2";
+            cardDiv.innerHTML = `
                 <div><span>${item.subtitle}</span></div>
-                <div class="skillbar clearfix" data-percent="${item.percent}%">
-                  <div class="skillbar-bar" style="width:${item.percent}%; background:${item.bgcolor}%"></div>
-                  <div class="skill-bar-percent">${item.years}</div>
+                <div class="skillbar clearfix" data-percent=${percentageExperience}"%">
+                  <div class="skillbar-bar" style="width:${percentageExperience}%; background:${item.bgcolor}%"></div>
+                  <div class="skill-bar-percent">${totalcurrentexp.outputExperience}</div>
                 </div>
               `;
               contentContainer.appendChild(cardDiv);
@@ -358,13 +396,25 @@ window.addEventListener("load", function () {
       .then((jsonData) => {
           // Loop through the JSON data and create HTML elements
           jsonData.forEach((item) => {
-              const cardDiv = document.createElement("p");
-              cardDiv.className = "mb-2 text-truncate-2";
-              cardDiv.innerHTML = `
+            // Calculate Total Experience
+            const TotalExpStart = new Date(`${item.TotalExp}`);
+            const currentdate = new Date();
+            const ExpStart = new Date(`${item.ExpStart}`);
+            const ExpEnd = new Date();
+           const totalexpyears = calculateExperience(TotalExpStart, currentdate);  
+            // Calculate relevant experience
+           const totalcurrentexp = calculateExperience(ExpStart, ExpEnd);          
+            // Calculate the percentage of total experience
+           const totalExperience = totalexpyears.totalYearsMonths; // Assuming total experience is 100%
+           const percentageExperience = (totalcurrentexp.totalYearsMonths / totalExperience) * 100;
+         // Create and append the card div
+            const cardDiv = document.createElement("p");
+            cardDiv.className = "mb-2 text-truncate-2";
+            cardDiv.innerHTML = `
                 <div><span>${item.subtitle}</span></div>
-                <div class="skillbar clearfix" data-percent="${item.percent}%">
-                  <div class="skillbar-bar" style="width:${item.percent}%; background:${item.bgcolor}%"></div>
-                  <div class="skill-bar-percent">${item.years}</div>
+                <div class="skillbar clearfix" data-percent=${percentageExperience}"%">
+                  <div class="skillbar-bar" style="width:${percentageExperience}%; background:${item.bgcolor}%"></div>
+                  <div class="skill-bar-percent">${totalcurrentexp.outputExperience}</div>
                 </div>
               `;
               contentContainer.appendChild(cardDiv);
@@ -375,7 +425,48 @@ window.addEventListener("load", function () {
       })
       .catch((error) => console.error("Error fetching data:", error));
 });
+// Tools
+// Tech skills
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("tools-container");
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/tools.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+          jsonData.forEach((item) => {
+            // Calculate Total Experience
+            const TotalExpStart = new Date(`${item.TotalExp}`);
+            const currentdate = new Date();
+            const ExpStart = new Date(`${item.ExpStart}`);
+            const ExpEnd = new Date();
+           const totalexpyears = calculateExperience(TotalExpStart, currentdate);  
+            // Calculate relevant experience
+           const totalcurrentexp = calculateExperience(ExpStart, ExpEnd);          
+            // Calculate the percentage of total experience
+           const totalExperience = totalexpyears.totalYearsMonths; // Assuming total experience is 100%
+           const percentageExperience = (totalcurrentexp.totalYearsMonths / totalExperience) * 100;
 
+         // Create and append the card div
+            const cardDiv = document.createElement("p");
+            cardDiv.className = "mb-2 text-truncate-2";
+            cardDiv.innerHTML = `
+                <div><span>${item.subtitle}</span></div>
+                <div class="skillbar clearfix" data-percent=${percentageExperience}"%">
+                  <div class="skillbar-bar" style="width:${percentageExperience}%; background:${item.bgcolor}%"></div>
+                  <div class="skill-bar-percent">${totalcurrentexp.outputExperience}</div>
+                  <div class="skill-bar-tools"></div>                  
+                </div>
+              `;
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
 // end skills section //
 
 //begin expertise section
@@ -642,4 +733,31 @@ imagesLoaded( grid ).on( 'progress', function() {
   // layout Masonry after each image loads
   msnry.layout();
 });
+
+
+// Function used to Calculate Month & years based on given date
+function calculateExperience(startDate,enddate) {
+  // Get the current date
+ // const currentDate = new Date();
+  // Calculate the difference in years
+  const yearsDiff = enddate.getFullYear() - startDate.getFullYear();
+  // Calculate the difference in months
+  let monthsDiff = enddate.getMonth() - startDate.getMonth();
+
+  // Adjust monthsDiff if it's negative
+  if (monthsDiff < 0) {
+    monthsDiff += 12;
+    yearsDiff--;
+  }
+  // Calculate the total months and years
+  const totalYearsMonths = yearsDiff * 12 + monthsDiff;
+
+  // Format the output as "M&Y"
+  const outputExperience = `${yearsDiff}Y${monthsDiff}M`;
+
+  return{
+    outputExperience,
+    totalYearsMonths
+  };
+}
 

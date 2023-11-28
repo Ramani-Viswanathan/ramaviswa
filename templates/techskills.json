@@ -1,56 +1,62 @@
 [
     {
         "subtitle" : "SDLC",
-        "percent": "40.14",
-        "years": "7Y",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2016-11-20T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Product Management",
-        "percent": "23.29",
-        "years": "4Y",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2019-10-01T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Infra Management",
-        "percent": "57.65",
-        "years": "10Y",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2013-01-25T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Networking",
-        "percent": "17.31",
-        "years": "3Y",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2020-07-16T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "CyberSecurity",
-        "percent": "28.82",
-        "years": "5Y",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2018-11-20T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Cloud Computing",
-        "percent": "11.53",
-        "years": "2Y",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2021-06-23T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Data Anlysis",
-        "percent": "32.31",
-        "years": "5Y3M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2018-09-22T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "DevOps",
-        "percent": "7.83",
-        "years": "1Y3M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2022-08-21T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Prompt Engineering",
-        "percent": "2.88",
-        "years": "5M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2023-05-23T23:50:21.000Z",
         "bgcolor" : "rgb(233, 211, 83);"
+    },
+    {
+        "subtitle" : "Agile - Scrum",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2019-07-23T23:50:21.000Z",
+        "bgcolor" : "rgb(90, 83, 233);"
     }
 ]

@@ -1,0 +1,128 @@
+[
+    {
+        "subtitle" : "Jira",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2021-11-20T23:50:21.000Z",
+        "usedyear" : "5",
+        "bgcolor" : "rgb(90, 83, 233);"
+    },
+    {
+        "subtitle" : "Confluence",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2022-09-01T23:50:21.000Z",
+        "usedyear" : "2",
+        "bgcolor" : "rgb(90, 83, 233);"
+    },
+    {
+        "subtitle" : "MS Project",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2013-01-25T23:50:21.000Z",
+        "usedyear" : "2",
+        "bgcolor" : "rgb(90, 83, 233);"
+    },
+    {
+        "subtitle" : "Excel",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2007-11-20T23:50:21.000Z",
+        "usedyear" : "3",
+        "bgcolor" : "rgb(90, 83, 233);"
+    },
+    {
+        "subtitle" : "SQL",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2015-11-19T23:50:21.000Z",
+        "usedyear" : "4",
+        "bgcolor" : "rgb(90, 83, 233);"
+    },
+    {
+        "subtitle" : "Power-BI",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2023-09-22T23:50:21.000Z",
+        "usedyear" : "5",
+        "bgcolor" : "rgb(118, 233, 83);"
+    },
+    {
+        "subtitle" : "Tableau",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2023-08-21T23:50:21.000Z",
+        "usedyear" : "1",
+        "bgcolor" : "rgb(118, 233, 83);"
+    },
+    {
+        "subtitle" : "Zoom Meetings",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2020-05-23T23:50:21.000Z",
+        "usedyear" : "2",
+        "bgcolor" : "rgb(90, 83, 233);"
+    },
+    {
+        "subtitle" : "Teams Meetings & Chat",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2019-07-23T23:50:21.000Z",
+        "usedyear" : "2",
+        "bgcolor" : "rgb(90, 83, 233);"
+    },
+    {
+        "subtitle" : "Git Hub",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2020-07-23T23:50:21.000Z",
+        "usedyear" : "3",
+        "bgcolor" : "rgb(90, 83, 233);"
+    },
+    {
+        "subtitle" : "HTML5, CSS",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2019-07-23T23:50:21.000Z",
+        "usedyear" : "1",
+        "bgcolor" : "rgb(90, 83, 233);"
+    },
+    {
+        "subtitle" : "Bootstrap",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2023-07-23T23:50:21.000Z",
+        "usedyear" : "2",
+        "bgcolor" : "rgb(233, 211, 83);"
+    },
+    {
+        "subtitle" : "Javascript",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2022-07-23T23:50:21.000Z",
+        "usedyear" : "2",
+        "bgcolor" : "rgb(233, 211, 83);"
+    },
+    {
+        "subtitle" : "Python Programming",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2021-07-23T23:50:21.000Z",
+        "usedyear" : "1",
+        "bgcolor" : "rgb(233, 211, 83);"
+    },
+    {
+        "subtitle" : "Terraform",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2023-10-23T23:50:21.000Z",
+        "usedyear" : "1",
+        "bgcolor" : "rgb(118, 233, 83);"
+    },
+    {
+        "subtitle" : "Kubernetes",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2023-09-23T23:50:21.000Z",
+        "usedyear" : "1",
+        "bgcolor" : "rgb(118, 233, 83);"
+    },
+    {
+        "subtitle" : "AWS",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2021-06-23T23:50:21.000Z",
+        "usedyear" : "1",
+        "bgcolor" : "rgb(233, 211, 83);"
+    },
+    {
+        "subtitle" : "Azure",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2023-06-23T23:50:21.000Z",
+        "usedyear" : "1",
+        "bgcolor" : "rgb(118, 233, 83);"
+    }
+]

@@ -1,37 +1,37 @@
 [
     {
         "subtitle" : "Communication",
-        "percent": "100",
-        "years": "17Y7M"
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2006-10-12T23:50:21.000Z"
     },
     {
         "subtitle" : "Cross Functional",
-        "percent": "95.26",
-        "years": "16Y9M"
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2011-01-15T23:50:21.000Z"
     },
     {
         "subtitle" : "Business Acumen",
-        "percent": "74.37",
-        "years": "13Y2M"
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2014-09-23T23:50:21.000Z"
     },
     {
         "subtitle" : "Corp Political",
-        "percent": "74.37",
-        "years": "13Y2M"
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2014-11-08T23:50:21.000Z"
     },
     {
         "subtitle" : "Corp Governance",
-        "percent": "74.37",
-        "years": "13Y1M"
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2015-02-12T23:50:21.000Z"
     },
     {
         "subtitle" : "People Management",
-        "percent": "43.71",
-        "years": "7Y7M"
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2016-06-03T23:50:21.000Z"
     },
     {
         "subtitle" : "Remote Management",
-        "percent": "95.26",
-        "years": "16Y9M"
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2007-09-18T23:50:21.000Z"
     }
 ]

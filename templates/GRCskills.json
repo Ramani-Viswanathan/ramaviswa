@@ -1,68 +1,80 @@
 [
     {
         "subtitle" : "Risk Management",
-        "percent": "95.26",
-        "years": "16Y9M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2006-11-08T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Infosec Risk Management",
-        "percent": "32.31",
-        "years": "5Y7M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2018-04-11T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Change Management",
-        "percent": "95.26",
-        "years": "16Y9M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2007-02-26T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Incident Management",
-        "percent": "57.65",
-        "years": "10Y",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2014-01-05T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Disaster Recovery (DR)",
-        "percent": "32.31",
-        "years": "5Y7M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2018-04-04T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Vendor Management",
-        "percent": "57.65",
-        "years": "10Y",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2013-11-21T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Audit",
-        "percent": "15.65",
-        "years": "2Y4M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2021-05-03T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Governance",
-        "percent": "74.37",
-        "years": "13Y1M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2021-05-23T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Compliance",
-        "percent": "65.38",
-        "years": "11Y5M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2012-06-24T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "Vulnerability Management",
-        "percent": "15.65",
-        "years": "2Y4M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2021-07-22T23:50:21.000Z",
         "bgcolor" : "rgb(90, 83, 233);"
     },
     {
         "subtitle" : "REAS AI",
-        "percent": "0.95",
-        "years": "2M",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2023-09-18T23:50:21.000Z",
+        "bgcolor" :"rgb(118, 233, 83);"
+    },
+    {
+        "subtitle" : "Audit - ISO 27001 (ISMS)",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2023-10-18T23:50:21.000Z",
+        "bgcolor" :"rgb(118, 233, 83);"
+    },
+    {
+        "subtitle" : "Audit - IT Risk Management",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2023-10-11T23:50:21.000Z",
         "bgcolor" :"rgb(118, 233, 83);"
     }
 ]

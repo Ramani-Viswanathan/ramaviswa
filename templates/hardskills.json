@@ -1,37 +1,32 @@
 [
     {
-        "subtitle" : "Degree (Bachelor & Masters)",
-        "percent": "23.33",
-        "years": "7Y"
-    },
-    {
-        "subtitle" : "CourseWare",
-        "percent": "6.67",
-        "years": "2Y"
-    },
-    {
         "subtitle" : "Project Manager",
-        "percent": "25.93",
-        "years": "4Y5M"
-    },
-    {
-        "subtitle" : "Program Manager",
-        "percent": "19.57",
-        "years": "3Y4M"
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2006-07-31T23:50:21.000Z",
+        "ExpEnd" : "2010-12-15T23:50:21.000Z"
     },
     {
         "subtitle" : "PMO - Head",
-        "percent": "10.87",
-        "years": "1Y9M"
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2010-12-15T23:50:21.000Z",
+        "ExpEnd" : "2012-12-12T23:50:21.000Z"
     },
     {
-        "subtitle" : "Portfolio Manager",
-        "percent": "15.65",
-        "years": "2Y4M"
+        "subtitle" : "Program Manager",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2012-08-12T23:50:21.000Z",
+        "ExpEnd" : "2016-12-15T23:50:21.000Z"
     },
     {
         "subtitle" : "Technical Program Manager",
-        "percent": "32.31",
-        "years": "5Y7M"
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2018-07-15T23:50:21.000Z",
+        "ExpEnd" : "2023-11-19T23:50:21.000Z"
+    },
+    {
+        "subtitle" : "Portfolio Manager",
+        "TotalExp": "2006-07-31T23:50:21.000Z",
+        "ExpStart": "2016-12-15T23:50:21.000Z",
+        "ExpEnd" : "2018-07-15T23:50:21.000Z"
     }
 ]

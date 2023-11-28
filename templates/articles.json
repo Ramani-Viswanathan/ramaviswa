@@ -33,6 +33,13 @@
         "description": "Created personal Portfolio page using HTML5, CSS, Javascript, JSON and Bootstrap",
         "category": "Project : front end development",
         "link": "#"
+    },
+    {
+        "title": "Code Pen",
+        "imageSrc": "./images/pproject.svg",
+        "description": "My Codepen collections",
+        "category": "Project : front end development",
+        "link": "https://codepen.io/collection/qOQKvZ"
     }
 ]
   

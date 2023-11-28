@@ -30,6 +30,7 @@ https://codepen.io/bycreator/pen/qBpwGy
   --header-height : 3rem ;
   --font-semi: 600;
   --font-page-weight: 500;
+  --font-page-strong: 100;
 
   --primary-color : #303031;
   --secondary-color: rgb(90, 83, 233);
@@ -133,9 +134,53 @@ img{
 /* Hero details */
 
 .hero_page{
-  height: calc(100vh - 14rem);
-  row-gap: 0.25rem;
+  height: 100vh;
+  margin-top: 0.1rem;
+  top: 0.5rem;
 }
+
+.hero_left{
+  row-gap: 0rem;
+  margin-top: 0.5rem;
+  top: 0;
+  vertical-align: top;
+}
+
+.hero_left h1{
+  font-family: var(--title-font);
+  font-size: var(--mb-6);
+  font-weight: var(--font-semi);
+  margin-bottom: var(--mb-1);
+  width:max-content;
+  vertical-align: top;
+}
+
+.hero_left h6{
+  font-family: var(--site-font);
+  font-size: var(--mb-3);
+  font-weight: var(--font-semi);
+  margin-bottom: var(--mb-1);
+  vertical-align: top;
+  color: var(--primary-color);
+}
+
+.hero_left p{
+  font-family: var(--site-font);
+  font-size: var(--p-font-size);
+  margin-bottom: var(--mb-1);
+  vertical-align: top;
+  color: var(--primary-color);
+}
+
+
+.hero_right{
+  row-gap: 0rem;
+  margin-top: 0.5rem;
+  top: 0;
+  vertical-align: top;
+  height: 100vh;
+}
+
 .hero_data{
   align-self: center;
 }
@@ -319,6 +364,10 @@ strong{
 
 
 /* Add this to your CSS file or within a <style> tag in the HTML head */
+
+
+
+
 #scroll-to-top-button {
  /* display: none;  Initially hide the button */
   position: fixed; /* Fixed position */
@@ -369,25 +418,6 @@ strong{
   opacity: 1;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
-}
-
-.brutbutton {
-  padding: 2px;
-  font-size: 12px;
-  border: none;
-  border: 2px solid black;
-  border-radius: .2em;
-  background-color: #6c63ffff;
-  filter: drop-shadow(3px 3px black); 
-  transition: .2s ease-in-out all; 
-  align-self:center;
-  color: black;
-
-  .buttona{
-    color: black;
-    font-style: italic;
-    align-items: flex-end;
-  }
 }
 
 .bottom{
@@ -558,6 +588,13 @@ width:110px;
 	font-size:11px;
 	height:20px;
 	line-height:20px;
+}
+
+.skill-bar-tools {
+	position:absolute;
+	right:10px;
+	top:12;
+	font-size:11px;
 }
 
 /* ---- Portfolio ---- */
