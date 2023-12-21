@@ -1,27 +1,32 @@
 [
     {
         "certification" : "Oracle Cloud Infrastructure 2023 Foundations Associate",
-        "provider"      : "Oracle Cloud Infrastructure",
-        "received_date" : "01-Sep-2023"
+        "provider"      : "Oracle",
+        "received_date" : "01-Sep-2023",
+        "category"      : "Cloud"
     },
     {
         "certification" : "Certified in Cybersecurity",
         "provider"      : "ISC3",
-        "received_date" : "01-feb-2023"
+        "received_date" : "01-feb-2023",
+        "category"      : "Security"
     },
     {
         "certification" : "AWS Certified Cloud Practitioner",
         "provider"      : "AWS",
-        "received_date" : "01-Nov-2022"
+        "received_date" : "01-Nov-2022",
+        "category"      : "Cloud"
     },
     {
         "certification" : "PMI Agile Certified Practitioner (PMI-ACP)",
         "provider"      : "PMI",
-        "received_date" : "11-jan-2021"
+        "received_date" : "11-jan-2021",
+        "category"      : "Project"
     },
     {
         "certification" : "Project Management Professional (PMP)",
         "provider"      : "PMI",
-        "received_date" : "08-nov-2008"
+        "received_date" : "08-nov-2008",
+        "category"      : "Project"
     }
 ]

@@ -48,7 +48,7 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
 
-//masory automatic creation
+//Portfolio Details
 
 window.addEventListener("load", function () {
   // Get a reference to the content container
@@ -66,13 +66,13 @@ window.addEventListener("load", function () {
               cardDiv.style.padding = "0.199rem";
               cardDiv.style.top = "0px";
               cardDiv.innerHTML = `
-                <div class="card">
-                  <img src="${item.imageSrc}" class="bd-placeholder-img card-img-top" style="width: 100%; height:125px;"></svg>
-                  <div class="card-body clearfix">
-                    <p class="card-text port_category"><small class="text-body-secondary">&nbsp;${item.category}</small></p>
-                    <p class="card-text port_desc">${item.title}</p>
-                    <p class="card-text port_desc">${item.description}</p>
-                    <p><a class="port_link" href="${item.link}">Click Here &nbsp;</a></p>
+                <div class="card portal">
+                  <img src="${item.imageSrc}" class="bd-placeholder-img card-img-top img-fluid" alt="Created using Microsoft Bing Image creator"></svg>
+                  <div class="card-body clearfix portal">
+                    <p class="card-text portal cat"><small class="text-body-secondary">&nbsp;${item.category}</small></p>
+                    <p class="card-text portal">${item.title}</p>
+                    <p class="card-text portal bdy">${item.description}</p>
+                    <p class="portal lik">${item.link}</p>
                   </div>
                 </div>
               `;
@@ -183,17 +183,12 @@ window.addEventListener("load", function () {
             const totalMonths = (yearDiff * 12) + monthDiff;
 
               const cardDiv = document.createElement("div");
-              cardDiv.className = "width:100%";
+              cardDiv.className ="row align-items-start border-bottom colbody";
               cardDiv.innerHTML = `
-              <ol class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">${item.certification}</div>
-                    ${item.provider}
-                  </div>
-                  <span class="badge bg-primary rounded-pill">${totalMonths}M</span>
-                </li>
-              </ol>
+                <div class="col-md-2">${item.category}</div>
+                <div class="col-md-2">${item.provider}</div>
+                <div class="col-md-6">${item.certification}</div>
+                <div class="col-md-2"><span class="badge bg-primary rounded-pill">${totalMonths}M</span></div>
               `;
 
               contentContainer.appendChild(cardDiv);
@@ -206,8 +201,6 @@ window.addEventListener("load", function () {
       .catch((error) => console.error("Error fetching data:", error));
 });
 
-// for Qualufications
-// for Certifications
 
 // bouve sunction for Experience
 
@@ -224,17 +217,12 @@ window.addEventListener("load", function () {
           jsonData.forEach((item) => {
 
               const cardDiv = document.createElement("div");
-              cardDiv.className = "width:100%";
+              cardDiv.className ="row align-items-start border-bottom colbody";
               cardDiv.innerHTML = `
-              <ol class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">${item.qualifications}</div>
-                    ${item.major}<br>${item.university}
-                  </div>
-                  <span class="badge bg-primary rounded-pill">${item.place}</span>
-                </li>
-              </ol>
+              <div class="col-md-2">${item.qualifications}</div>
+              <div class="col-md-4">${item.university}</div>
+              <div class="col-md-4">${item.major}</div>
+              <div class="col-md-2">${item.place}</div>
               `;
 
               contentContainer.appendChild(cardDiv);
@@ -620,17 +608,14 @@ window.addEventListener("load", function () {
           jsonData.forEach((item) => {
 
               const cardDiv = document.createElement("div");
-              cardDiv.className = "carousel-item active";
               cardDiv.innerHTML = `
-                <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#ff00"/></svg>
-                <div class="container">
-                  <div class="carousel-caption text-start">
-                    <h6 class="cartitle"><strong>${item.person} &nbsp;</strong><span class="carsubtitle">&nbsp;|&nbsp;${item.title}</span></h6>
-                    <p class="cartext">${item.recomend} &nbsp;<span class="carSource">Source : <i class="bi bi-linkedin" style="color:#6c63ffff;"></i></span></p>
-                  </div>
+              <div class="carousel-item">
+                <div>
+                  <h6 class="cartitle"><strong>${item.person} &nbsp;</strong><span class="carsubtitle">&nbsp;|&nbsp;${item.title}</span></h6>
+                  <p class="cartext">${item.recomend} <br>&nbsp;<span class="carSource">Source : <i class="bi bi-linkedin" style="color:#6c63ffff;"></i></span></p>
                 </div>
+              </div>
               `;
-
               contentContainer.appendChild(cardDiv);
           });
           // Calculate and set the min-height based on the content's height
