@@ -69,6 +69,8 @@ https://codepen.io/JJimmyFlynn/pen/yzoPyV?editors=1100 - BARUN
   --z-tooltip: 10;
   --z-fixed: 100;
 
+  --gap: 1rem;
+
   
   
 }
@@ -804,6 +806,49 @@ width:110px;
 
 
 }
+
+.experience{
+
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - 20px);
+  justify-content: space-evenly;
+  padding: 1px;
+
+  .experience .card{
+    backdrop-filter: blur(5px);
+    background-color: var(--lead-title-color-light);
+    border: 1px solid var(--lead-title-color-dark);
+    box-shadow: 2px 2px 4px rgba(black, 0.25);
+    width: 11rem;
+    padding: 1px 1px;
+    margin: 2px;
+  }
+ 
+ .experience .cardtitle{
+  font-family: var(--site-font);
+  font-weight: var(--p-font-size);
+  font-size: var(--mb-11);
+  font-weight: bold;
+ }
+
+ .experience .subtitle{
+  color: gray(245);
+  text-align: left;
+  color: var(--primary-color);
+  font-family: var(--site-font);
+  font-size: var(--mb-11);
+ }
+ 
+}
+
+.certsubtitle{
+  color: gray(245);
+  text-align: left;
+  color: var(--primary-color);
+  font-family: var(--site-font);
+  font-size: small;
+ }
 
 .skillbar-index{
   width: 40px;

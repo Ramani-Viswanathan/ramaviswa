@@ -183,12 +183,12 @@ window.addEventListener("load", function () {
             const totalMonths = (yearDiff * 12) + monthDiff;
 
               const cardDiv = document.createElement("div");
-              cardDiv.className ="row align-items-start border-bottom colbody";
+              cardDiv.className ="col d-flex align-items-start";
               cardDiv.innerHTML = `
-                <div class="col-md-2">${item.category}</div>
-                <div class="col-md-2">${item.provider}</div>
-                <div class="col-md-6">${item.certification}</div>
-                <div class="col-md-2"><span class="badge bg-primary rounded-pill">${totalMonths}M</span></div>
+                <div>
+                <h4 class="fw-bold mb-0">${item.category}</h4>
+                <p>${item.certification} , ${item.provider} <span class="badge bg-primary rounded-pill">${totalMonths}M</span></p>
+                </div>
               `;
 
               contentContainer.appendChild(cardDiv);
