@@ -46,6 +46,9 @@ https://codepen.io/JJimmyFlynn/pen/yzoPyV?editors=1100 - BARUN
   --lead-title-color-dark:#c0ebf0ff;
   --lead-title-color2-light: #fe9280ff;
   --lead-title-color2-dark: #f45e43ff;
+  --completed-color: #23780b;
+  --inprogress-color: #3c23ff;
+  --future-color:#ff0e73;
 
   --site-font: 'Nunito Sans', sans-serif;
   --title-font:'Courgette', cursive;
@@ -811,18 +814,18 @@ width:110px;
 
   display: flex;
   flex-direction: row;
-  height: calc(100% - 20px);
+  height: calc(100% - 30px);
   justify-content: space-evenly;
-  padding: 1px;
+  padding: 0.5px;
 
   .experience .card{
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
     background-color: var(--lead-title-color-light);
     border: 1px solid var(--lead-title-color-dark);
     box-shadow: 2px 2px 4px rgba(black, 0.25);
-    width: 11rem;
+    width: 11.5rem;
     padding: 1px 1px;
-    margin: 2px;
+    margin: 1px;
   }
  
  .experience .cardtitle{
@@ -844,11 +847,29 @@ width:110px;
 
 .certsubtitle{
   color: gray(245);
-  text-align: left;
+  text-align: center;
   color: var(--primary-color);
   font-family: var(--site-font);
   font-size: small;
  }
+
+ .pcertsubtitle{
+  text-align: left;
+  font-family: var(--site-font);
+  font-size: small;
+ }
+
+ .completed{
+  color: var(--completed-color);
+}
+
+.future{
+  color: var(--future-color);
+}
+
+.inprogress{
+  color: var(--inprogress-color);
+}
 
 .skillbar-index{
   width: 40px;

@@ -8,5 +8,15 @@
         "category": "Cyber Security",
         "Count"     : "1",
         "link"      : "<a href='portfolio.html'>click here</a>"
+    },
+    {
+        "category": "IT Architecture",
+        "Count"     : "0",
+        "link"      : "<a href='portfolio.html'>click here</a>"
+    },
+    {
+        "category": "Cloud & Cloud Security",
+        "Count"     : "0",
+        "link"      : "<a href='portfolio.html'>click here</a>"
     }
 ]
