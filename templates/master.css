@@ -18,6 +18,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Corben:700');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans:wght@400');
 
 /* Licensing & Courtesy  - 
 
@@ -26,6 +28,10 @@ https://undraw.co/search
 https://codepen.io/bycreator/pen/qBpwGy
 
 https://codepen.io/JJimmyFlynn/pen/yzoPyV?editors=1100 - BARUN
+
+color checker : https://www.htmlcsscolor.com/hex/676256
+RGBA to HEX converter : https://simplecss.eu/rgbatohex.html 
+
 
 */
 
@@ -39,25 +45,21 @@ https://codepen.io/JJimmyFlynn/pen/yzoPyV?editors=1100 - BARUN
   --font-page-strong: 100;
   --font-hero-weight: 900;
 
-  --primary-color : #001e20ff;
-  --secondary-color: #07496cff;
-  --paragraph-color : #011520ff;
-  --lead-title-color-light: #f0f4ffff;
-  --lead-title-color-dark:#c0ebf0ff;
-  --lead-title-color2-light: #fe9280ff;
-  --lead-title-color2-dark: #f45e43ff;
-  --completed-color: #23780b;
-  --inprogress-color: #3c23ff;
-  --future-color:#ff0e73;
+--page-color : #FFFFFF;
+--font-color : #000000;
+--color-night-rider :#2f2f2f; /* Bird */
+--color-Tangerine-yellow : #FFCF00; /*(Bird) */
+--color-red-pantone: #e63946;/* bird*/
+--color-Charlotte: #A8DADC; /*bird */
+--color-bonjour: #e5dbd3; /*tree*/
+--color-gunpowder : #525062; /* tree */
+--color-pablo : #726b5d; /*tree */
+--color-makara : #676256; /*background */
 
-  --site-font: 'Nunito Sans', sans-serif;
-  --title-font:'Courgette', cursive;
+
+  --site-font: "Poppins", sans-serif;
+  --title-font: 'poppins', sans-serif;
   --hero-font-big: 'Corben', cursive;
-  --hero-font-prof: 'Crimson Text', serif;
-  --hero-right-side-font: 'Raleway', sans-serif;
-  --big-font-size: 2rem;
-  --h-font-size: 1.25rem;
-  --p-font-size: 1.15rem;
 
   --mb-1: 0.5rem;
   --mb-11: 0.75rem;
@@ -111,8 +113,8 @@ body{
   font-family: var(--site-font);
   font-size: var(--p-font-size);
   font-weight: var(--font-page-weight);
-  color: var(--secondary-color);
-  background: #ffffff;
+  color: var(--font-color);
+  background: var(--page-color);
 }
 h1,h2,p{
   margin: 0;
@@ -122,43 +124,321 @@ ul{
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--font-color);
 }
 
 li{
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--font-color);
 }
 
 i{
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--font-color);
 }
 
 a{
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--font-color);
 }
 img{
   max-width: 100%;
   height: auto;
   display: block;
 }
+
+.button{
+  background-color: var(--color-gunpowder);
+  border: 0px;
+  color: var(--color-bonjour);
+  font-family: "Poppins", sans-serif;
+}
 /* Section title and colors defined */
 
-.section-title{
-  position: relative;
-  font-family: var(--title-font);
-  font-size: var(--h-font-size);
-  color: var(--primary-color);
-  margin-top: var(--mb-1);
-  margin-bottom: var(--mb-2);
-  text-align: center;
+.Herosection{
+
+  font-family: "Poppins", sans-serif;
+  color: var(--font-color);
+
+  .bigfont{
+    font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .mediumfont{
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .smallfont{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+
+  .sidefont{
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .heroimg{
+    border-radius: 50%;
+    border-color: var(--color-night-rider);
+    height: 155px;
+    width: 155px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .button{
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
 }
 
-.section{
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+/* defining Image animation */
+@keyframes imageTransition {
+  0% {
+    background-image: url('/images/Hero_bg_4.svg');
+  }
+  20% {
+    background-image: url('/images/Hero_bg_4.svg');
+  }
+  40% {
+    background-image: url('/images/Hero_bg_4.svg');
+  }
+  60% {
+    background-image: url('/images/Hero_bg_4.svg');
+  }
+  80% {
+    background-image: url('/images/Hero_bg_4.svg');
+  }
+  100% {
+    background-image: url('/images/Hero_bg_4.svg');
+  }
+}
+
+.bgimg{
+  animation: imageTransition 30s infinite;
+ /* background-image: url(/images/Hero_bg_5.svg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.powness{
+
+  height: 300px;
+  font-family: "Poppins", sans-serif;
+  color: var(--font-color);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+
+  .box1{
+
+    background-color: var(--color-makara);
+    height: 250px;
+    align-self: center;
+
+    .numb{
+      font-size: 70px;
+      font-weight: 900;
+      font-style:oblique;
+      text-align: center;
+      align-content: center;
+    }
+  }
+
+}
+
+.Herobox{
+
+  font-family: "Poppins", sans-serif;
+  color: var(--font-color);
+  background-color: var(--color-Charlotte);  
+  height: 175px;
+
+  .leftbox{
+    text-align: left;
+    margin-top: 45px;
+    font-size: 16px;
+    font-weight: 350;
+    font-style: normal;
+  }
+
+  .rightbox{
+    text-align: left;
+    margin-top: 45px;
+    font-size: 16px;
+    font-weight: 350;
+    font-style: normal;
+  }
+
+}
+
+.whyhirebox{
+
+  font-family: 'Pontano', sans;
+  color: var(--font-color);
+  background-color:var(--color-Tangerine-yellow);
+
+  .bigfont{
+    font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .whyhirep{
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .smallfont{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+
+  .accordintext{
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 350;
+    font-style: normal;
+  }
+
+  .accordion{
+    --bs-accordion-btn-color: var(--color-night-rider);
+    --bs-accordion-active-bg: var(--color-Tangerine-yellow);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-bg: var(--color-Tangerine-yellow);
+    font-family: "Poppins", sans-serif;
+    color: var(--font-color);
+  }
+
+  .accordion-button:not(.collapsed){
+    box-shadow: none;
+  }
+
+  .accordion-button::after{
+    background-image: url(/images/plus.svg);
+  }
+
+  .accordion-button:not(.collapsed)::after{
+    background-image: url(/images/dash.svg);
+  }
+
+}
+
+.recomendbox{
+
+  font-family: "Poppins", sans-serif;
+  color: var(--color-bonjour);
+  border-radius: 5px;
+  border:1px;
+  background-color: var(--color-night-rider);
+  text-justify: auto;
+  align-items: center;
+  align-self: center;
+
+  .mediumfont{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .smallfont{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-bonjour);
+  }
+
+  .sidefont{
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-bonjour);
+  }
+
+  .recommendimg{
+    border-radius: 50%;
+    border-color: var(--color-bonjour);
+    border: 3px solid white;
+    box-sizing: border-box;
+    height: 155px;
+    width: 155px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+
+}
+
+.skillsbox{
+
+  font-family: "Poppins", sans-serif;
+  color: var(--font-color);
+
+}
+
+.progress-bar{
+  background-color: var(--color-red-pantone);
+  text-align: left;
+}
+
+.Projectsbox{
+  font-family: "Poppins", sans-serif;
+  color: var(--font-color);
+  background-color: var(--page-color);
+
+  .mediumfont{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .smallfont{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+  }
+
+  .sidefont{
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: right;
+  }
+
+}
+
+.bottombox{
+  font-family: "Poppins", sans-serif;
+  color: var(--font-color);
+  background-color: var(--color-pablo);
 }
 
 /* Nav Style */
@@ -215,7 +495,7 @@ span{
   background-color: var(--lead-title-color-light);
   border: 1px solid var(--lead-title-color-dark);
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgba(black, 0.25);
+  box-shadow: 2px 2px 4px rgba(var(--dark-background), 0.25);
   height: 8vw;
   max-height: 210px;
   min-height: 180px;
@@ -696,194 +976,3 @@ strong{
 }
 
 /* skill Bar : https://codepen.io/bycreator/pen/qBpwGy */
-
-.skillbar {
-	position:relative;
-	display:block;
-	margin-bottom:15px;
-	width:100%;
-	background:#eee;
-	height:20px;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	-webkit-transition:0.4s linear;
-	-moz-transition:0.4s linear;
-	-ms-transition:0.4s linear;
-	-o-transition:0.4s linear;
-	transition:0.4s linear;
-	-webkit-transition-property:width, background-color;
-	-moz-transition-property:width, background-color;
-	-ms-transition-property:width, background-color;
-	-o-transition-property:width, background-color;
-	transition-property:width, background-color;
-}
-
-.skillbar-title {
-	position:absolute;
-	top:0;
-	left:0;
-width:110px;
-	font-weight:bold;
-	font-size:13px;
-	color:#ffffff;
-	background:#6adcfa;
-	-webkit-border-top-left-radius:3px;
-	-webkit-border-bottom-left-radius:4px;
-	-moz-border-radius-topleft:3px;
-	-moz-border-radius-bottomleft:3px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
-}
-
-.skillbar-title span {
-	display:block;
-	background:rgba(0, 0, 0, 0.1);
-	padding:0 20px;
-	height:20px;
-	line-height:35px;
-	-webkit-border-top-left-radius:3px;
-	-webkit-border-bottom-left-radius:3px;
-	-moz-border-radius-topleft:3px;
-	-moz-border-radius-bottomleft:3px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
-}
-
-.skillbar-bar {
-	height:20px;
-	width:0px;
-	background:var(--secondary-color);
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-}
-
-.skill-bar-percent {
-	position:absolute;
-	right:10px;
-	top:0;
-	font-size:11px;
-	height:20px;
-	line-height:20px;
-}
-
-.skill-bar-tools {
-	position:absolute;
-	right:10px;
-	top:12;
-	font-size:11px;
-}
-
-/* ---- Portfolio ---- */
-
-.portal{
-
-  font-family: var(--site-font);
-  font-size: var(--mb-11);
-  font-weight: var(--mb-1);
-  color: var(--secondary-color);
-  padding: 0.2rem;
-
-  .portal .cat{
-    text-align: right;
-    font-weight: bold;
-    font-size: var(--mb-11);
-  }
-
-  .portal .lik{
-    text-align: right;
-    font-weight: bold;
-    font-size: var(--mb-11);
-    text-decoration: none;
-
-  }
-
-  .portal .bdy{
-    color: var(--primary-color);    
-  }
-
-  .portal .ola{
-    border-radius: 30px #ffffff;
-  }
-
-
-}
-
-.experience{
-
-  display: flex;
-  flex-direction: row;
-  height: calc(100% - 30px);
-  justify-content: space-evenly;
-  padding: 0.5px;
-
-  .experience .card{
-    backdrop-filter: blur(1px);
-    background-color: var(--lead-title-color-light);
-    border: 1px solid var(--lead-title-color-dark);
-    box-shadow: 2px 2px 4px rgba(black, 0.25);
-    width: 11.5rem;
-    padding: 1px 1px;
-    margin: 1px;
-  }
- 
- .experience .cardtitle{
-  font-family: var(--site-font);
-  font-weight: var(--p-font-size);
-  font-size: var(--mb-11);
-  font-weight: bold;
- }
-
- .experience .subtitle{
-  color: gray(245);
-  text-align: left;
-  color: var(--primary-color);
-  font-family: var(--site-font);
-  font-size: var(--mb-11);
- }
- 
-}
-
-.certsubtitle{
-  color: gray(245);
-  text-align: center;
-  color: var(--primary-color);
-  font-family: var(--site-font);
-  font-size: small;
- }
-
- .pcertsubtitle{
-  text-align: left;
-  font-family: var(--site-font);
-  font-size: small;
- }
-
- .completed{
-  color: var(--completed-color);
-}
-
-.future{
-  color: var(--future-color);
-}
-
-.inprogress{
-  color: var(--inprogress-color);
-}
-
-.skillbar-index{
-  width: 40px;
-  height: 10px;
-}
-
-.skillbar-index_color-exp{
-  background-color: var(--experience-color);
-}
-
-.skillbar-index_color-per{
-  background-color: var(--projects-color);
-}
-
-.skillbar-index_color-beg{
-  background-color: var(--studying-color);
-}

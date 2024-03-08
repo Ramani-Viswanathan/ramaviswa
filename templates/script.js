@@ -455,6 +455,76 @@ window.addEventListener("load", function () {
       })
       .catch((error) => console.error("Error fetching data:", error));
 });
+
+//Skills Bar
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  //const contentContainer = document.getElementById("skillsbar-container");
+
+  // Fetch data from "articles.json" using fetch API
+  let currentPage = 1; 
+  const rowsPerPage = 5;
+  fetch("templates/skillsbar.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+        //pagination logic
+            // Get number of pages
+            const numPages = Math.ceil(jsonData.length / rowsPerPage);
+
+            // Display page 1 on load
+            window.addEventListener("scroll",() => {
+              currentPage = 1;
+              displayPage(jsonData, currentPage, rowsPerPage); 
+            });
+           
+
+            // Pagination
+            const pagination = document.getElementById("pagination");
+            
+            for(let i = 1; i <= numPages; i++){
+              let li = document.createElement("li");
+              li.classList.add("page-item");
+        
+              let a = document.createElement("a");
+              a.classList.add("page-link"); 
+              a.innerText = i;
+        
+              a.addEventListener("click", () => {
+                currentPage = i;
+                displayPage(jsonData, currentPage, rowsPerPage);  
+              });
+        
+              li.appendChild(a);
+              pagination.appendChild(li);
+            }
+          // Loop through the JSON data and create HTML elements
+          const contentContainer = document.getElementById("progressbars");
+          function displayPage(items, page, rowsPerPage) {
+            const start = (page - 1) * rowsPerPage;
+            const end = page * rowsPerPage;
+            contentContainer.innerHTML = '';
+            for(let i = 0; i < items.length; i++){
+              if(i >= start && i < end){
+
+                const cardDiv = document.createElement("div");
+                cardDiv.innerHTML = `
+                  <span>&nbsp;&nbsp;${items[i].SkillName}</span>
+                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="${items[i].percentExperience}" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width:${items[i].percentExperience}%"></div>
+                    </div>
+                    <br>
+                `;
+                contentContainer.appendChild(cardDiv);
+              }
+            }
+          }
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
+
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
 // end skills section //
 
 //begin expertise section

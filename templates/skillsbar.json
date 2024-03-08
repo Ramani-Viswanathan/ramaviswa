@@ -1,0 +1,78 @@
+[
+    {
+        "SkillName" : "Ability to coordinate and manage cross-functional engineering teams",
+        "percentExperience": "90"
+    },
+    {
+        "SkillName" : "Establishing delivery timelines, roadmaps",
+        "percentExperience": "91"
+    },
+    {
+        "SkillName" : "Tracking progress, status reporting",
+        "percentExperience": "95"
+    },
+    {
+        "SkillName" : "Stakeholder management",
+        "percentExperience": "89"
+    },
+    {
+        "SkillName" : "Agile development methodologies",
+        "percentExperience": "80"
+    },
+    {
+        "SkillName" : "Strategic thinking abilities",
+        "percentExperience": "89"
+    },
+    {
+        "SkillName" : "Organized and attention to detail",
+        "percentExperience": "91"
+    },
+    {
+        "SkillName" : "Problem solving and root cause analysis",
+        "percentExperience": "95"
+    },
+    {
+        "SkillName" : "Risk management",
+        "percentExperience": "82"
+    },
+    {
+        "SkillName" : "Strong verbal and written communication",
+        "percentExperience": "88"
+    },
+    {
+        "SkillName" : "Flexibility, ability to adapt to changes",
+        "percentExperience": "80"
+    },
+    {
+        "SkillName" : "Collaboration and teamwork",
+        "percentExperience": "84"
+    },
+    {
+        "SkillName" : "Passion for learning and growth",
+        "percentExperience": "74"
+    },
+    {
+        "SkillName" : "data pipelines, ETL, data warehousing concepts",
+        "percentExperience": "8"
+    },
+    {
+        "SkillName" : "big data tools like Hadoop, Spark, Kafka",
+        "percentExperience": "5"
+    },
+    {
+        "SkillName" : "SQL and NoSQL databases",
+        "percentExperience": "18"
+    },
+    {
+        "SkillName" : "Python, Java, Scala programming skills",
+        "percentExperience": "15"
+    },
+    {
+        "SkillName" : "Data modeling, database design",
+        "percentExperience": "4"
+    },
+    {
+        "SkillName" : "Data analysis and visualization",
+        "percentExperience": "12"
+    }
+]
