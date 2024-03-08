@@ -210,22 +210,22 @@ img{
 /* defining Image animation */
 @keyframes imageTransition {
   0% {
-    background-image: url('/images/Hero_bg_4.svg');
+    background-image: url('../images/Hero_bg_4.svg');
   }
   20% {
-    background-image: url('/images/Hero_bg_4.svg');
+    background-image: url('../images/Hero_bg_4.svg');
   }
   40% {
-    background-image: url('/images/Hero_bg_4.svg');
+    background-image: url('../images/Hero_bg_4.svg');
   }
   60% {
-    background-image: url('/images/Hero_bg_4.svg');
+    background-image: url('../images/Hero_bg_4.svg');
   }
   80% {
-    background-image: url('/images/Hero_bg_4.svg');
+    background-image: url('../images/Hero_bg_4.svg');
   }
   100% {
-    background-image: url('/images/Hero_bg_4.svg');
+    background-image: url('../images/Hero_bg_4.svg');
   }
 }
 
@@ -341,11 +341,11 @@ img{
   }
 
   .accordion-button::after{
-    background-image: url(/images/plus.svg);
+    background-image: url(../images/plus.svg);
   }
 
   .accordion-button:not(.collapsed)::after{
-    background-image: url(/images/dash.svg);
+    background-image: url(../images/dash.svg);
   }
 
 }
