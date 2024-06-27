@@ -20,6 +20,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pontano+Sans:wght@400');
+@import url('https://fonts.googleapis.com/css?family=Anek+Devanagari:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swapp');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swapp');
 
 /* Licensing & Courtesy  - 
 
@@ -39,13 +42,17 @@ RGBA to HEX converter : https://simplecss.eu/rgbatohex.html
 
 :root {
 
-  --header-height : 3rem ;
+  --header-height : 0rem ;
   --font-semi: 600;
   --font-page-weight: 500;
   --font-page-strong: 100;
   --font-hero-weight: 900;
 
---page-color : #FFFFFF;
+  --big-font-size: 3.5rem;
+  --h-font-size: 2rem;
+  --p-font-size: 1rem;
+
+--page-color : #F0F4F8; /* linear-gradient(to bottom, #C7DBF7, #BFC7DE, #75708C, #C59594, #010101); */
 --font-color : #000000;
 --color-night-rider :#2f2f2f; /* Bird */
 --color-Tangerine-yellow : #FFCF00; /*(Bird) */
@@ -57,7 +64,7 @@ RGBA to HEX converter : https://simplecss.eu/rgbatohex.html
 --color-makara : #676256; /*background */
 
 
-  --site-font: "Poppins", sans-serif;
+  --site-font: "Anek Devanagari", sans-serif;
   --title-font: 'poppins', sans-serif;
   --hero-font-big: 'Corben', cursive;
 
@@ -113,7 +120,6 @@ body{
   font-family: var(--site-font);
   font-size: var(--p-font-size);
   font-weight: var(--font-page-weight);
-  color: var(--font-color);
   background: var(--page-color);
 }
 h1,h2,p{
@@ -151,91 +157,280 @@ img{
   background-color: var(--color-gunpowder);
   border: 0px;
   color: var(--color-bonjour);
-  font-family: "Poppins", sans-serif;
+  font-family: var(--site-font);
 }
+
+.nvabgcolor{
+  background-color: var(--primary-color);
+}
+
+.nvabgcolor a{
+  color: #fff;
+}
+
+h1{
+  color: var(--secondary-color);
+}
+
+p{
+  color: var(--paragraph-color);
+}
+
+span{
+  color: var(--primary-color);
+}
+
+/* Box borders */
+
+.box-header-footer{
+
+  position : relative;
+  background: linear-gradient(to bottom right, #E9F1FA, #FFFFFF);
+}
+
 /* Section title and colors defined */
 
-.Herosection{
+/* Fonts color - Hero section */
 
-  font-family: "Poppins", sans-serif;
+.p-hero{
+  color: #964734;
+  font-family: var(--site-font);
+  font-size: 20px;
+  position: absolute;
+  left: 47px;
+  top: 45px;
+}
+
+.p-heroR{
+  color: #964734;
+  font-family: var(--site-font);
+  font-size: 20px;
+  position: absolute;
+  right: 47px;
+  top: 45px;
+}
+
+.h2-hero{
+
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--big-font-size);
+  color: #964734;
+}
+
+.h2-hero1{
+
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--big-font-size);
+  color: #0A0F22;
+}
+
+.h2-welcome{
+
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--mb-5);
+  color: #964734;
+
+}
+
+.h2-welcome1{
+
+  font-family: "Sacramento", cursive;
+  font-weight: 100;
+  font-style:oblique;
+  font-size: var(--mb-5);
+  color: #0A0F22;
+
+}
+
+.h3-hero{
+
+  font-family:  "Lora", serif;
+  font-size: 20px;
+  color: #4D8EE5;
+}
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.side-bar {
+  width: 50px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to bottom right, #F0F4F8, #FFFFFF);
+  justify-content: space-between;
+}
+
+.bi{
+  color: #4D8EE5;
+  margin-top: 12px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.social-links{
+  width: 50px;
+  top: 170px;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-50%);
+  justify-content: space-between;
+}
+
+.hero-button {
   color: var(--font-color);
-
-  .bigfont{
-    font-size: 50px;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  .mediumfont{
-    font-size: 22px;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  .smallfont{
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-
-  }
-
-  .sidefont{
-    font-size: 12px;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .heroimg{
-    border-radius: 50%;
-    border-color: var(--color-night-rider);
-    height: 155px;
-    width: 155px;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  .button{
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-    display: table-cell;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #4D8EE5;
+  border-radius: 20px;
+  outline: pointer;
+  font-family:  "Lora", serif;
 }
 
-/* defining Image animation */
-@keyframes imageTransition {
-  0% {
-    background-image: url('../images/Hero_bg_4.svg');
-  }
-  20% {
-    background-image: url('../images/Hero_bg_4.svg');
-  }
-  40% {
-    background-image: url('../images/Hero_bg_4.svg');
-  }
-  60% {
-    background-image: url('../images/Hero_bg_4.svg');
-  }
-  80% {
-    background-image: url('../images/Hero_bg_4.svg');
-  }
-  100% {
-    background-image: url('../images/Hero_bg_4.svg');
-  }
+/* How I do Section */
+
+.hdoi-containerL{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000000;
+  background: linear-gradient(to bottom, #F0F4F8,  #FFFFFF);
+  font-family: var(--site-font);
 }
 
-.bgimg{
-  animation: imageTransition 30s infinite;
- /* background-image: url(/images/Hero_bg_5.svg); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.hdoi-containerR{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000000;
+  background: linear-gradient(to bottom, #F0F4F8,  #FFFFFF);
+  font-family: var(--site-font);
 }
+
+.hdoi-h4{
+  font-family:  "Lora", serif;
+  font-size: 18px;
+  color: #0A0F22;
+}
+
+/* who am I section */
+
+.h5-aboutme-bigtitle{
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--big-font-size);
+  color: #964734;
+}
+
+.p-aboutme-smalltitle{
+  font-family:  "Lora", serif;
+  font-size: 20px;
+}
+
+.h6-aboutme-initiative{
+  font-family:  "Lora", serif;
+  font-size: 18px;
+  color: #4D8EE5;
+}
+
+/* why Hire section */
+
+.p-whyhire-abovetext{
+  font-family:  "Lora", serif;
+  font-size: 18px;
+  color: #0A0F22;
+}
+
+.h1-whyhireme{
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--big-font-size);
+  color: #964734;
+}
+
+.accordintext{
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.accordion{
+  --bs-accordion-btn-color: #0A0F22;
+  --bs-accordion-active-bg: linear-gradient(to bottom right, #F0F4F8, #FFFFFF);
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-bg: linear-gradient(to bottom right, #F0F4F8, #FFFFFF);
+  font-family: var(--site-font);
+  color: var(--font-color);
+}
+
+.accordion-button:not(.collapsed){
+  box-shadow: none;
+}
+
+.accordion-button::after{
+  background-image: url(../images/plus.svg);
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url(../images/dash.svg);
+}
+
+/* recommendation section */
+
+.card-recommend{
+  color: #4D8EE5;
+  font-family:  "Lora", serif;
+}
+
+.p-recommend{
+  font-family:  "Lora", serif;
+  font-size: 18px;
+  color: #0A0F22;
+}
+
+.h5-recommend{
+  font-family: "Work Sans", sans-serif;
+  font-size: 21px;
+  color: #964734;
+}
+
+/* Skills section */
+
+.p-skillheading{
+  color: #4D8EE5;
+  font-family:  "Lora", serif;
+}
+
+/* Portfolio Section */
+
+.mediumfont{
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-family: var(-site-font);
+}
+
+.smallfont{
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  font-family: var(-site-font);
+}
+
+.sidefont{
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: right;
+  font-family: var(-site-font);
+}
+
+/* End section */
 
 .powness{
 
@@ -263,230 +458,22 @@ img{
 
 }
 
-.Herobox{
-
-  font-family: "Poppins", sans-serif;
-  color: var(--font-color);
-  background-color: var(--color-Charlotte);  
-  height: 175px;
-
-  .leftbox{
-    text-align: left;
-    margin-top: 45px;
-    font-size: 16px;
-    font-weight: 350;
-    font-style: normal;
-  }
-
-  .rightbox{
-    text-align: left;
-    margin-top: 45px;
-    font-size: 16px;
-    font-weight: 350;
-    font-style: normal;
-  }
-
-}
-
-.whyhirebox{
-
-  font-family: 'Pontano', sans;
-  color: var(--font-color);
-  background-color:var(--color-Tangerine-yellow);
-
-  .bigfont{
-    font-size: 50px;
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-  }
-
-  .whyhirep{
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-    display: table-cell;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .smallfont{
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-
-  }
-
-  .accordintext{
-    font-family: "Poppins", sans-serif;
-    text-align: left;
-    margin-top: 25px;
-    font-size: 14px;
-    font-weight: 350;
-    font-style: normal;
-  }
-
-  .accordion{
-    --bs-accordion-btn-color: var(--color-night-rider);
-    --bs-accordion-active-bg: var(--color-Tangerine-yellow);
-    --bs-accordion-btn-focus-box-shadow: none;
-    --bs-accordion-bg: var(--color-Tangerine-yellow);
-    font-family: "Poppins", sans-serif;
-    color: var(--font-color);
-  }
-
-  .accordion-button:not(.collapsed){
-    box-shadow: none;
-  }
-
-  .accordion-button::after{
-    background-image: url(../images/plus.svg);
-  }
-
-  .accordion-button:not(.collapsed)::after{
-    background-image: url(../images/dash.svg);
-  }
-
-}
-
-.recomendbox{
-
-  font-family: "Poppins", sans-serif;
-  color: var(--color-bonjour);
-  border-radius: 5px;
-  border:1px;
-  background-color: var(--color-night-rider);
-  text-justify: auto;
-  align-items: center;
-  align-self: center;
-
-  .mediumfont{
-    font-size: 16px;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  .smallfont{
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--color-bonjour);
-  }
-
-  .sidefont{
-    font-size: 12px;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--color-bonjour);
-  }
-
-  .recommendimg{
-    border-radius: 50%;
-    border-color: var(--color-bonjour);
-    border: 3px solid white;
-    box-sizing: border-box;
-    height: 155px;
-    width: 155px;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-  }
-
-}
-
 .skillsbox{
 
-  font-family: "Poppins", sans-serif;
+  font-family: var(--site-font);
   color: var(--font-color);
 
 }
 
 .progress-bar{
-  background-color: var(--color-red-pantone);
+  background-color: #964734;
   text-align: left;
 }
 
-.Projectsbox{
-  font-family: "Poppins", sans-serif;
-  color: var(--font-color);
-  background-color: var(--page-color);
-
-  .mediumfont{
-    font-size: 16px;
-    font-weight: 500;
-    font-style: normal;
-    text-align: center;
-  }
-
-  .smallfont{
-    font-size: 14px;
-    font-weight: 300;
-    font-style: normal;
-    text-align: left;
-  }
-
-  .sidefont{
-    font-size: 12px;
-    font-weight: 300;
-    font-style: normal;
-    text-align: right;
-  }
-
-}
-
-.bottombox{
-  font-family: "Poppins", sans-serif;
-  color: var(--font-color);
-  background-color: var(--color-pablo);
-}
 
 /* Nav Style */
 
-.nvabgcolor{
-  background-color: var(--primary-color);
-}
 
-.nvabgcolor a{
-  color: #fff;
-}
-
-h1{
-  color: var(--secondary-color);
-}
-
-p{
-  color: var(--paragraph-color);
-}
-
-span{
-  color: var(--primary-color);
-}
-
-/* Hero details */
-
-.hero_slide1{
-  width: 1024px;
-  height: 500px;
-  align-items: center;
-  background-image: url("../images/security_consultant.jpg");
-  background-size:contain;
-  position:relative;
-  top: 1em;
-  background-repeat: no-repeat;
-}
-
-.hero_title_box1,.hero_title_box2{
-  margin-top: 1px;
-  height: 100px;
-  overflow: hidden;
-}
-
-.hero_title{
-  font-weight: 600;
-  font-size: 72px;
-  font-family: "Oswald", sans-serif;
-}
 
 /*Project Management Prowness section */
 
