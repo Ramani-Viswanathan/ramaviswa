@@ -121,6 +121,7 @@ body{
   font-size: var(--p-font-size);
   font-weight: var(--font-page-weight);
   background: var(--page-color);
+  background-image: linear-gradient(180deg, var(--bs-body-bg), var(--bs-body-bg) 100px, var(--bs-body-bg));
 }
 h1,h2,p{
   margin: 0;
@@ -267,11 +268,17 @@ span{
   justify-content: space-between;
 }
 
-.bi{
-  color: #4D8EE5;
-  margin-top: 12px;
-  margin-bottom: 25px;
-  justify-content: space-between;
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-pills, .nav-item,.nav-link,.active,.strong{
+  color: #0A0F22;
+}
+
+.btn{
+  background-color: #0A0F22;
 }
 
 .social-links{
