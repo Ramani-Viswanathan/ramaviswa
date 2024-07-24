@@ -54,7 +54,8 @@ https://themes.getbootstrap.com/preview/?theme_id=143914
   --h-font-size: 2rem;
   --p-font-size: 1rem;
 
---page-color : #F0F4F8; /* linear-gradient(to bottom, #C7DBF7, #BFC7DE, #75708C, #C59594, #010101); */
+--page-color : rgb(227, 237, 247);   /*  #e5e5e5; linear-gradient(to bottom, #C7DBF7, #BFC7DE, #75708C, #C59594, #010101); */
+--objects-color : #F0F4F8;
 --font-color : #000000;
 --color-night-rider :#2f2f2f; /* Bird */
 --color-Tangerine-yellow : #FFCF00; /*(Bird) */
@@ -119,11 +120,16 @@ html{
 }
 body{
   margin: var(--header-height) 0 0 0;
-  font-family: var(--site-font);
+ /* font-family: var(--site-font); */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: var(--p-font-size);
   font-weight: var(--font-page-weight);
   background: var(--page-color);
   background-image: linear-gradient(180deg, var(--bs-body-bg), var(--bs-body-bg) 100px, var(--bs-body-bg));
+
+  div{
+    background-color: white;
+  }
 }
 h1,h2,p{
   margin: 0;
@@ -181,6 +187,9 @@ p{
 
 span{
   color: var(--primary-color);
+}
+svg{
+ background-color: white;
 }
 
 /* Box borders */
@@ -972,3 +981,115 @@ strong{
 }
 
 /* skill Bar : https://codepen.io/bycreator/pen/qBpwGy */
+
+
+/* Bottom Client Box */
+
+.iphone-card {
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  overflow: hidden; /* Ensure content fits inside rounded corners */
+  border: 1px solid #e0e0e0; /* Light border */
+  transition: transform 0.3s ease-in-out; /* Smooth transformation */
+  padding: 20px; /* Add padding to control size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Adjust height automatically based on content */
+}
+
+.iphone-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.iphone-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iphone-icon {
+  border-radius: 7%; /* Rounded corners to make it circular */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  overflow: hidden; /* Ensure content fits inside rounded corners */
+  border: 1px solid #e0e0e0; /* Light border */
+  transition: transform 0.3s ease-in-out; /* Smooth transformation */
+  padding: 2px; /* Add padding to control size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px; /* Fixed height */
+  width: 45px; /* Fixed width */
+  margin: auto; /* Center the icon container */
+}
+
+.iphone-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.iphone-icon i {
+  font-size: 24px; /* Adjust the size of the icon */
+  color: #0d6efd; /* Default icon color */
+}
+
+.iphone-icon a {
+  font-size: 24px; /* Adjust the size of the icon */
+  color: #0d6efd; /* Default icon color */
+}
+
+.iphone-icon svg {
+  font-size: 24px; /* Adjust the size of the icon */
+  color: #0d6efd; /* Default icon color */
+}
+
+
+.iphone-card-portfolio {
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  overflow: hidden; /* Ensure content fits inside rounded corners */
+  border: 1px solid #e0e0e0; /* Light border */
+  transition: transform 0.3s ease-in-out; /* Smooth transformation */
+  padding: 20px; /* Add padding to control size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Adjust height automatically based on content */
+}
+
+.iphone-card-portfolio:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.iphone-card-portfolio .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Ensure the content has some padding */
+}
+
+.iphone-card-title {
+  font-size: 1.25rem; /* Adjust font size */
+  font-weight: 600; /* Bold heading */
+  color: #0d6efd; /* Oracle iPhone style primary color */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.iphone-card-text {
+  font-size: 1rem; /* Adjust font size for text */
+  color: #6c757d; /* Secondary text color */
+}
+
+.container {
+  margin-top: 50px; /* Space at the top */
+}
+
+@media (max-width: 767px) {
+  .iphone-card-portfolio {
+    margin-bottom: 20px; /* Space between cards on small screens */
+  }
+}
+
