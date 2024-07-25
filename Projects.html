@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramani Viswanathan - Personal Page</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="templates/master.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .filter-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .filter-container label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .filter-container select {
+            font-size: 16px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-left: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            vertical-align: top; /* Align text to the top */
+        }
+
+        th {
+            background-color: #f0f0f0;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        td {
+            font-size: 14px;
+            color: #333;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+         @media (max-width: 768px) {
+            th, td {
+                padding: 12px;
+            }
+
+            .filter-container select {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <span class="fs-4">Ramani Viswanathan</span>
+        </a>
+
+        <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="index.html#whyme" class="nav-link">Hire Me</a></li>
+        <li class="nav-item"><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+        </ul>
+    </header>
+    </div>
+
+    <div class="container my-5">
+        <div class="filter-container">
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="All">All</option>
+                <option value="Product enhancement">Product enhancement</option>
+                <option value="Preventive">Preventive</option>
+                <option value="Refactor">Disaster Recovery & Planning</option>
+                <option value="Refactoring (“Re-architect”)">Refactoring (“Re-architect”)</option>
+                <option value="Preventive">Replace, Refurbish, Retire, Refresh</option>
+            </select>
+        </div>
+
+        <table id="projectsTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Duration</th>
+                    <th>Overview</th>
+                    <th>Drivers</th>
+                    <th>Accomplishment</th>
+                    <th>Challenges</th>
+                    <th>Skills</th>
+                    <th>Tech Stack</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Project rows will be inserted here dynamically -->
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+<script>
+    const projects = [
+        {
+            "title" : ".",
+            "category" : "Product enhancement",
+            "duration" : "~ 8 Months",
+            "overview" : ".",
+            "drivers" : ".",
+            "accomplishment" : ".",
+            "challenges" : ".",
+            "skills" : "<u>Critical Thinking:</u> write sometjing here<li><u>Problem-solving:</u>2.<li><u>Communication:</u> 3.<li><u>Team Work:</u>4.",
+            "techstack" : "Angular, Tomcat"        
+        },
+        {
+            "title" : "Rollout of Enhanced Vulnerability and Threat Management Standard and Implementation",
+            "category" : "Preventive",
+            "duration" : "~ 6 Months",
+            "overview" : "Spearheaded the comprehensive rollout of an advanced vulnerability and threat management standard to bolster the organization’s security posture and align with the broader security strategy.",
+            "drivers" : "Increasing Cyber Threats, Regulatory Compliance, Operational Efficiency",
+            "accomplishment" : "<li>Current State Assessment: Conducted a thorough evaluation of existing vulnerability and threat management practices across business units.</li><li>Standard Development: Defined and implemented an enhanced standard designed to address identified gaps and align with the organization's security objectives.</li><li>Stakeholder Engagement: Secured buy-in from key stakeholders, including business unit leaders, information security teams, compliance officers, and legal teams.</li><li>Implementation Planning: Crafted a detailed rollout plan outlining timelines, roles, responsibilities, and communication strategies.</li><li>Strategic Deployment: Rolled out the new standards, incorporating necessary tools, process improvements, and targeted training sessions.</li><li>Performance Monitoring: Tracked implementation progress through key performance indicators, including threat detection rates, resolution times, and compliance metrics.</li><li>Continuous Improvement: Enhanced the standard based on stakeholder feedback and industry best practices.</li>",
+            "challenges" : "<li>Stakeholder Buy-In: Secured commitment from diverse stakeholders through effective communication and collaboration, ensuring understanding and support for the project.</li><li>Varied Maturity Levels: Addressed the varying maturity levels of business units by customizing the implementation approach for each unit.</li><li>Strategic Communication: Utilized proactive communication and relationship-building strategies to overcome challenges and achieve senior leadership endorsement.</li>",
+            "skills" : "<li>Critical Thinking: Effectively engaged stakeholders to ensure project alignment and understanding.</li><li>Problem-Solving: Developed and executed a comprehensive rollout plan in collaboration with stakeholders.</li><li>Communication: Led the project team in the successful deployment of enhanced standards.</li><li>Teamwork: Addressed and resolved issues collaboratively throughout the project.</li>",
+            "techstack" : "<li>Vulnerability Scanner: Qualys</li><li>SIEM: Splunk</li><li>Threat Intelligence Platform: CrowdStrike</li>"        
+        },
+        {
+            "title" : "Major Incident Management (MIM) ",
+            "category" : "Refactor",
+            "duration" : "~ 8 Hours",
+            "overview" : "In the fast-paced world of IT, even a small misstep can lead to significant disruptions. When a critical P2P application degraded post a change to add additional SAN storage to the production server, it triggered a major incident that tested our team's resilience and technical prowess",
+            "drivers" : "change to add additional SAN storage to the production server,",
+            "accomplishment" : "As the Technical Program Manager, I orchestrated a swift and strategic response, navigating through the chaos to restore production, ensuring critical payments and invoices were processed, and implementing lessons learned to fortify our systems against future incidents. This challenging 8-hour ordeal not only showcased our ability to manage high-stakes situations but also highlighted our commitment to excellence and continuous improvement.",
+            "challenges" : "<u>Root Cause Analysis:</u> The incident was caused by a manual error, which made it difficult to identify the root cause.I quickly gathered information from the L2 engineers and the communication department. This information helped me to narrow down the possible causes of the incident and develop a plan to restore production.<li><u>Incident Response:</u> The incident caused a significant disruption to production, which put pressure on me to restore service as quickly as possible.I worked closely with the technical and functional teams to develop a recovery plan and by communicating regularly with key stakeholders to keep them informed of the situation.<li><u>Post-Incident Review:</u> The incident required me to work with cross-functional teams, which can be challenging to coordinate.I established a 24x7 zoom line to facilitate communication and by working closely with the communication team to ensure that everyone was kept informed of the situation..<li><u>Resilience:</u>The incident required me to make quick decisions under pressure. I stayed calm and focused, and by using my critical thinking skills to identify the best course of action.",
+            "skills" : "<u>Critical Thinking:</u> Quickly identified the root cause of the incident and developed a plan to restore production.<li><u>Problem-solving:</u>Identified and implemented creative solutions to overcome challenges, such as prioritizing and manually approving urgent pending purchase orders and invoices.<li><u>Communication:</u> Effectively communicated with key stakeholders throughout the incident, providing regular updates and keeping everyone informed of the situation.<li><u>Team Work:</u>Collaborated with cross-functional teams to quickly and effectively restore production.<li><u>Leadership:</u>Took charge of the situation and managed the incident from start to finish.",
+            "techstack" : "Incident management, Change Management, Problem Management, Risk Management"        
+        },
+        {
+            "title" : "Procure to Pay , Application Upgrade",
+            "category" : "Refactoring (“Re-architect”)",
+            "duration" : "~ 2 years",
+            "overview" : "Led the comprehensive upgrade of the Procure to Pay (P2P) system, aligning it with Citibank’s safety and soundness targets to enhance operational efficiency and security.",
+            "drivers" : "<li>End of Vendor Support: Legacy platform nearing the end of vendor support required a timely upgrade.</li><li>Application Vulnerability: Addressed critical application vulnerabilities through system enhancements.</li><li>Maintenance Improvement: Enhanced business-as-usual (BAU) maintenance with upgraded hardware.</li>",
+            "accomplishment" : "<li>Seamless Go-Live: Achieved a zero-downtime go-live for critical payments, making Citibank the largest organization to execute a parallel production approach during an upgrade.</li><li>Enhanced User Experience: Deployed the Enterprise Command Center to revolutionize the buying experience for procurement users, boosting internal procurement capacity by 50%.</li><li>Infrastructure Upgrades: Procured and integrated over 100 servers and 0.5 petabytes of storage.</li><li>Component Upgrades: Upgraded more than 35 Fusion Middleware components beyond core components.</li><li>Functionality Retrofit: Retrofitted 2,500 application functionalities to align with new system requirements.</li><li>Global Testing: Conducted internal testing across 90+ countries and external testing for 40+ countries, supporting 13 languages.</li><li>Extensive Testing: Utilized 37,500 test scripts over 9 months, identifying and addressing 450+ technical defects, with a 95% closure rate.</li><li>Job Integration: Integrated over 423 inbound and outbound jobs into the system.</li><li>Mock Builds: Completed 6 mock builds to ensure readiness before go-live.</li><li>Service Requests: Raised 292 technical service requests to Oracle, including 144 classified as critical, with 85% resolved before go-live and 10% post-go-live as part of hypercare.</li><li>Lead Testing: Performed 120 hours of lead testing with 5,000+ virtual users, achieving an average throughput of 1.3 million bytes per second.</li><li>Vulnerability Management: Raised 5 Statements of Work (SOW) for vulnerability testing and resolved all identified vulnerabilities, including 18 critical, 7 high, and 15 medium-level issues.</li>",
+            "challenges" : "<li>Global Coordination: Orchestrated the go-live across multiple time zones (US, EMEA, APAC, and LATAM) and managed the integration of EDI invoices with Accounts Payable workflows and external feeds.</li><li>Vendor Communication: Facilitated communication with external vendors and coordinated upgrades across upstream and downstream systems and network teams.</li><li>Resource Allocation: Dedicated additional resources and time to rigorous testing to ensure a successful migration.</li><li>Technical Leadership: Collaborated with database administrators (DBAs) to modernize application and database architecture.</li><li>Customer Focus: Ensured smooth migration and processed critical business transactions by deploying upgraded hardware and software.</li>",
+            "skills" : "<li>Technical Project Management: Effectively managed a complex upgrade project requiring coordination among a large, diverse team.</li><li>Leadership: Demonstrated leadership by effectively communicating with stakeholders, managing risks, and resolving issues.</li><li>Customer Centricity: Delivered a successful project meeting both business needs and user requirements.</li><li>Continuous Improvement: Leveraged project experience for personal growth and enhanced project management skills.</li>",
+            "techstack" : "<li>Oracle EBS</li><li>Oracle Database</li><li>RHEL 7</li><li>Oracle Fusion Middleware</li><li>JIRA</li><li>Confluence</li><li>MS project</li><li>Vertex</li><li>RightFax</li><li>Enterprise Command Center (ECC)</li>"        
+        },
+        {
+            "title" : ".",
+            "category" : "Preventive",
+            "duration" : "~ 8 Months",
+            "overview" : ".",
+            "drivers" : ".",
+            "accomplishment" : ".",
+            "challenges" : ".",
+            "skills" : ".",
+            "techstack" : ""        
+        }
+    ];
+
+    function populateTable() {
+        const tableBody = document.getElementById('projectsTable').getElementsByTagName('tbody')[0];
+        tableBody.innerHTML = '';  // Clear existing rows
+
+        projects.forEach(project => {
+            const row = tableBody.insertRow();
+
+            Object.values(project).forEach(value => {
+                const cell = row.insertCell();
+                cell.innerHTML = value;
+            });
+        });
+    }
+
+    function filterProjects() {
+        const filterValue = document.getElementById('categoryFilter').value;
+        const tableBody = document.getElementById('projectsTable').getElementsByTagName('tbody')[0];
+        tableBody.innerHTML = '';  // Clear existing rows
+
+        const filteredProjects = projects.filter(project => filterValue === 'All' || project.category === filterValue);
+
+        filteredProjects.forEach(project => {
+            const row = tableBody.insertRow();
+
+            Object.values(project).forEach(value => {
+                const cell = row.insertCell();
+                cell.innerHTML = value;
+            });
+        });
+    }
+
+    document.getElementById('categoryFilter').addEventListener('change', filterProjects);
+
+    // Initial population of the table
+    populateTable();
+</script>
+
+</body>
+</html>
