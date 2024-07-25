@@ -816,3 +816,11 @@ function calculateExperience(startDate,enddate) {
   };
 }
 
+
+const timelineContainer = document.querySelector('.timeline-container');
+
+timelineContainer.addEventListener('wheel', (evt) => {
+  evt.preventDefault();
+  timelineContainer.scrollLeft += evt.deltaY;
+});
+
