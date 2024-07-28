@@ -985,6 +985,13 @@ strong{
 
 /* Bottom Client Box */
 
+.iphone-Menu-title {
+  font-size: 2.35rem; /* Adjust font size */
+  font-weight: 600; /* Bold heading */
+  color: #0d6efd; /* Oracle iPhone style primary color */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
 .iphone-card {
   border-radius: 20px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Subtle shadow */
