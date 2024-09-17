@@ -1090,6 +1090,11 @@ strong{
   color: #6c757d; /* Secondary text color */
 }
 
+.iphone-card-text-projects {
+  font-size: 1rem; /* Adjust font size for text */
+  color: #000000; /* Secondary text color */
+}
+
 .container {
   margin-top: 50px; /* Space at the top */
 }
@@ -1228,3 +1233,23 @@ strong{
   transform: translateY(-50%);
 }
 
+/* Animation */
+
+/* high level component 
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale : 1;
+  }
+}
+
+.animeblock {
+  animation: appear 2s linear;
+}
+
+*/
