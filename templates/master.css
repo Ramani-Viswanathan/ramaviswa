@@ -988,7 +988,7 @@ strong{
 .iphone-Menu-title {
   font-size: 2.35rem; /* Adjust font size */
   font-weight: 600; /* Bold heading */
-  color: #0d6efd; /* Oracle iPhone style primary color */
+  color: #004aad; /* Oracle iPhone style primary color */
   margin-bottom: 10px; /* Space below the heading */
 }
 
@@ -1038,17 +1038,17 @@ strong{
 
 .iphone-icon i {
   font-size: 24px; /* Adjust the size of the icon */
-  color: #0d6efd; /* Default icon color */
+  color: #004aad; /* Default icon color */
 }
 
 .iphone-icon a {
   font-size: 24px; /* Adjust the size of the icon */
-  color: #0d6efd; /* Default icon color */
+  color: #004aad; /* Default icon color */
 }
 
 .iphone-icon svg {
   font-size: 24px; /* Adjust the size of the icon */
-  color: #0d6efd; /* Default icon color */
+  color: #004aad; /* Default icon color */
 }
 
 
