@@ -680,10 +680,15 @@ window.addEventListener("load", function () {
               const cardDiv = document.createElement("div");
               cardDiv.innerHTML = `
               <div class="carousel-item">
-                <div>
-                  <h6 class="cartitle"><strong>${item.person} &nbsp;</strong><span class="carsubtitle">&nbsp;|&nbsp;${item.title}</span></h6>
-                  <p class="cartext">${item.recomend} <br>&nbsp;<span class="carSource">Source : <i class="bi bi-linkedin" style="color:#6c63ffff;"></i></span></p>
-                </div>
+                <section class="recommendation">
+                  <div class="recommendation-image"><i class="bi bi-quote"></i></div>
+                  <div class="recommendation-content">
+                    <h4>${item.person}</h4>
+                    <p>${item.title}</p>
+                    <p class="accordintext">${item.when}</p>
+                    <p>${item.recomend}</p>
+                  </div>
+                </section>
               </div>
               `;
               contentContainer.appendChild(cardDiv);
@@ -746,6 +751,38 @@ window.addEventListener("load", function () {
           const contentHeight = contentContainer.offsetHeight;
           contentContainer.style.minHeight = `${contentHeight}px`;
 
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+});
+
+// Experience Summary
+window.addEventListener("load", function () {
+  // Get a reference to the content container
+  const contentContainer = document.getElementById("ExperienceSummary-container");
+  // Fetch data from "articles.json" using fetch API
+  fetch("templates/expsummary.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          // Loop through the JSON data and create HTML elements
+          jsonData.forEach((item) => {
+            // Calculate Total Experience
+            const TotalExpStart = new Date(`${item.TotalExp}`);
+            const currentdate = new Date();
+           const totalexpyears = calculateExperience(TotalExpStart, currentdate); 
+           // Get Total Experience
+           const totalExperience = totalexpyears.outputExperience; // Assuming total experience is 100%
+         // Create and append the card div
+            const cardDiv = document.createElement("span");
+            cardDiv.className = "white-space: nowrap";
+            cardDiv.innerHTML = `
+            <h1 class="title">${totalExperience}</h1>            
+            </span>
+              `;
+              contentContainer.appendChild(cardDiv);
+          });
+          // Calculate and set the min-height based on the content's height
+          const contentHeight = contentContainer.offsetHeight;
+          contentContainer.style.minHeight = `${contentHeight}px`;
       })
       .catch((error) => console.error("Error fetching data:", error));
 });

@@ -1,27 +1,56 @@
 [
     {
+        "person":"Julie Hardison",
+        "title":"Product Manager at PMI (Standards and Publications Dept)",
+        "recomend":"It is with great pleasure that I commend Ramani for his exceptional dedication and expertise in contributing to the development of Risk Management in Portfolios, Programs, and Projects: A Practice Guide. As a volunteer, Ramani exhibited a profound understanding of risk management principles and a deep commitment to making a meaningful impact in our profession.Throughout the project, Ramani consistently demonstrated subject matter expertise, providing invaluable insights and guidance that significantly enriched the practice guide. His dedication to excellence and passion for advancing program management practices were truly commendable, inspiring all those around him and I wholeheartedly recommend him for any future endeavors he undertakes.",
+        "when": "November 27, 2024, Julie worked with Ramani but they were at different companies"
+    },
+    {
+        "person":"Baskaran Venugopal",
+        "title":"Director of Operations",
+        "recomend":"Ramani and I worked together in Global Functional Technology (GFT) team at Citibank. He is one of the best colleague I have worked during my stint with Virtusa Consulting Services. Ramani is a seasoned, courageous Program/Project Manager, good in delivering project objectives attention to the detail, understands team working culture and ridiculously efficient. I wish him good luck.",
+        "when": "August 8, 2024, Baskaran worked with Ramani on the same team"
+    },
+    {
         "person":"Udayasree Jonnala",
         "title":"Principal Advaced Services Engineer",
-        "recomend":"Ramani leads a team exceptionally well, takes ownership of Projects and activities till go-live is successful. His way of handling two different teams is amazing. Excellent interaction with peers . It was great pleasure working with Ramani for the upgrade project and is a good asset to any organization.."
+        "recomend":"Ramani leads a team exceptionally well, takes ownership of Projects and activities till go-live is successful. His way of handling two different teams is amazing. Excellent interaction with peers . It was great pleasure working with Ramani for the upgrade project and is a good asset to any organization.",
+        "when": "January 11, 2024, Ramani was Udayasree’s client"
     },
     {
         "person":"Manisha Akolkar",
         "title":"Enterprise Architect",
-        "recomend":"Ramani is a rare gem of people leader. He has amazing quality of converting group of individual consultants to a focused team. He is very skilled for Agile projects and virtual project management. It was great pleasure working with Ramani for the integration and upgrade project."
+        "recomend":"Ramani is a rare gem of people leader. He has amazing quality of converting group of individual consultants to a focused team. He is very skilled for Agile projects and virtual project management. It was great pleasure working with Ramani for the integration and upgrade project.",
+        "when": "February 2, 2021, Manisha reported directly to Ramani"
     },
     {
         "person":"Ankur Mathur",
         "title":"Sr IT Project Manager",
-        "recomend":"Ramani is a rare gem of people leader. He has amazing quality of converting group of individual consultants to a focused team. He is very skilled for Agile projects and virtual project management. It was great pleasure working with Ramani for the integration and upgrade project."
+        "recomend":"Ramani is a rare gem of people leader. He has amazing quality of converting group of individual consultants to a focused team. He is very skilled for Agile projects and virtual project management. It was great pleasure working with Ramani for the integration and upgrade project.",
+        "when": "October 1, 2018, Ankur worked with Ramani on the same team"
     },
     {
         "person":"Charles Lang",
-        "title":"Client Partner",
-        "recomend":"Ramani was excellent at coming into a new position and truly making a difference for the entire group by taking the initiative to create efficient processes where they were inefficient or didn't exist. He was also very good at automating processes to improve efficiency and make things simpler. I would recommend Ramani for any position that requires leadership and out of the box thinking to tackle problems and find real solutions."
+        "title":"Trusted partner at PPL Corporation",
+        "recomend":"Ramani was excellent at coming into a new position and truly making a difference for the entire group by taking the initiative to create efficient processes where they were inefficient or didn't exist. He was also very good at automating processes to improve efficiency and make things simpler. I would recommend Ramani for any position that requires leadership and out of the box thinking to tackle problems and find real solutions.",
+        "when": "June 16, 2018, Charles worked with Ramani on the same team"
+    },
+    {
+        "person":"Aslam Mahamood",
+        "title":"Data Management professional",
+        "recomend":"Ramani and I worked closely for a brief period on different assignments and found him very focused and disciplined on the task. At Mcube more than anything else we all shared a very warm personal relationship and Ramani helped to create such a good environment.",
+        "when": "February 3, 2013, Aslam worked with Ramani on the same team"
     },
     {
         "person":"Vincent Hoh",
         "title":"Apple Care",
-        "recomend":"Working with Ramani had been pleasurable, with his witty sense of humour and highly positive aura sure turns the office environment into a very enjoyable place to work!"
+        "recomend":"Working with Ramani had been pleasurable, with his witty sense of humour and highly positive aura sure turns the office environment into a very enjoyable place to work!",
+        "when": "May 28, 2010, Vincent worked with Ramani but on different teams"
+    },
+    {
+        "person":"Rajesh Shenoy",
+        "title":"Management Advisory & Consulting",
+        "recomend":"Ramani is a very hardworking person. We were in the same project group at IIM B and have had very interesting exchanges of ideas and thoughts.",
+        "when": "May 10, 2009, Rajesh and Ramani studied together"
     }
 ]
