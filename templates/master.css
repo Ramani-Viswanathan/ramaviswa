@@ -225,21 +225,21 @@ svg{
 
 .h2-hero{
 
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Rambla', sans-serif;
   font-size: var(--big-font-size);
   color: #964734;
 }
 
 .h2-hero1{
 
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Rambla', sans-serif;
   font-size: var(--big-font-size);
   color: #0A0F22;
 }
 
 .h2-welcome{
 
-  font-family: "Yellowtail", cursive;
+  font-family: 'Rambla', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--mb-5);
@@ -249,7 +249,7 @@ svg{
 
 .h2-welcome1{
 
-  font-family: "Sacramento", cursive;
+  font-family: 'Rambla', sans-serif;
   font-weight: 100;
   font-style:oblique;
   font-size: var(--mb-5);
@@ -259,7 +259,7 @@ svg{
 
 .h3-hero{
 
-  font-family:  "Lora", serif;
+  font-family:  'Rambla', sans-serif;
   font-size: 20px;
   color: #4D8EE5;
 }
@@ -309,7 +309,7 @@ svg{
   border: 1px solid #4D8EE5;
   border-radius: 20px;
   outline: pointer;
-  font-family:  "Lora", serif;
+  font-family: 'Rambla', sans-serif;
 }
 
 /* How I do Section */
@@ -329,7 +329,7 @@ svg{
 }
 
 .hdoi-h4{
-  font-family:  "Lora", serif;
+  font-family:  'Rambla', sans-serif;
   font-size: 18px;
   color: #0A0F22;
 }
@@ -337,18 +337,18 @@ svg{
 /* who am I section */
 
 .h5-aboutme-bigtitle{
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Rambla', sans-serif;
   font-size: var(--big-font-size);
   color: #964734;
 }
 
 .p-aboutme-smalltitle{
-  font-family:  "Lora", serif;
+  font-family:  'Rambla', sans-serif;
   font-size: 20px;
 }
 
 .h6-aboutme-initiative{
-  font-family:  "Lora", serif;
+  font-family:  'Rambla', sans-serif;
   font-size: 18px;
   color: #4D8EE5;
 }
@@ -356,19 +356,19 @@ svg{
 /* why Hire section */
 
 .p-whyhire-abovetext{
-  font-family:  "Lora", serif;
+  font-family: 'Rambla', sans-serif;
   font-size: 18px;
   color: #0A0F22;
 }
 
 .h1-whyhireme{
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Rambla', sans-serif;
   font-size: var(--big-font-size);
   color: #964734;
 }
 
 .accordintext{
-  font-family: "Poppins", sans-serif;
+  font-family: 'Rambla', sans-serif;
   text-align: left;
   margin-top: 2px;
   font-size: 14px;
@@ -401,17 +401,17 @@ svg{
 
 .card-recommend{
   color: #4D8EE5;
-  font-family:  "Lora", serif;
+  font-family:  'Rambla', sans-serif;
 }
 
 .p-recommend{
-  font-family:  "Lora", serif;
+  font-family:  'Rambla', sans-serif;
   font-size: 18px;
   color: #0A0F22;
 }
 
 .h5-recommend{
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Rambla', sans-serif;
   font-size: 21px;
   color: #964734;
 }
@@ -420,7 +420,7 @@ svg{
 
 .p-skillheading{
   color: #4D8EE5;
-  font-family:  "Lora", serif;
+  font-family:  'Rambla', sans-serif;
 }
 
 /* Portfolio Section */
@@ -454,7 +454,7 @@ svg{
 .powness{
 
   height: 300px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Rambla', sans-serif;
   color: var(--font-color);
   font-size: 16px;
   font-weight: 400;
@@ -1279,7 +1279,7 @@ strong{
 
 .my-info h6 {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rambla', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: rgb(13, 110, 253);
@@ -1736,7 +1736,7 @@ strong{
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rambla', sans-serif;
   background: rgb(13, 110, 253);
   letter-spacing: 2px;
   color: #fff;
@@ -1878,7 +1878,7 @@ strong{
 
 .title {
   color: rgb(13, 110, 253);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rambla', sans-serif;
   margin-top: 0;
   font-weight: 500;
   font-size: 30px;
@@ -1888,7 +1888,7 @@ strong{
 }
 
 .title-small {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rambla', sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   color: rgb(4, 5, 5);
@@ -1902,7 +1902,7 @@ strong{
 --------------------------------------------------------------*/
 .navmenu-container {
   position: fixed;
-  top: 25;
+  top: 50px;
   left: 5;
   z-index: 9997;
 }
@@ -1933,7 +1933,7 @@ strong{
   margin-bottom: 8px;
   font-size: 15px;
   border-radius: 50px;
-  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  background: color-mix(in srgb, black, transparent 92%);
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -2115,7 +2115,7 @@ strong{
 
 .content-wrap .title {
   color: #101010;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rambla', sans-serif;
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 30px;
@@ -2127,7 +2127,7 @@ strong{
 
 .content-wrap .title-small {
   display: block;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rambla', sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   color: rgb(13, 110, 253);
@@ -2231,4 +2231,64 @@ strong{
   font-size: 30px; /* Adjust icon size as needed */
   color: white;
   background: rgb(13, 110, 253);
+}
+
+
+/* portfolio flex */
+
+.d-flex {
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+}
+
+.flex-item {
+  flex: 1; /* Ensures equal width for all items */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.flex-grow-1 {
+  flex-grow: 1.2; /* Makes the first item slightly wider */
+}
+
+.card {
+  width: 132;
+  height: 350px;
+  border-radius: 1px; /* Optional: Rounded corners */
+  box-shadow: none /* Optional: Shadow effect */
+}
+
+.card-img-top {
+  height: 55px;
+  width: 55px;
+  margin-top: 15px;
+  margin-left: 12px;
+}
+
+.card-body {
+  height: calc(100% - 60px); /* Adjust for image height */
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1em; /* Adjust font size as needed */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.learn-more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px; /* Position to the right */
+  text-decoration: none;
+  color: rgb(13, 110, 253);
+  font-size: 14px;
+}
+
+.learn-more i {
+  margin-left: 5px;
 }
