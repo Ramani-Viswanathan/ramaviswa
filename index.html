@@ -1,1569 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Ramani Viswanathan - Personal Page</title>
-  <link rel="icon" type="image/x-icon" href="">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="templates/master.css">
-</head>
-
-<body>
-
-  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-    <symbol id="check" viewBox="0 0 16 16" class="text-primary">
-      <title>Check</title>
-      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-    </symbol>
-    <symbol id="facebook" viewBox="0 0 16 16">
-      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-    </symbol>
-    <symbol id="instagram" viewBox="0 0 16 16">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-    </symbol>
-    <symbol id="twitter" viewBox="0 0 16 16">
-      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-    </symbol>
-    <symbol id="linkedin" viewBox="0 0 16 16">
-      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-    </svg>
-    <symbol id="bi-arrow-right" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-    </svg>
-  </svg>
-
-
-  <!--
-    New Look Top Section
-  -->
-  <div class="container my-5">
-    <header class="">
-        <div class="row">
-            <!-- Left Column: Logo spanning two rows -->
-            <div class="col-md-3 d-flex flex-column align-items-start">
-                <img src="./images/RV_LOGO.png" alt="RV Logo" class="header-logo">
-            </div>
-            <!-- Right Column: Name and Menu -->
-            <div class="col-md-9">
-                <!-- Top Right: Name -->
-                <div class="row">
-                    <div class="col-12 display-3 fw-bold lh-1 text-body-emphasis">
-                        Ramani Viswanathan
-                    </div>
-                </div>
-                <!-- Bottom Right: Menu -->
-                <div class="row mt-3">
-                    <div class="col-8 header-menu">
-                        <ul class="nav nav-pills ml-auto">
-                            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
-                            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                            <li class="nav-item"><a href="#whyme" class="nav-link">Hire Me</a></li>
-                            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                            <li class="nav-item"><a href="Projects.html" class="nav-link">Projects</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-</div>
-
-  <main> 
-    <div id="home" class="container my-5 animeblock">
-      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border">
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-3 fw-bold lh-1 text-body-emphasis">Project by project - I'm your trusted ally</h1>
-          <p class="lead display-5 text-secondary">Trust Your Data, Trust No One</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-4 mb-lg-4">
-            <ul class="nav col-md-5 justify-content-end list-unstyled d-flex">
-              <li class="ms-3">
-                <div class="iphone-icon text-center">
-                  <a class="text-body-secondary" href="https://twitter.com/ramanvis" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                    </svg>
-                  </a>
-                </div>
-              </li>
-              <li class="ms-3">
-                <div class="iphone-icon text-center">
-                  <a class="text-body-secondary" href="https://www.linkedin.com/in/ramaniviswanathan/" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg></a>
-                </div>
-              </li>
-              <li class="ms-3">
-                <div class="iphone-icon text-center">
-                  <a class="text-body-secondary" href="https://github.com/Ramani-Viswanathan/Ramani-Viswanathan" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github" width="24" height="24" viewBox="0 0 16 16" id="bi-github">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                    </svg>
-                  </a>
-                </div>
-              </li>
-              <li class="ms-3">
-                <div class="iphone-icon text-center">
-                  <a class="text-body-secondary" href="https://www.youtube.com/c/RamaniViswanathan-1" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-youtube" viewBox="0 0 16 16">
-                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-                    </svg>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
-            <img class="rounded-lg-3" src="./images/profile_picture.jpg" alt="" width="720">
-        </div>
-      </div>
-    </div>
-
-    <div class="container my-5 animeblock">
-      <div class="row align-items-center">
-        <div class="col-lg-3 d-flex justify-content-center">
-          <div class="d-flex flex-column align-items-center">
-            <h1 class="display-3 fw-bold lh-1 text-primary">22</h1>
-            <p>Yrs. Experience</p>
-          </div>
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3 d-flex justify-content-center">
-          <div class="d-flex flex-column align-items-center">
-            <h1 class="display-3 fw-bold lh-1 text-primary">04</h1>
-            <p class="">Domains</p>
-          </div>
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3 d-flex justify-content-center">
-          <div class="d-flex flex-column align-items-center">
-            <h2 class="display-3 fw-bold lh-1 text-primary">45</h2>
-            <p>Major Projects <br>(and counting)</p>
-          </div>
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3 d-flex justify-content-center">
-          <div class="d-flex flex-column align-items-center">
-            <h2 class="display-3 fw-bold lh-1 text-primary">95%</h2>
-            <p>Success rate</p>
-          </div>
-
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-    </div>
-
-    <div class="container my-5 animeblock">
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-bg-dark rounded-3">
-            <h2>Companies undertaking digital initiatives need to:</h2>
-            <ul>
-              <li style="color: aliceblue;">Comply with evolving security, privacy and governance imperatives</li>
-              <li style="color: aliceblue;"> Extract value from data to innovate within responsible parameters</li>
-              <li style="color: aliceblue;"> Operationalize data strategies through disciplined execution</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-            <h2>As your trusted ally, I provide complete oversight spanning:</h2>
-            <ul>
-              <li> Technology Risk Management</li>
-              <li>Privacy and Compliance Planning</li>
-              <li>Trusted Advisory</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="about" class="container py-5 animeblock">
-        <!--Who we are start-->
-      <section class="my-xl-9 my-5">
-        <div class="container">
-            <div class="row g-4">
-              <small class="text-primary text-uppercase ls-md fw-bold">About ME</small>
-              <div class="col-lg-6 col-12">
-                <div class="mb-2">
-                    <h2 class="h1 mt-4 mb-3">I have spent last 17 years to undestand the business complexities and how to resolve them</h2>
-                    <p class="mb-3">I have identified challenges, developed solutions, and delivered measurable results, more importantly led organization to achieve their strategic objectives through innovative and impactful program management methodologies.</p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-12">
-                <div class="mb-2">
-                  <p class="mb-0"><small class="text-uppercase ls-md fw-semibold">Key initiatives</small></p>
-                  <ul>
-                    <li><span class="text-primary">Financial Services:</span> Led a program to consolidate applications and create a single source of truth for data in a global bank’s supply chain. This initiative streamlined processes, tightened security, and migrated legacy applications to a multi-cloud strategy.</li>
-                    <li><span class="text-primary">Healthcare:</span> Optimized IT infrastructure and applications for a $172 billion healthcare leader, modernizing systems critical for clinical developments.</li>
-                    <li><span class="text-primary">Energy:</span>  Managed the implementation of mission-critical technologies for an $11 billion energy company, delivering advanced products to reduce environmental footprint.</li>
-                    <li><span class="text-primary">Retail:</span> Championed infrastructure rollouts and enforced governance models, achieving significant cost savings exceeding €1.1 million per quarter.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        </div>
-      </section>
-      <!--Who we are end-->
-
-      <!--Expert team start-->
-      <section>
-        <div class="container">
-            <div class="row border-top border-bottom">
-                <div
-                    class="col-md-4 border-end-md border-bottom border-bottom-md-0">
-                    <div class="text-center py-lg-5 p-4">
-                        <div class="mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                                height="32" fill="currentColor"
-                                class="bi bi-people-fill text-primary"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
-                            </svg>
-                        </div>
-                        <div>
-                          <h4>Program Leadership and Optimization</h4>
-                          <p class="mb-0">
-                            <ul>
-                              <li>Cross-functional team coordination</li>
-                              <li>Stakeholder management</li>
-                              <li>Process improvement and cost optimization</li>
-                            </ul>
-                          </p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-md-4 border-end-md border-bottom border-bottom-md-0">
-                    <div class="text-center py-lg-5 p-4">
-                        <div class="mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                                height="32" fill="currentColor"
-                                class="bi bi-trophy-fill text-primary"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h4>Data Governance and Cybersecurity</h4>
-                            <p class="mb-0">
-                              <ul>
-                                <li>GRC (Governance, Risk, and Compliance)</li>
-                                <li>Data privacy and protection</li>
-                                <li>Security vulnerability remediation</li>
-                              </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-center py-lg-5 p-4">
-                        <div class="mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                                height="32" fill="currentColor"
-                                class="bi bi-stars text-primary"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
-                            </svg>
-                        </div>
-                        <div>
-                          <h4>Enterprise Technology Management</h4>
-                          <p class="mb-0">
-                            <ul>
-                              <li>Large-scale IT project execution</li>
-                              <li>Multi-cloud strategy implementation</li>
-                              <li> Legacy system modernization</li>
-                            </ul>
-                          </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!--Expert team end-->
-    </div>
-
-    <div class="container my-5 animeblock">
-      <!--testmonial start-->
-      <section class="py-7">
-        <div class="container">
-            <div class="col-xxl-8 offset-xxl-2 col-md-12">
-                <div class="row align-items-center">
-                    <div class="col-md-1">
-                        <div class="mb-5 mb-lg-0"></div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="">
-                          <small
-                            class="text-uppercase ls-md fw-semibold text-primary">What professionals Say about me</small>
-                            <p class="lead text-dark">
-                                “Ramani was excellent at coming into a new position and truly making a difference for the 
-                                entire group by taking the initiative to create efficient processes where they were inefficient or didn't 
-                                exist. He was also very good at automating processes to improve efficiency and make things simpler. 
-                                I would recommend Ramani for any position that requires leadership and out of the box thinking to tackle 
-                                problems and find real solutions.”
-                            </p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                          <div style="width: 225px;">
-                              <h5 class="mb-0">Charles Lang</h5>
-                              <small>Trusted partner @ PPL Corporation</small>
-                              <!----> <a href="https://www.linkedin.com/in/ramaniviswanathan/details/recommendations/"><svg class="bi" width="12" height="12"><use xlink:href="#linkedin"/></svg></a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!--testmonial end-->  
-    </div>
-
-    <div id="whyme" class="container my-5 animeblock">
-            <!--our benefits-->
-      <section class="my-xl-9 my-4">
-        <div class="container">
+    <title>Ramani Viswanathan - Personal Page</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="templates/master.css">
+    </head>
+    <body>
+        <style>
+            body {
+    font-family: 'Rambla', sans-serif;
+    color: #888;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.75em;
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+        </style>
+          <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+            <symbol id="check" viewBox="0 0 16 16" class="text-primary">
+              <title>Check</title>
+              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </symbol>
+            <symbol id="facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </symbol>
+            <symbol id="instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </symbol>
+            <symbol id="twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </symbol>
+            <symbol id="linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+            </svg>
+            <symbol id="bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+          </svg>
+          <!-- Main Page-->
+           <div class="container-fluid">
             <div class="row">
-                <div class="">
-                    <div class="text-center mb-xl-7 mb-5">
-                        <small
-                            class="text-uppercase ls-md fw-semibold text-primary">Why Hire Me</small>
-                        <h2 class="mt-1 mb-0">My deep technical expertise along with collaborative leadership and commitment to continuous improvement make me a trusted advisor who can effectively partner with stakeholders at all levels to deliver high-impact initiatives that drive innovation, support wider organizational objectives, and lead to positive business outcomes.</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-6">
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                                height="32" fill="currentColor"
-                                class="bi bi-stars text-primary"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
-                          </svg>                            
-                        </div>
-                        <div class="ms-4">
-                          <p class="ms-4 mb-0">
-                            <span class="text-dark fw-bold">Proven leadership navigating complexity</span>
-                            I have successfully led some of the most complex IT initiatives from planning to post-implementation reviews. I am comfortable making difficult decisions despite ambiguity
-                        </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div
-                            class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                            height="32" fill="currentColor"
-                            class="bi bi-stars text-primary"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
-                            </svg> 
-                        </div>
-                        <div class="ms-4">
-                          <p class="ms-4 mb-0">
-                            <span class="text-dark fw-bold">Technical depth to drive innovation</span>
-                            With deep expertise across cloud, security, data and emerging tech, I can guide strategic modernization and digital transformation initiatives that create business value.
-                        </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                          height="32" fill="currentColor"
-                          class="bi bi-stars text-primary"
-                          viewBox="0 0 16 16">
-                          <path
-                              d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
-                          </svg> 
-                        </div>
-                        <div class="ms-4">
-                          <p class="ms-4 mb-0">
-                            <span class="text-dark fw-bold">Trusted advisor connecting technology and business</span>
-                            Having run $MULTI-MILLION programs, I can translate technology capabilities to drive towards clear business outcomes that support wider organizational goals.
-                        </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                          height="32" fill="currentColor"
-                          class="bi bi-stars text-primary"
-                          viewBox="0 0 16 16">
-                          <path
-                              d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
-                          </svg> 
-                        </div>
-                        <div class="ms-4">
-                          <p class="ms-4 mb-0">
-                            <span class="text-dark fw-bold">Collaborative program governance</span>
-                            I take an inclusive approach in bringing diverse stakeholders together to collectively own program challenges. My programs have some of the highest user satisfaction scores.
-                        </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                          height="32" fill="currentColor"
-                          class="bi bi-stars text-primary"
-                          viewBox="0 0 16 16">
-                          <path
-                              d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
-                          </svg> 
-                        </div>
-                        <div class="ms-4">
-                          <p class="ms-4 mb-0">
-                            <span class="text-dark fw-bold">Committed to continuous improvement</span>
-                            From my Stanford coursework to staying on top of the latest methodologies, I actively strengthen my technical, leadership and strategic skills. I also mentor other PMs to raise capabilities..
-                        </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0"></div>
-                        <div class="ms-4"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!--our benefits-->
-    </div>
-
-    <div class="container my-5 animeblock">
-      <section class="pt-xl-6 pb-xl-10 py-lg-7 py-5">
-        <!--Logo section start-->
-        <div class="container">
-          <div class="row mb-6">
-          <div class="col-lg-5">
-          <div>
-          <h2 class="mb-0">Professional Degrees & Certifications</h2>
-          </div>
-          </div>
-          <div class="offset-xl-1 col-xl-6">
-          <div>
-          <p class="mb-0">
-            <span class="text-dark fw-bold">Continuous Learning: The Cornerstone of My Professional Journey</span>
-            In today's rapidly evolving technological landscape, the pursuit of knowledge is not just a passion—it's a necessity. My academic and professional journey reflects a commitment to ongoing education and skill development across multiple disciplines.
-          </p>
-          </div>
-          </div>
-          </div>
-          <div class="row g-4">
-          <div class="col-lg-3 col-md-6">
-          <div class="card bg-opacity-10 p-4 border-0 h-100 card-lift">
-          <div class="mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-trophy text-primary" viewBox="0 0 16 16">
-              <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935M3.504 1q.01.775.056 1.469c.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.5.5 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667q.045-.694.056-1.469z"/>
-            </svg>
-          </div>
-          <div>
-          <h3>Primary</h3>
-          <p class="mb-0">Bachelors and Masters in Computer Science</p>
-          </div>
-          </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-          <div class="card bg-opacity-10 p-4 border-0 h-100 card-lift">
-          <div class="mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bank text-primary" viewBox="0 0 16 16">
-              <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
-            </svg>
-          </div>
-          <div>
-          <h3>Management</h3>
-          <p class="mb-0">
-            <ul>
-              <li>M.B.A - Project Mgmt - Alagappa</li>
-              <li>Coursework - Project Mgmt - Stanford</li>
-              <li>Exec M.B.A  - General Mgmt - IIM-Bangalore</li>
-            </ul>
-          </p>
-          </div>
-          </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-          <div class="card bg-opacity-10 p-4 border-0 h-100 card-lift">
-          <div class="mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-award text-primary" viewBox="0 0 16 16">
-              <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
-              <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
-            </svg>
-          </div>
-          <div>
-          <h3>Professional</h3>
-          <p class="mb-0">PMP, PMI-ACP from PMI.</p>
-          <p class="mb-0">Generative AI Professional from OCI.</p>
-          </div>
-          </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-          <div class="card bg-opacity-10 p-4 border-0 h-100 card-lift">
-          <div class="mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shield text-primary" viewBox="0 0 16 16">
-              <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
-            </svg>
-          </div>
-          <div>
-          <h3>Foundational</h3>
-          <p class="mb-0">
-            <ul>
-              <li>Cloud - AWS & OCI</li>
-              <li>Cybersecurity - ISC2</li>
-              <li>Generative AI - OCI</li>
-            </ul>
-          </p>
-          </div>
-          </div>
-          </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="container my-5 animeblock">
-      <div class="">
-        <h2 class="pb-2">Core Skills</h2>
-        <p>In an ever-evolving technological landscape, it’s the blend of deep technical expertise, strategic leadership, and a continuous 
-          learning mindset that sets apart the most effective professionals. As someone with a rich and diverse experience in the IT industry, I have cultivated these 
-          qualities and more. Now, let me share with you the specific skills and competencies that I bring to the table.</p>
-        <div class="container-fluid py-5">
-          <div class="table-responsive">
-            <table class="table text-center">
-              <thead>
-                <tr>
-                  <th style="width: 34%;"></th>
-                  <th style="width: 22%;">Intermediate</th>
-                  <th style="width: 22%;">Advanced</th>
-                  <th style="width: 22%;">Expert</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row" class="text-start">Project Management</th>
-                  <td></td>
-                  <td></td>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Program & Portfolio Management</th>
-                  <td></td>
-                  <td></td>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                </tr>
-              </tbody>
-              <tr>
-                <th scope="row" class="text-start">Technical Account Management</th>
-                <td></td>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Business Strategy & Management</th>
-                <td></td>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-              </tr>
-              <tbody>
-                <tr>
-                  <th scope="row" class="text-start">IT Infrastructure management</th>
-                  <td></td>
-                  <td></td>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Disaster Recovery Management</th>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Enterprise Application Management</th>
-                  <td></td>
-                  <td></td>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Agile Methodologies</th>
-                  <td></td>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Data Management & Analytics</th>
-                  <td></td>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Data Privacy</th>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Governance, Risk, and Compliance (GRC)</th>
-                  <td></td>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Cloud Technologies (AWS, OCI)</th>
-                  <td></td>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Generative AI</th>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Cybersecurity & Risk Management</th>
-                  <td></td>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Vulnerability Management</th>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Technical Programming</th>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">CRM - HubSpot</th>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Low Code No Code</th>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--courseware-->
-    <div class="container my-5 animeblock">
-      <h2 class="pb-2">Courseware</h2>
-      <p>In the rapidly changing world of technology, continuous learning is essential. I am dedicated to expanding my knowledge and skills on a daily basis, 
-        focusing on core areas of technology to stay ahead of the curve.I am committed to lifelong learning and continuously seek out new opportunities to enhance my 
-        expertise and stay updated with the latest advancements in technology.</p>
-      <div class="container-fluid py-5">
-        <div class="table-responsive">
-          <table class="table text-center">
-            <thead>
-              <tr>
-                <th style="width: 34%;"></th>
-                <th style="width: 22%;">Not Started</th>
-                <th style="width: 22%;">In progress</th>
-                <th style="width: 22%;">Completed</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="text-start">AWS Certified Data Engineer – Associate (udemy)</th>
-                <td></td>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Master Apache Spark Program - Pyspark (udemy)</th>
-                <td></td>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Spark & python for BigData with Spark (udemy)</th>
-                <td></td>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">100 days of code - The complete python Pro Boot Camp (udemy)</th>
-                <td></td>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Langchain: PDF Chat App (GUI) (You Tube)</th>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">LLMOps: Everything You Need to Know to Manage LLMs (You Tube)</th>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Become an OCI Generative AI Professional (OCI)</th>
-                <td></td>
-                <td></td>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Tableau 2024 A-Z (Udemy)</th>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">HubSpot CMS for Developers</th>
-                <td></td>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Microsoft - Power Automate</th>
-                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- Timeline-->
-    <div class="container py-5 tcontainer animeblock">
-      <h2 class="pb-2">Key Timelines</h2>
-      <p>In the dynamic world of IT, a professional's journey is marked not just by the roles they undertake but by the evolution of their skills and the depth of their impact. My career, spanning over two decades, reflects a trajectory of continuous growth, adaptability, and strategic leadership. Let me take you through this journey, showcasing the milestones and the roles that have shaped my expertise and approach.</p>
-        <div>&nbsp;</div>
-      <div class="timeline-container">
-        <div class="timeline">
-          <!--<div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Developer</h3>
-              <p>Jul 1996 to Aug 2000.</p>
-              <p>4 years and 1 Month</p>
-            </div>
-          </div>-->
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Software Engineer</h3>
-              <p>Sep 2000 to Aug 2006</p>
-              <p>5 years and 11 months</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Project Manager</h3>
-              <p>Aug 2006 to Dec 2010</p>
-              <p>4 years and 4 months</p>
-            </div>
-          </div>
-          <!-- Add more timeline items as needed --> 
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>PMO Lead</h3>
-              <p>Dec 2010 - Aug 2012</p>
-              <p>1 Year 9 Months</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Program Manager</h3>
-              <p>Aug 2012 to Dec 2015</p>
-              <p>2 Years 4 Months</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Technical Program Manager</h3>
-              <p>Jan 2016 to Apr 2024</p>
-              <p>8 years and 4 months</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Associate Director - Program Management</h3>
-              <p>Apr 2024 - till date</p>
-              <p>3 Months</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="portfolio" class="container my-5 animeblock">
-      <h2 class="pb-2">Portfolio</h2>
-      <p>My portfolio reflects a dynamic blend of professional expertise, continuous learning, and community involvement. It showcases my commitment to excellence in project management, cybersecurity, and technology, while also highlighting my dedication to giving back to the professional community and society at large.</p>
-      <div class="row" data-masonry='{"percentPosition": true }'>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="">Volunteering</h3>
-            <div class="card-body">
-              <h5 class="iphone-card-title">Review PMP training content</h5>
-              <p class="iphone-card-text">
-                Content Reviewer - I had an opportunity to review the PMP Exam content guide, Q&A along with other Volunteers.
-                Shared our insights created new questions and answers that will be part of the PMI Training curriculum. <br>Duration : Mar 2022 - Nov 2022 · 9 mos
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <div class="card-body">
-              <h5 class="iphone-card-title">Code Pen</h5>
-              <p class="iphone-card-text">Personal HTML, CSS, JS Projects</p>
-              <p class="card-text">
-                <a href="https://codepen.io/collection/qOQKvZ" class="icon-link icon-link-hover card-link">
-                  Click here
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Blog</h3>
-            <div class="card-body">
-              <h5 class="iphone-card-title">Zero Trust Architecture in the Cloud.</h5>
-              <h5 class="card-title">I had an opportunity to learn a short course as part of membership professional development courses in ISC2 about Zero Trust Architecture in the Cloud.</h5>
-              <p class="card-text">What is Zero Trust : (What it defines)<br><br>
-                Approach : An integrated defense-in-depth approach
-                Emphasis verifying request for access, encompasses wide range of factors
-                segmentation and least privilege access</p>
-              <p class="card-text">
-                <a href="https://www.linkedin.com/pulse/what-i-learn-understand-ramani-viswanathan?trk=article-ssr-frontend-pulse_more-articles_related-content-card" class="icon-link icon-link-hover card-link">
-                  Read here
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3>Volunteering</h3>
-            <div class="card-body">
-              <h5 class="iphone-card-title">Risk Management :  A Practice Guide Revision </h5>
-              <p class="card-text">
-                I had opportunity to be part of advisory board , reviewed PMI-Risk Management Standard and provided constructive feedback. <br>Duration : May 2023 - Nov 2023 · 7 mos
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Blog</h3>
-            <div class="card-body">
-              <h5 class="iphone-card-title">PMI Talent Triangle</h5>
-              <p class="card-text">Project Management : Navigating Project Success:</p>
-              <p class="card-text">Part 1: Unleashing Success with the Ways of Working<br><br>
-                Introduction:
-                Welcome to the First part of our series on leveraging the PMI Talent Triangle. In this installment, I will explore the crucial aspect of "Ways of Working," formerly known as "Technical Project Management." The Talent Triangle recognizes that there are multiple approaches to achieving success in project management, ranging from predictive methodologies to agile practices and design thinking. By mastering diverse ways of working, professionals can apply the right techniques at the right time, ultimately delivering winning results. 
-                With over a decade of hands-on project management experience spanning diverse industries, I bring a wealth of knowledge to this article. Drawing from my expertise, I will illuminate the top areas that aspiring project managers should understand and familiarize themselves with before embarking on their first professional assignment.</p>
-              <p class="card-text">
-                <a href="https://www.linkedin.com/pulse/leveraging-pmi-talent-triangle-benefits-project-ramani-viswanathan/?trackingId=hluouCXKSiGIm1pS1LwudA%3D%3D" class="icon-link icon-link-hover card-link">
-                  Read here
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3>Volunteering</h3>
-            <div class="card-body">
-              <h5 class="iphone-card-title">Empowering Cybersecurity Excellence</h5>
-              <p class="card-text">
-                My Journey Volunteering with ISC2 in Developing the Certified in Cybersecurity Exam. <br>Duration : June 2023. 4 days<br>
-                <a href="https://www.linkedin.com/posts/ramaniviswanathan_isc2-cybersecurity-ccexam-activity-7080350280675966976-GgcP/?utm_source=share&utm_medium=member_desktop" class="icon-link icon-link-hover card-link">
-                  Read here
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Personal Project</h3>
-            <div class="card-body">
-              <h5 class="iphone-card-title">Project LiftOff</h5>
-              <p class="card-text">Project: LiftOff is a comprehensive training program designed to prepare aspiring project managers for success in the field of technical project management. The program provides participants with the necessary knowledge, tools, and practical experience to effectively navigate the complexities of managing technical projects. By equipping participants with a well-rounded skill set and hands-on experience, Project: LiftOff instills confidence and ensures that graduates are fully prepared to excel in their roles as project managers in the tech industry.</p>
-              <p class="card-text">
-                <a href="https://github.com/Ramani-Viswanathan/LiftOff" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3>For a Social Cause</h3>
-            <div class="card-body">
-              <h5 class="iphone-card-title">North Texas Food Bank : Pack & Box </h5>
-              <p class="card-text">
-                 I lend a hand at NTFB Distribution Center in packing produces for the needy, that will be distributed across north Texas. It was an 2 hour full filled Volunteering activity along with my son and 50+ Volunteers. <br>stats: we managed to pack [32 pallets, 1,536 Bags, 23,808 Pounds] of Produce whcih will serve 19,840 families in North Texas.<br>
-                <a href="https://ntfb.org/get-involved/?utm_campaign=RKD_FY25_Evergreen&gad_source=1&gclid=CjwKCAjwqf20BhBwEiwAt7dtdUtXFY_gYRHFC55IiYdDC45HTdVpd79yG-uhOgfvzm8XubCmu1Ms_xoC5ScQAvD_BwE" class="icon-link icon-link-hover card-link">
-                  You can do it
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Projects</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Oracle ERP Upgrade</h5>
-              <p class="card-text">The Procure to Pay system in alignment with safety and soundness targets for Citibank</p>
-              <p class="card-text">Category:&nbsp;Refactoring (“Re-architect”)</p>
-              <p class="card-text">Duration:&nbsp;2 Years.</p>
-              <p class="card-text">
-                <a href="Projects.html" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-       
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Projects</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Backup and Recovery Transformation</h5>
-              <p class="card-text">Category:&nbsp;Refactor / Rebuild / Refresh</p>
-              <p class="card-text">Duration:&nbsp;6-8 Months.</p>
-              <p class="iphone-card-text">Overview:Managed a critical program to transform the backup and recovery services, addressing capacity issues, standardizing retention policies, and resolving tape management challenges to mitigate backup failures.</p>
-              <p class="card-text">
-                <a href="Projects.html" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Projects</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Major Incident Management (MIM)</h5>
-              <p class="card-text">In the fast-paced world of IT, even a small misstep can lead to significant disruptions. When a critical P2P application degraded post a change...</p>
-              <p class="card-text">Category:&nbsp;Refactor</p>
-              <p class="card-text">Duration:&nbsp;~ 8 Hours.</p>
-              <p class="card-text">
-                <a href="Projects.html" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Projects</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Rollout of Enhanced Vulnerability and Threat Implementation</h5>
-              <p class="card-text">Spearheaded the comprehensive rollout of an advanced vulnerability and threat management standard.....</p>
-              <p class="card-text">Category:&nbsp;Preventive</p>
-              <p class="card-text">Duration:&nbsp;~ 6 Months.</p>
-              <p class="card-text">
-                <a href="Projects.html" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Engagement</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Project Management Office - Lead</h5>
-              <p class="card-text">Successful in establishing Governance Model (detailing PMO roles &amp; responsibilities),....</p>
-              <p class="card-text">Category:&nbsp;Refactor</p>
-              <p class="card-text">Duration:&nbsp;~ 1 Year and 9 Months.</p>
-              <p class="card-text">
-                <a href="Projects.html" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Projects</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Data Center Transition</h5>
-              <p class="card-text">Build of 3 World-class Data-center in the US, Sweden, and Singapore, migration of IT infrastructure service components,....</p>
-              <p class="card-text">Category:&nbsp;Rebuild</p>
-              <p class="card-text">Duration:&nbsp;~ 1 Year and 5 Months.</p>
-              <p class="card-text">
-                <a href="#" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Projects</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Service Transition</h5>
-              <p class="card-text">Award winning Transition of IT Hosting Services with well-defined service acceptance....</p>
-              <p class="card-text">Category:&nbsp;Replace</p>
-              <p class="card-text">Duration:&nbsp;~ 8 Months</p>
-              <p class="card-text">
-                <a href="#" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Projects</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Conference Room Technology Integration</h5>
-              <p class="card-text">Construction of a new facility that will require comprehensive development of essential IT infrastructure. ....</p>
-              <p class="card-text">Category:&nbsp;Rebuild</p>
-              <p class="card-text">Duration:&nbsp;~ 1 Year 2 Months</p>
-              <p class="card-text">
-                <a href="#" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Projects</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Enterprise Technology Refresh and Management Program</h5>
-              <p class="card-text">This comprehensive initiative involves multiple phases to ensure up-to-date IT infrastructure. ....</p>
-              <p class="card-text">Category:&nbsp;Refactor, Refresh</p>
-              <p class="card-text">Duration:&nbsp;~ 2 Year 4 Months</p>
-              <p class="card-text">
-                <a href="#" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Projects</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">O365 Collaboration Modernization</h5>
-              <p class="card-text">This initiative is focused on updating and enhancing the end-user environment through the integration of Office 365 products. ....</p>
-              <p class="card-text">Category:&nbsp;Refresh</p>
-              <p class="card-text">Duration:&nbsp;~ 8 Months</p>
-              <p class="card-text">
-                <a href="#" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Projects</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Small Onboarding Projects</h5>
-              <p class="card-text">This program encompasses a range of critical onboarding and modernization activities, including....</p>
-              <p class="card-text">Category:&nbsp;Rebuild</p>
-              <p class="card-text">Duration:&nbsp;~ 3 Years</p>
-              <p class="card-text">
-                <a href="#" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Engagement</h3>
-            <div class="card-body">
-              <p class="card-text"><i>(showcasing only Critical Projects handled during my tenure)</i></p>
-              <h5 class="iphone-card-title">Technical Account Management</h5>
-              <p class="card-text">In addition to his core responsibilities, Ramani seamlessly integrates the role of a Technical Account Manager (TAM) to enhance client satisfaction and ensure the continuous improvement of IT infrastructure and processes....</p>
-              <p class="card-text">Category:&nbsp;Engage</p>
-              <p class="card-text">Duration:&nbsp;~ 12 Years</p>
-              <p class="card-text">
-                <a href="Projects.html" class="icon-link icon-link-hover card-link">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="iphone-card-portfolio text-center">
-            <h3 class="text-center">Professional Engagement</h3>
-            <div class="card-body">
-              <p class="card-text"><i></i></p>
-              <h5 class="iphone-card-title">Program Director at Azuris</h5>
-              <p class="card-text">Currently helping Azuris, a startup company established in 2014, in streamlining processes, procedures, technical integration, and workflow 
-                as a Program Director. <br>Azuris delivers Enterprise-level IT services to companies of all sizes, focusing on alleviating their IT challenges with tailored solutions.</p>
-              <p class="card-text">Category:&nbsp;Consultancy</p>
-              <p class="card-text">Duration:&nbsp;~ On going</p>
-              <p class="card-text">
-                <a href="https://www.azuris.com/" class="icon-link icon-link-hover card-link" target="_blank">
-                  Know More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right text-primary" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-
-
-      </div>
-    </div>
-
-    <div class="container my-5 animeblock">
-      <!--Modern tech start-->
-        <section class="py-xl-9 py-5">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-12 col-12">
-                      <div class="text-center mb-xl-7 mb-5">
-                          <small class="text-uppercase ls-md fw-semibold text-primary">Clients</small>
-                          <h2 class="my-3">Professional Services and Client Engagements</h2>
-                          <p class="mb-0 text-body">Throughout my career, I've had the privilege of working with a diverse range of clients across various industries. My expertise in IT project management, cloud data management, security, and GRC has allowed me to deliver transformative solutions that drive business value. Below is the list of key clients, leveraging my skills in program management, technology implementation, and process optimization.</p>
-                      </div>
+              <div class="col-lg-1">
+                <!--navigation-->
+                <div class="container-fluid">
+                  <div class="navmenu-container">
+                    <img src="./images/profile_picture.jpg" alt="Menu Image" class="navmenu-image">
+                    <div><span>&nbsp;</span></div>
+                    <nav id="navmenu" class="navmenu">
+                      <ul>
+                        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+                        <li><a href="resume.html"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+                        <li><a href="portfolio.html"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+                        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+                        <li>&copy; 2024. All Rights Reserved.</li>
+                      </ul>
+                    </nav>
                   </div>
-              </div>
-              <div class="row g-3">
-                  <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
-                    <div class="row row-cols-lg-5 row-cols-md-4 row-cols-2 justify-content-center g-3">
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">IPCOM</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Xerox</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Repeat for each card -->
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Office Depot</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Astra Zeneca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Novartis</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">IBM</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Citi</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Entergy</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Mphasis</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Ahold</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Nova Scotia</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">HCL Technology</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Virtusa</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Western Digital</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">GE</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">MCube</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="iphone-card text-center">
-                          <div class="card-body justify-content-between">
-                            <div class="">
-                              <p class="text-uppercase">Azuris</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-              </div>
-          </div>
-        </section>
-      <!--Modern tech end-->
 
-    </div>
-
-    <div id="contact" class="container my-5 animeblock">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-        <div>
-          <footer class="mt-lg-7 pt-7">
-            <div class="container">
-                <!-- Footer 4 column -->
-                <div class="row mb-7">
-                    <div class="col-md-7">
-                        <div>
-                            <div class="mb-4">
-                                <h1>Why Wait !!</h1>
+                </div>
+              </div>
+              <div class="col-lg-11">
+                <!--introduction-->
+                <div id="about" class="container">
+                  <!--Who we are start-->
+                  <section class="my-xl-9 my-5">
+                    <div class="container">
+                        <div class="row g-4">
+                            <h3 class="title-small">Strategic, Relationship, and Operational Executive</h3>
+                            <h2 class="title">Ramani Viswanathan</h2>
+                          <div class="col-lg-6 col-12">
+                            <div class="mb-2">
+                                <h2 class="h1 mt-4 mb-3">I have spent last 17 years to undestand the business complexities and how to resolve them</h2>
+                                <p class="mb-3">I have identified challenges, developed solutions, and delivered measurable results, more importantly led organization to achieve their strategic objectives through innovative and impactful program management methodologies.</p>
                             </div>
-                            <p class="mb-5">My diverse experience and proven track record in delivering complex, high-impact technology initiatives make me a valuable asset for organizations seeking transformative solutions. With expertise spanning IT project management, cloud data management, security, and GRC, I bring a unique blend of technical knowledge and strategic insight to every engagement. Don't miss the opportunity to leverage my skills in driving innovation, optimizing processes, and achieving tangible business results. Let's connect and explore how I can contribute to your organization's success. Reach out today to discuss how we can work together to tackle your most pressing technology challenges and unlock new opportunities for growth.</p>
+                          </div>
+                          <div class="col-lg-6 col-12">
+                            <div class="mb-2">
+                              <p class="mb-0"><small class="text-uppercase ls-md fw-semibold">Key initiatives</small></p>
+                              <ul>
+                                <li><span class="text-primary">Financial Services:</span> Led a program to consolidate applications and create a single source of truth for data in a global bank’s supply chain. This initiative streamlined processes, tightened security, and migrated legacy applications to a multi-cloud strategy.</li>
+                                <li><span class="text-primary">Healthcare:</span> Optimized IT infrastructure and applications for a $172 billion healthcare leader, modernizing systems critical for clinical developments.</li>
+                                <li><span class="text-primary">Energy:</span>  Managed the implementation of mission-critical technologies for an $11 billion energy company, delivering advanced products to reduce environmental footprint.</li>
+                                <li><span class="text-primary">Retail:</span> Championed infrastructure rollouts and enforced governance models, achieving significant cost savings exceeding €1.1 million per quarter.</li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
-                        <form class="needs-validation" novalidate>
-                            <div>
-                                <h4 class="mb-1">Contact me at:</h4>
-                                <p>Email: ramaniv74@gmail.com | Phone: 682-802-2334</p>
-                                <div class="row g-2">
-                                    <div class="col-md-12 col-6">
-                                        <div>
-                                          <br>
-                                          <small class="text-uppercase ls-md fw-semibold text-primary">Transform your technology landscape – let's start the conversation now!</small>
-                                        </div>
+                  </section>
+                  <!--Who we are end-->
+                    <!--Expert team start-->
+                  <section>
+                    <div class="container">
+                        <div class="row border-top border-bottom">
+                            <div
+                                class="col-md-4 border-end-md border-bottom border-bottom-md-0">
+                                <div class="text-center py-lg-5 p-4">
+                                    <div class="mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                            height="32" fill="currentColor"
+                                            class="bi bi-people-fill text-primary"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                                        </svg>
                                     </div>
                                     <div>
-                                      <ul class="nav col-md-6 justify-content-end list-unstyled d-flex">
-                                        <li class="ms-3">
-                                          <div class="iphone-icon text-center">
-                                            <a class="text-body-secondary" href="https://twitter.com/ramanvis"  target="_blank">
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                                              </svg>
-                                            </a>
-                                          </div>
-                                        </li>
-                                        <li class="ms-3">
-                                          <div class="iphone-icon text-center">
-                                            <a class="text-body-secondary" href="https://www.linkedin.com/in/ramaniviswanathan/"  target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg></a>
-                                          </div>                          
-                                        </li>
-                                        <li class="ms-3">
-                                          <div class="iphone-icon text-center">
-                                            <a class="text-body-secondary" href="https://github.com/Ramani-Viswanathan/Ramani-Viswanathan" target="_self">
-                                              <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github" width="24" height="24" viewBox="0 0 16 16" id="bi-github">
-                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                              </svg>
-                                            </a>
-                                          </div>
-                                        </li>
-                                      </ul>
+                                      <h4>Program Leadership and Optimization</h4>
+                                      <p class="mb-0">
+                                        <ul>
+                                          <li>Cross-functional team coordination</li>
+                                          <li>Stakeholder management</li>
+                                          <li>Process improvement and cost optimization</li>
+                                        </ul>
+                                      </p>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                            <div
+                                class="col-md-4 border-end-md border-bottom border-bottom-md-0">
+                                <div class="text-center py-lg-5 p-4">
+                                    <div class="mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                            height="32" fill="currentColor"
+                                            class="bi bi-trophy-fill text-primary"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Data Governance and Cybersecurity</h4>
+                                        <p class="mb-0">
+                                          <ul>
+                                            <li>GRC (Governance, Risk, and Compliance)</li>
+                                            <li>Data privacy and protection</li>
+                                            <li>Security vulnerability remediation</li>
+                                          </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center py-lg-5 p-4">
+                                    <div class="mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                            height="32" fill="currentColor"
+                                            class="bi bi-stars text-primary"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                      <h4>Enterprise Technology Management</h4>
+                                      <p class="mb-0">
+                                        <ul>
+                                          <li>Large-scale IT project execution</li>
+                                          <li>Multi-cloud strategy implementation</li>
+                                          <li> Legacy system modernization</li>
+                                        </ul>
+                                      </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="container mt-7 mb-4">
-              <div class="row align-items-md-stretch">
-                <div class="col-md-6">
-                    <div class="small mb-3 mb-lg-0">
-                        Copyright © 2019 - 2023
-        
-                        <span class="text-primary"><a href="#">Ramani Viswanathan</a></span>
-                        | Designed using
-                        <span class="text-primary"><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></span>
+                  </section>
+                  <!--Expert team end-->
+                  <!-- why Hire me Start-->
+                  <!--our benefits-->
+                  <section class="my-xl-9 my-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="">
+                                <div class="text-center mb-xl-7 mb-5">
+                                    <small
+                                        class="text-uppercase ls-md fw-semibold text-primary">Why Hire Me</small>
+                                    <h2 class="mt-1 mb-0">My deep technical expertise along with collaborative leadership and commitment to continuous improvement make me a trusted advisor who can effectively partner with stakeholders at all levels to deliver high-impact initiatives that drive innovation, support wider organizational objectives, and lead to positive business outcomes.</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-6">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                            height="32" fill="currentColor"
+                                            class="bi bi-stars text-primary"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                                      </svg>                            
+                                    </div>
+                                    <div class="ms-4">
+                                      <p class="ms-4 mb-0">
+                                        <span class="text-dark fw-bold">Proven leadership navigating complexity</span>
+                                        I have successfully led some of the most complex IT initiatives from planning to post-implementation reviews. I am comfortable making difficult decisions despite ambiguity
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div
+                                        class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                        height="32" fill="currentColor"
+                                        class="bi bi-stars text-primary"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                                        </svg> 
+                                    </div>
+                                    <div class="ms-4">
+                                      <p class="ms-4 mb-0">
+                                        <span class="text-dark fw-bold">Technical depth to drive innovation</span>
+                                        With deep expertise across cloud, security, data and emerging tech, I can guide strategic modernization and digital transformation initiatives that create business value.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                      height="32" fill="currentColor"
+                                      class="bi bi-stars text-primary"
+                                      viewBox="0 0 16 16">
+                                      <path
+                                          d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                                      </svg> 
+                                    </div>
+                                    <div class="ms-4">
+                                      <p class="ms-4 mb-0">
+                                        <span class="text-dark fw-bold">Trusted advisor connecting technology and business</span>
+                                        Having run $MULTI-MILLION programs, I can translate technology capabilities to drive towards clear business outcomes that support wider organizational goals.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                      height="32" fill="currentColor"
+                                      class="bi bi-stars text-primary"
+                                      viewBox="0 0 16 16">
+                                      <path
+                                          d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                                      </svg> 
+                                    </div>
+                                    <div class="ms-4">
+                                      <p class="ms-4 mb-0">
+                                        <span class="text-dark fw-bold">Collaborative program governance</span>
+                                        I take an inclusive approach in bringing diverse stakeholders together to collectively own program challenges. My programs have some of the highest user satisfaction scores.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                      height="32" fill="currentColor"
+                                      class="bi bi-stars text-primary"
+                                      viewBox="0 0 16 16">
+                                      <path
+                                          d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                                      </svg> 
+                                    </div>
+                                    <div class="ms-4">
+                                      <p class="ms-4 mb-0">
+                                        <span class="text-dark fw-bold">Committed to continuous improvement</span>
+                                        From my Stanford coursework to staying on top of the latest methodologies, I actively strengthen my technical, leadership and strategic skills. I also mentor other PMs to raise capabilities..
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0"></div>
+                                    <div class="ms-4"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                  </section>
+                  <!--our benefits-->
+                  <!-- why hire me end-->
                 </div>
-                <div class="col-md-6"></div>
+                <!--end Introduction-->
               </div>
             </div>
-            </footer>
-                                                            
-        </div>
-      </footer>
-    </div>
+           </div>
+        <script src="templates/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+        <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/0f616b50b9.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                // Smooth scrolling for anchor links
+                $('a[href^="#"]').on('click', function (event) {
+                    event.preventDefault();
 
-  <div class="">
-    <a href="#" class="iphone-top-arrow" id="goTopArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
-      </svg>
-    </a>
-  </div>
-
-  <script src="templates/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-  <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/0f616b50b9.js" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            // Smooth scrolling for anchor links
-            $('a[href^="#"]').on('click', function (event) {
-                event.preventDefault();
-
-                $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top
-                }, 1000); // Adjust the animation speed as needed
+                    $('html, body').animate({
+                        scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 1000); // Adjust the animation speed as needed
+                });
             });
+
+            // navbar function...
+
+            var nav = document.querySelector('nav');
+
+            window.addEventListener('scroll', function() {
+            if(window.pageYOffset < 100){
+                nav.classList.add('style="bg-dark;"','');
+            }
+
+            });
+
+            // go t top arrow
+                // JavaScript for Go to Top Arrow
+            const goTopArrow = document.getElementById('goTopArrow');
+
+        // Show or hide the arrow based on scroll position
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            goTopArrow.style.display = "block";
+            } else {
+            goTopArrow.style.display = "none";
+            }
+        };
+
+        // Scroll to top smoothly when arrow is clicked
+        goTopArrow.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
-        // navbar function...
-
-        var nav = document.querySelector('nav');
-
-        window.addEventListener('scroll', function() {
-          if(window.pageYOffset < 100){
-            nav.classList.add('style="bg-dark;"','');
-          }
-
-        });
-
-        // go t top arrow
-            // JavaScript for Go to Top Arrow
-          const goTopArrow = document.getElementById('goTopArrow');
-
-      // Show or hide the arrow based on scroll position
-      window.onscroll = function() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          goTopArrow.style.display = "block";
-        } else {
-          goTopArrow.style.display = "none";
-        }
-      };
-
-      // Scroll to top smoothly when arrow is clicked
-      goTopArrow.addEventListener('click', function(event) {
-        event.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    </script>
-</body>
+        </script>
+    </body>
 </html>
