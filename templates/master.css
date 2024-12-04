@@ -24,7 +24,12 @@
 @import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swapp');
 @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swapp');
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500|Rambla:400,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Fredoka:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Fredoka:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Antique+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 /* Licensing & Courtesy  - 
 
 https://undraw.co/search
@@ -286,11 +291,11 @@ svg{
 }
 
 .nav-pills, .nav-item,.nav-link,.active,.strong{
-  color: #0A0F22;
+  color: #4D8EE5;
 }
 
 .btn{
-  background-color: #0A0F22;
+  background-color: #4D8EE5;
 }
 
 .social-links{
@@ -870,8 +875,8 @@ svg{
 }
 
 strong{
-  font-size:large;
-  color: #6c63ffff;
+  font-size:smaller;
+  color: #4D8EE5;
 }
 
 .counterinner-img{
@@ -1907,11 +1912,28 @@ strong{
   z-index: 9997;
 }
 
+@media (min-width: 768px) {
+  /* For screens wider than 768px, set the width to 12.5% */
+  .navmenu-container {
+    width: 25%;
+    left: 5; /* Align to the left edge */
+  }
+}
+
 .navmenu-image {
-  width: 300px;
-  height: 450px;
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-  display: block;
+  width: 100%; /* Make the image take up 100% of its container's width */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio 1  */
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+  left: 5;
+}
+
+@media (min-width: 992px) {
+  /* Adjust the image size for larger screens if needed */
+  .navmenu-image {
+    width: 100%; /* Or any desired width */
+    height: 100%;
+    left: 5;
+  }
 }
 
 .navmenu {
@@ -1933,11 +1955,20 @@ strong{
   margin-bottom: 8px;
   font-size: 15px;
   border-radius: 50px;
-  background: color-mix(in srgb, black, transparent 92%);
+  background: 1  color-mix(in srgb, black, transparent 92%);
   height: 56px;
-  width: 100%;
+  width: 100%; /* Ensure full width for responsive behavior */
   overflow: hidden;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens (e.g., mobile devices) */
+  .navmenu a,
+  .navmenu a:focus {
+    padding: 10px 12px; /* Reduce padding for smaller screens */
+    font-size: 14px; /* Reduce font size for better readability */
+  }
 }
 
 .navmenu a i,
@@ -1985,7 +2016,7 @@ strong{
 .navicon {
   margin-right: 10px;  /* Space between icon and text */
   font-size: 1.2em;    /* Size of the icon */
-  color: #333;         /* Color of the icon */
+  color: rgb(13, 110, 253);         /* Color of the icon */
 }
 
 .navicon:hover {
@@ -2292,3 +2323,223 @@ strong{
 .learn-more i {
   margin-left: 5px;
 }
+
+ol {
+  counter-reset: item;
+  padding-left: 0;
+}
+
+ol li {
+  position: relative;
+  list-style: none;
+  padding-left: 20px;
+  text-align: left;
+  font-family: 'Rambla', sans-serif;
+  text-align: left;
+  margin-top: 2px;
+  font-size: 15px;
+  font-weight: 350;
+  font-style: normal;
+}
+
+ol li:before {
+  content: "\00BB"; /* Unicode for a bullet point content: counter(item); */
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: rgb(13, 110, 253);
+}
+
+body {
+  font-family: 'Rambla', sans-serif;
+  color: #888;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.75em;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.sidebar {
+  width: 12.5%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  background-color: white;
+  z-index: 999;
+}
+
+.sidebar .navbar-brand {
+  margin-bottom: 20px;
+}
+
+.sidebar .navbar-nav {
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(13, 110, 253);
+  font-size: 24px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: white;
+}
+
+.sidebar .nav-link span {
+  display: none; /* Initially hide the text */
+}
+
+.sidebar .nav-link:hover span {
+  display: inline-block; /* Show the text on hover */
+  margin-left: 10px;
+}
+
+.sidebar .nav-link.active {
+  background-color: rgb(13, 110, 253);
+  color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 12.5%;
+      position: relative;
+      height: auto;
+  }
+}
+
+.sidebar1 {
+  width: 5%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 999;
+  color: rgb(13, 110, 253);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .sidebar1 {
+      width: 5%;
+      position: relative;
+      height: auto;
+  }
+}
+
+.sidebar1 .navbar-brand {
+  margin-bottom: 20px;
+}
+
+.sidebar1 .navbar-nav {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar1 .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar1 .nav-link:hover {
+  background-color: white;
+}
+
+.sidebar1 .nav-link span {
+  display: none; /* Initially hide the text */
+}
+
+.sidebar1 .nav-link:hover span {
+  display: inline-block; /* Show the text on hover */
+  margin-left: 10px;
+}
+
+.sidebar1 .nav-link.active {
+  background-color: rgb(13, 110, 253);
+  color: white;
+}
+
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(13, 110, 253);
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: rgb(13, 110, 253);
+  font-size: 24px;
+}
+
+.home-title {
+  color: #f5f5f5;
+  font-size: clamp(3.2rem, 10vw, 7rem);
+  line-height: clamp(3.2rem, 10vw, 7rem);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgb(13, 110, 253);
+}
+
+/* landing page */
+
+.landing-page {
+  margin: 0;
+  height: 100vh;
+  background-color:  #f4f4fb;
+
+  @media (min-width: 992px){
+    .navbar li {
+        margin-left : 1em;
+        margin-right : 1em;
+    }
+}
+
+  button{
+    background-color: #f4f4fb;
+  }
+
+  img {
+    border-radius: 5%;
+    max-width: 350px;
+  }
+
+  .hello{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size:60px;
+    letter-spacing: -2px;
+    font-stretch: condensed;
+  }
+
+  .numbers{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size:60px;
+    letter-spacing: -2px;
+    font-stretch: condensed;
+    padding: 15px;
+  }
+
+}
+
+
+
