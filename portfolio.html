@@ -12,475 +12,432 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="templates/master.css">
     </head>
-    <body>
-        <style>
-            body {
-    font-family: 'Rambla', sans-serif;
-    color: #888;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.75em;
-    min-height: 100%;
-    position: relative;
-    overflow-x: hidden;
-    background-color: #fff;
-}
-        </style>
-         <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-          <symbol id="check" viewBox="0 0 16 16" class="text-primary">
-            <title>Check</title>
-            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-          </symbol>
-          <symbol id="facebook" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-          </symbol>
-          <symbol id="instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-          </symbol>
-          <symbol id="twitter" viewBox="0 0 16 16">
-            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-          </symbol>
-          <symbol id="linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-          </svg>
-          <symbol id="bi-arrow-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-          </svg>
-        </svg>
-          <!-- Main Page-->
-           <div class="container-fluid">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check" viewBox="0 0 16 16" class="text-primary">
+        <title>Check</title>
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </symbol>
+      <symbol id="linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+      </svg>
+      <symbol id="bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+      </svg>
+    </svg>
+    <body class="myportfolio">
+      <div class="container-fluid myportfolio">
+        <div class="row mb-3 text-center">
+          <div class="col-md-2">
+            <div class="d-flex flex-column flex-shrink-0 sidebar" style="width: 4.5rem;">
+              <a href="/" class="d-block p-3 link-body-emphasis text-decoration-none" title="logo"  data-bs-placement="right">
+                <img src="./images/RV_LOGO.png" width="50" height="50">
+              </a>
+              <ul class="nav nav-flush flex-column mb-auto text-center">
+                <li class="nav-item">
+                  <a href="/" class="nav-link active py-3 border-bottom rounded-0" width="24" height="24" aria-current="page" title="Home" data-bs-placement="right">
+                    home
+                  </a>
+                </li>
+                <li>
+                  <a href="home.html" class="nav-link py-3 border-bottom rounded-0" title="Dashboard" data-bs-placement="right">
+                    about
+                  </a>
+                </li>
+                <li>
+                  <a href="resume.html" class="nav-link py-3 border-bottom rounded-0" title="Orders" data-bs-placement="right">
+                    resume
+                  </a>
+                </li>
+                <li>
+                  <a href="portfolio.html" class="nav-link py-3 border-bottom rounded-0 navactive" title="Products" data-bs-placement="right">
+                    portfolio
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html" class="nav-link py-3 border-bottom rounded-0" title="Customers" data-bs-placement="right">
+                    contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-1">
-                  <!--navigation-->
-                  <div class="container-fluid">
-                    <div class="navmenu-container">
-                      <nav class="sidebar navbar">
-                        <div class="container-fluid">
-                          <ul class="navbar-nav">
-                            <li><img src="./images/RV_LOGO.png" alt="Logo" class="navmenu-image"></li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="index.html">
-                                      <i class="bi bi-house-fill"></i>
-                                      <span>Home</span>
-                                  </a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="resume.html">
-                                      <i class="bi bi-file-earmark-person-fill"></i>
-                                      <span>Resume</span>
-                                  </a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="portfolio.html">
-                                      <i class="bi bi-briefcase-fill"></i>
-                                      <span>Portfolio</span>
-                                  </a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="contact.html">
-                                      <i class="bi bi-envelope-fill"></i>
-                                      <span>Contact</span>
-                                  </a>
-                              </li>
-                              <li>&copy; 2024. All Rights Reserved.</li>
-                          </ul>
-                        </div>
-                      </nav>
-                      <nav class="sidebar1 navbar">
-                        <div class="container-fluid">
-                            <ul class="navbar-nav">
-                                <li class="nav-item social-icons"><a href="#"><i class="bi bi-facebook"></i></a></li>
-                                <li class="nav-item social-icons"><a href="#"><i class="bi bi-twitter"></i></a></li>
-                                <li class="nav-item social-icons"><a href="#"><i class="bi bi-instagram"></i></a></li>
-                                <li class="nav-item social-icons"><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                              </ul>
-                        </div>
-                    </nav>
+                <div class="col-md-12">
+                  <h1 class="Unveiling">Unveiling </h1>
+                  <h1 class="Blueprint">the Blueprint</h1>
+                </div>
+              </div>
+              <div class="row"><div class="col">&nbsp;</div></div>
+              <!--
+              <div class="row">
+                <div class="col-md-12">
+                  <h4>Executive's Impact on the World</h4>
+                  <p>As a seasoned global executive, I've had the privilege of leading transformative initiatives across diverse industries. My expertise in IT project management, cloud data management, security, and GRC has empowered organizations to achieve their strategic goals.</p>
+                </div>
+              </div>
+              <div class="row"><div class="col">&nbsp;</div></div>
+              
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="">
+                    <div class="">
+                      <div class="row row-cols-lg-5 row-cols-md-4 row-cols-2 g-3">
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">IPCOM (IN)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">XEROX (US)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">Office Depot (US)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">Astra Zeneca (US)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">Novartis (CH)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">IBM (US)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">Citi (US)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">Entergy (US)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">Mphasis (IN)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">Ahold (NL)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">HCL Technology (IN)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">Virtusa (IN)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">Western Digital (US)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">GE (US)</p></div></div>
+                        <div class="col-md-2"><div class="card1"><p class="text-uppercase">MCube (IN)</p></div></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-11">
-                    <!-- Varous Companies-->
-                    <div class="container">
-                      <h3 class="accordintext">Throughout my career, I've had the privilege of working with a diverse range of clients across various industries. My expertise in IT project management, cloud data management, security, and GRC has allowed me to deliver transformative solutions that drive business value. Below is the list of key clients, leveraging my skills in program management, technology implementation, and process optimization.</h3>
-                      <h2 class="title">Professional Services and Client Engagements</h2><br>
-                        <div class="grid-container">
-                          <div class="grid-column">
-                            <div class="row row-cols-lg-5 row-cols-md-4 row-cols-2 justify-content-center g-3">
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">IPCOM</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Xerox</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Repeat for each card -->
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Office Depot</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Astra Zeneca</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Novartis</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">IBM</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Citi</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Entergy</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Mphasis</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Ahold</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Nova Scotia</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">HCL Technology</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Virtusa</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">Western Digital</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">GE</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="iphone-card text-center">
-                                  <div class="card-body justify-content-between">
-                                    <div class="">
-                                      <p class="text-uppercase">MCube</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- End Companies-->
-                     <!--Portfolio Volunteeering, personal projects-->
-                     <div class="container">
-                        <h3 class="accordintext">My portfolio reflects a dynamic blend of professional expertise, continuous learning, and community involvement. It showcases my commitment to excellence in project management, Account management, cybersecurity, and technology, while also highlighting my dedication to giving back to the professional community and society at large.</h3>
-                        <h2 class="title">Portfolio</h2><br>
-                        <div class="grid-container">
-                          <div class="grid-column">
-                            <!--Volunteering -->
-                            <div class="d-flex flex-row justify-content-center">
-                              <div class="flex-item flex-grow-2 p-2">
-                                <h3 class="title">Volunteering</h3>
-                                <p>As a dedicated professional, I've actively sought opportunities to give back to the community and contribute to the advancement of my field.</p>
-                              </div>
-                              <div class="flex-item p-2">
-                                <div class="card">
-                                  <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h6 class="card-title text-center">Practice Guide</h6>
-                                    <p class="card-text text-center">contributing to the development of Risk Management in Portfolios, Programs, and Projects: A Practice Guide book</p>
-                                    <a href="#" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="flex-item p-2">
-                                <div class="card">
-                                  <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h6 class="card-title text-center">Review PMP training content</h6>
-                                    <p class="card-text text-center">Content Reviewer - I had an opportunity to review the PMP Exam content guide, Q&A along with other Volunteers.
-                                      Shared our insights created new questions and answers that will be part of the PMI Training curriculum.</p>
-                                      <a href="#" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="flex-item p-2">
-                                <div class="card">
-                                  <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h6 class="card-title text-center">Empowering Cybersecurity Excellence</h6>
-                                    <p class="card-text text-center">My Journey Volunteering with ISC2 in Developing the Certified in Cybersecurity Exam.</p>
-                                    <a href="#" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="d-flex flex-row justify-content-center">
-                              <div class="flex-item flex-grow-2 p-2"></div>
-                              <div class="flex-item p-2">
-                                <div class="card">
-                                  <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h6 class="card-title text-center">Pack & Box</h6>
-                                    <p class="card-text text-center">For a Social Cause : North Texas Food Bank -  I lend a hand at NTFB Distribution Center in packing produces for the needy, that will be distributed across north Texas. It was an 2 hour full filled Volunteering activity along with my son and 50+ Volunteers.</p>
-                                    <a href="https://ntfb.org/get-involved/?utm_campaign=RKD_FY25_Evergreen&gad_source=1&gclid=CjwKCAjwqf20BhBwEiwAt7dtdUtXFY_gYRHFC55IiYdDC45HTdVpd79yG-uhOgfvzm8XubCmu1Ms_xoC5ScQAvD_BwE" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="flex-item flex-grow-2 p-2"></div>
-                              <div class="flex-item flex-grow-2 p-2"></div>
-                            </div>
-                            <!--End Volunteering-->
-                            <!-- Blog section-->
-                            <div class="d-flex flex-row justify-content-center">
-                              <div class="flex-item flex-grow-2 p-2"><h3 class="title">Blog</h3></div>
-                              <div class="flex-item p-2">
-                                <div class="card">
-                                  <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h6 class="card-title text-center">Zero Trust Architecture in the Cloud.</h6>
-                                    <p class="card-text text-center">What is Zero Trust : (What it defines) Approach : An integrated defense-in-depth approach Emphasis verifying request for access, encompasses wide range of factors segmentation and least privilege access.</p>
-                                    <a href="https://www.linkedin.com/pulse/what-i-learn-understand-ramani-viswanathan?trk=article-ssr-frontend-pulse_more-articles_related-content-card" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="flex-item flex-grow-2 p-2">
-                                <div class="card">
-                                  <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h6 class="card-title text-center">PMI Talent Triangle</h6>
-                                    <p class="card-text text-center">Welcome to the First part of our series on leveraging the PMI Talent Triangle. In this installment, I will explore the crucial aspect of "Ways of Working," formerly known as "Technical Project Management."</p>
-                                    <a href="https://www.linkedin.com/pulse/leveraging-pmi-talent-triangle-benefits-project-ramani-viswanathan/?trackingId=hluouCXKSiGIm1pS1LwudA%3D%3D" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="flex-item flex-grow-2 p-2"></div>
-                            </div>
-                            <!-- End Blog section-->
-                              <!--Personal project-->
-                              <div class="d-flex flex-row justify-content-center">
-                                <div class="flex-item flex-grow-2 p-2"><h3 class="title">Personal project</h3></div>
-                                <div class="flex-item p-2">
-                                  <div class="card">
-                                    <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title text-center">Code Pen</h6>
-                                      <p class="card-text text-center">Personal HTML, CSS, JS Projects.</p>
-                                      <a href="https://codepen.io/collection/qOQKvZ" class="learn-more">See yourself <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flex-item flex-grow-2 p-2">
-                                  <div class="card">
-                                    <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title text-center">Project LiftOff</h6>
-                                      <p class="card-text text-center">Project: LiftOff is a comprehensive training program designed to prepare aspiring project managers for success in the field of project management.</p>
-                                      <a href="https://github.com/Ramani-Viswanathan/LiftOff" class="learn-more">Got Delayed <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flex-item flex-grow-2 p-2"></div>
-                              </div>
-                              <!--Personal project-->
-                              <!-- professional Engagement-->
-                              <div class="d-flex flex-row justify-content-center">
-                                <div class="flex-item flex-grow-2 p-2"><h3 class="title">Professional Engagement</h3></div>
-                                <div class="flex-item p-2">
-                                  <div class="card">
-                                    <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title text-center">Technical Account Management</h6>
-                                      <p class="card-text text-center">I bridge the gap between technology and business. I specialize in building strong client relationships, providing strategic IT guidance, and optimizing operations. My focus on proactive problem-solving, effective communication, and delivering innovative solutions drives business success.</p>
-                                      <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flex-item flex-grow-2 p-2">
-                                  <div class="card">
-                                    <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title text-center">PMO - Head</h6>
-                                      <p class="card-text text-center">I've optimized project management practices, improved resource allocation, enhanced project visibility, and fostered collaboration. I've delivered high-impact projects on time and within budget, driving business success.</p>
-                                      <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flex-item flex-grow-2 p-2"></div>
-                              </div>
-                              <!-- End Professional Engagement-->
-                              <!-- Professional projects-->
-                              <div class="d-flex flex-row justify-content-center">
-                                <div class="flex-item flex-grow-2 p-2"><h3 class="title">Professional Programs</h3></div>
-                                <div class="flex-item p-2">
-                                  <div class="card">
-                                    <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title text-center">Refactor (Re-architecture)</h6>
-                                      <p class="card-text text-center">
-                                        <ol class="list-group-numbered"><li class="list-group-item">Oracle ERP Upgrade</li></ol>
-                                      </p>
-                                      <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flex-item flex-grow-2 p-2">
-                                  <div class="card">
-                                    <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title text-center">Rebuild</h6>
-                                      <p class="card-text text-center">
-                                        <ol class="list-group-numbered">
-                                          <li class="list-group-item">Backup and Recovery Transformation</li>
-                                          <li class="list-group-item">Data Center Transition</li>
-                                          <li class="list-group-item">Conference Room Technology Integration</li>
-                                          <li class="list-group-item">Small Onboarding Projects</li>
-                                          <li class="list-group-item">installing new security equipment and infrastructure.</li>
-                                        </ol>
-                                      </p>
-                                      <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flex-item flex-grow-2 p-2">
-                                  <div class="card">
-                                    <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title text-center">Replace</h6>
-                                      <p class="card-text text-center">
-                                        <ol class="list-group-numbered">
-                                          <li class="list-group-item">Service Transition</li>
-                                        </ol>
-                                      </p>
-                                      <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="d-flex flex-row justify-content-center">
-                                <div class="flex-item flex-grow-2 p-2"><h3 class="title"></h3></div>
-                                <div class="flex-item p-2">
-                                  <div class="card">
-                                    <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title text-center">Refresh</h6>
-                                      <p class="card-text text-center">
-                                        <ol class="list-group-numbered">
-                                          <li class="list-group-item">Enterprise Technology Refresh and Management Program</li>
-                                          <li class="list-group-item">O365 Collaboration Modernization</li>
-                                        </ol>
-                                      </p>
-                                      <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flex-item flex-grow-2 p-2">
-                                  <div class="card">
-                                    <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title text-center">Preventive</h6>
-                                      <p class="card-text text-center">
-                                        <ol class="list-group-numbered"><li class="list-group-item">Rollout of Enhanced Vulnerability and Threat Implementation</li></ol></p>
-                                      <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flex-item flex-grow-2 p-2"></div>
-                              </div>
-                              <!-- End Professional projects-->
-                          </div>
-                        </div>
-                     </div>
-                     <!--end forst part-->
+              </div>
+              <div class="row"><div class="col">&nbsp;</div></div>
+              -->
+              <div class="row">
+                <div class="col-md-12">
+                  <h4>Portfolio</h4>
+                  <p>My portfolio reflects a dynamic blend of professional expertise, continuous learning, and community involvement. It showcases my commitment to 
+                    excellence in project management, Account management, cybersecurity, and technology, while also highlighting my dedication to giving back to the 
+                    professional community and society at large.</p>
                 </div>
               </div>
-           </div>
+              <div class="row"><div class="col">&nbsp;</div></div>
+              <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-md-12">
+                  <div class="grid-container">
+                    <div class="grid-column">
+                      <!--Volunteering -->
+                      <div class="container text-center">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                          <div class="col-4">
+                            <h3 class="card-title">Volunteering</h3>
+                          <p>As a dedicated professional, I've actively sought opportunities to give back to the community and contribute to the advancement of my field.</p>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Practice Guide</h6>
+                                <p class="card-text">contributing to the development of Risk Management in Portfolios, Programs, and Projects: A Practice Guide book</p>
+                                <a href="#" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Review PMP training content</h6>
+                                <p class="card-text">Content Reviewer - I had an opportunity to review the PMP Exam content guide, Q&A along with other Volunteers.
+                                  Shared our insights created new questions and answers that will be part of the PMI Training curriculum.</p>
+                                  <a href="#" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Empowering Cybersecurity Excellence</h6>
+                                <p class="card-text">My Journey Volunteering with ISC2 in Developing the Certified in Cybersecurity Exam.</p>
+                                <a href="#" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container text-center">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                          <div class="col-4">&nbsp;</div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Pack & Box</h6>
+                                <p class="card-text text-center">For a Social Cause : North Texas Food Bank -  I lend a hand at NTFB Distribution Center in packing produces for the needy, that will be distributed across north Texas. It was an 2 hour full filled Volunteering activity along with my son and 50+ Volunteers.</p>
+                                <a href="https://ntfb.org/get-involved/?utm_campaign=RKD_FY25_Evergreen&gad_source=1&gclid=CjwKCAjwqf20BhBwEiwAt7dtdUtXFY_gYRHFC55IiYdDC45HTdVpd79yG-uhOgfvzm8XubCmu1Ms_xoC5ScQAvD_BwE" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">&nbsp;</div>
+                          <div class="col">&nbsp;</div>
+                        </div>
+                      </div>
+                      <!--End Volunteering-->
+                      <div class="row"><div class="col">&nbsp;</div></div>
+                      <!-- Blog section-->
+                      <div class="container text-center">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                          <div class="col-4">
+                            <h3 class="card-title">A Window to My World</h3>
+                            <p>A <strong>blog</strong> is more than just a digital diary. It's a canvas where I can paint my thoughts, share my experiences, and showcase my skills, both professional and personal. It's a window into my world, offering a glimpse into my mind and heart.</p>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Zero Trust Architecture in the Cloud.</h6>
+                                <p class="card-text">What is Zero Trust : (What it defines) Approach : An integrated defense-in-depth approach Emphasis verifying request for access, encompasses wide range of factors segmentation and least privilege access.</p>
+                                <a href="https://www.linkedin.com/pulse/what-i-learn-understand-ramani-viswanathan?trk=article-ssr-frontend-pulse_more-articles_related-content-card" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">PMI Talent Triangle</h6>
+                                <p class="card-text">Welcome to the First part of our series on leveraging the PMI Talent Triangle. In this installment, I will explore the crucial aspect of "Ways of Working," formerly known as "Technical Project Management."</p>
+                                <a href="https://www.linkedin.com/pulse/leveraging-pmi-talent-triangle-benefits-project-ramani-viswanathan/?trackingId=hluouCXKSiGIm1pS1LwudA%3D%3D" class="learn-more">Learn More <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">&nbsp;</div>
+                        </div>
+                      </div>
+                      <!-- End Blog section-->
+                      <div class="row"><div class="col">&nbsp;</div></div>
+                      <!--Personal project-->
+                      <div class="container text-center">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                          <div class="col-4">
+                            <h3 class="card-title">A Portfolio of Passion and Purpose</h3>
+                            <p><strong>Personal projects</strong> are more than just hobbies; they're a tangible demonstration of skills, knowledge, and creativity. They're the building blocks of a strong professional portfolio, providing real-world examples of problem-solving, innovation, and technical expertise.</p>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Code Pen</h6>
+                                <p class="card-text">Personal HTML, CSS, JS Projects.</p>
+                                <a href="https://codepen.io/collection/qOQKvZ" class="learn-more">See yourself <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Project LiftOff</h6>
+                                <p class="card-text">Project: LiftOff is a comprehensive training program designed to prepare aspiring project managers for success in the field of project management.</p>
+                                <a href="https://github.com/Ramani-Viswanathan/LiftOff" class="learn-more">Got Delayed <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">&nbsp;</div>
+                        </div>
+                      </div>
+                      <!--End Personal project-->
+                      <div class="row"><div class="col">&nbsp;</div></div>
+                      <!-- professional Engagement-->
+                      <div class="container text-center">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                          <div class="col-4">
+                            <h3 class="card-title">Drive Organizational Success</h3>
+                            <p><strong>Professional engagements</strong> are the cornerstone of a successful career. They provide opportunities to apply knowledge, skills, and experience to real-world challenges, ultimately driving organizational growth and innovation.</p>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Technical Account Management</h6>
+                                <p class="card-text">I bridge the gap between technology and business. I specialize in building strong client relationships, providing strategic IT guidance, and optimizing operations. My focus on proactive problem-solving, effective communication, and delivering innovative solutions drives business success.</p>
+                                <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">PMO - Head</h6>
+                                <p class="card-text">I've optimized project management practices, improved resource allocation, enhanced project visibility, and fostered collaboration. I've delivered high-impact projects on time and within budget, driving business success.</p>
+                                <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col"></div>
+                        </div>
+                      </div>
+                      <!-- End Professional Engagement-->
+                      <div class="row"><div class="col">&nbsp;</div></div>
+                      <!-- Professional projects-->
+                      <div class="container text-center">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                          <div class="col-4">
+                            <h3 class="card-title">Fueling Innovation and Driving Change</h3>
+                            <p><strong>Strategic programs</strong> are the lifeblood of organizations, driving innovation, improving efficiency, and delivering exceptional results. They require a unique blend of strategic thinking, technical expertise, and leadership skills.</p>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Refactor (Re-architecture)</h6>
+                                <p class="card-text">
+                                  <ol class="list-group-numbered">
+                                    <li class="list-group-item">Oracle ERP Upgrade</li>
+                                    <li class="list-group-item">Network Upgrade</li>
+                                    <li class="list-group-item">Datbase & Server Upgrade</li>
+                                  </ol>
+                                </p>
+                                <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Rebuild</h6>
+                                <p class="card-text">
+                                  <ol class="list-group-numbered">
+                                    <li class="list-group-item">Backup and Recovery Transformation</li>
+                                    <li class="list-group-item">Data Center Transition</li>
+                                    <li class="list-group-item">Conference Room Technology Integration</li>
+                                    <li class="list-group-item">Small Onboarding Projects</li>
+                                    <li class="list-group-item">installing new security equipment and infrastructure.</li>
+                                  </ol>
+                                </p>
+                                <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Replace</h6>
+                                <p class="card-text">
+                                  <ol class="list-group-numbered">
+                                    <li class="list-group-item">Service Transition</li>
+                                  </ol>
+                                </p>
+                                <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row"><div class="col">&nbsp;</div></div>
+                      <div class="container text-center">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                          <div class="col-4">&nbsp;</div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Refresh</h6>
+                                <p class="card-text">
+                                  <ol class="list-group-numbered">
+                                    <li class="list-group-item">Enterprise Technology Refresh and Management Program</li>
+                                    <li class="list-group-item">O365 Collaboration Modernization</li>
+                                  </ol>
+                                </p>
+                                <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title">Preventive</h6>
+                                <p class="card-text">
+                                  <ol class="list-group-numbered"><li class="list-group-item">Rollout of Enhanced Vulnerability and Threat Implementation</li></ol></p>
+                                <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title">Relocate </h6>
+                                <p class="card-text">
+                                  <ol class="list-group-numbered"><li class="list-group-item">Dataceneter Consolidation</li></ol></p>
+                                <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row"><div class="col">&nbsp;</div></div>
+                      <div class="container text-center">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                          <div class="col-4">&nbsp;</div>
+                          <div class="col">
+                            <div class="card">
+                              <img src="./images/RV_LOGO.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title text-center">Replatform</h6>
+                                <p class="card-text">
+                                  <ol class="list-group-numbered">
+                                    <li class="list-group-item">Network, Server and Database Consolidation</li>
+                                    <li class="list-group-item">On-prem to Cloud Migration</li>
+                                  </ol>
+                                </p>
+                                <a href="#" class="learn-more">call to know more <i class="fa fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">&nbsp;</div>
+                          </div>
+                          <div class="col">&nbsp;</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3 text-center">
+          <div class="col-md-12">
+            <div class="container">
+              <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                  <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Ramani Viswanathan</span>
+                </div>
+            
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook" width="45" height="45"></i></a></li>
+                  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter" width="45" height="45"></i></a></li>
+                  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram" width="45" height="45"></i></a></li>
+                  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-linkedin" width="45" height="45"></i></a></li>
+                  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-youtube" width="45" height="45"></i></a></li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
         <script src="templates/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

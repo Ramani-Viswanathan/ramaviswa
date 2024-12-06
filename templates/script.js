@@ -679,13 +679,13 @@ window.addEventListener("load", function () {
 
               const cardDiv = document.createElement("div");
               cardDiv.innerHTML = `
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="10000">
                 <section class="recommendation">
-                  <div class="recommendation-image"><i class="bi bi-quote"></i></div>
+                  <div recommendation-image><i class="bi bi-quote"></i></div>
                   <div class="recommendation-content">
                     <h4>${item.person}</h4>
-                    <p>${item.title}</p>
-                    <p class="accordintext">${item.when}</p>
+                    <p><small class="text-uppercase ls-md fw-semibold text-primary">${item.title}</small></p>
+                    <p class="accordintext">${item.when}</p><br>
                     <p>${item.recomend}</p>
                   </div>
                 </section>
@@ -860,6 +860,9 @@ timelineContainer.addEventListener('wheel', (evt) => {
   evt.preventDefault();
   timelineContainer.scrollLeft += evt.deltaY;
 });
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 
 
